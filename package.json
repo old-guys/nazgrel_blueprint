@@ -1,0 +1,26 @@
+{
+  "name": "nazgrel_blueprint",
+  "version": "1.0.0",
+  "description": "bi doc api",
+  "author": "",
+  "homepage": "git@gitlab.ishanggang.com:bi/nazgrel_blueprint.git",
+  "copyright": "Copyright 2017 creativeLabs",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "drakov --watch --disableCORS -f ./source/api/**/*.md -p 3006",
+    "generate": "aglio -i ./source/api.md -o ./public/api.html",
+    "test": "dredd ./source/api/**/*.md http://127.0.0.1:3006",
+    "clean": "rimraf ./public/*.html"
+  },
+  "engines": {
+    "node": ">= 5.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "devDependencies": {
+    "aglio": "^2.3.0",
+    "drakov": "^1.0.4",
+    "dredd": "^4.6.2",
+    "rimraf": "^2.6.2"
+  }
+}
