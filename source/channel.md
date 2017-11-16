@@ -8,5 +8,5 @@ HOST: https://bi.ishanggang.com
 <!-- include(intro.md) -->
 <!-- include(guide.md) -->
 
-<!-- include(api/ping.md) -->
-<!-- include(api/auth.md) -->
+<!-- include(api/channel/ping.md) -->
+<!-- include(api/channel/auth.md) -->

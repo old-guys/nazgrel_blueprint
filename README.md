@@ -27,10 +27,19 @@ You're going to need:
  2. Clone *your forked repository* (not our original one) to your hard drive with `git clone ssh://git@gitlab.ishanggang.com/bi/nazgrel_blueprint.git`
  3. `cd nazgrel_blueprint`
  4. Install all dependencies: `npm install`
- 5. Start the Mock server: `npm run start`
- 6. Generate html file: `npm run generate`
 
-### Generate or Update
+### Development Channel api
 
-1. Start the Mock server: `npm run start`
-2. Generate html file: `npm run generate`
+ 1. Start the Mock server: `npm run start_channel`
+ 2. Generate html file: `npm run generate_channel`
+ 3. test mock api: `npm run test_channel`
+
+### Development Mobile api
+
+ 1. Start the Mock server: `npm run start_mobile`
+ 2. Generate html file: `npm run generate_mobile`
+ 3. test mock api: `npm run test_mobile`
+
+### Clean Html
+
+1. Start the Mock server: `npm run clean`

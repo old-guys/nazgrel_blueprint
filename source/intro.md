@@ -1,5 +1,12 @@
 # Group Introduction
 
+## Api 请求目录
+
+目前系统按照 `api/${type}` 来区分请求哪个平台
+
+- `channel` 渠道 app 接口
+- `mobile` BI 接口
+
 ## 认证参数
 登录成功后，可以在请求参数中携带身份验证信息（即在请求参数中传、user_token、version_code、device），也可以将身份信息放到请求头的Authorization里，即在每个请求头中都加入如下参数：
 

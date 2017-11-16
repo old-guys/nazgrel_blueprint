@@ -9,7 +9,7 @@ npm install -g api-mock drakov aglio
 ## 启动 Mock server
 
 ```
-drakov -f source/api/*.md -p 3006
+drakov -f source/api/**/*.md -p 3006
 ```
 
 ## 测试接口
@@ -19,7 +19,7 @@ drakov -f source/api/*.md -p 3006
 请求
 
 ```
-curl localhost:3006/ping?device=h5 -H "Content-Type: application/json"
+curl localhost:3006/api/mobile/ping?device=h5 -H "Content-Type: application/json"
 ```
 
 结果
@@ -35,7 +35,7 @@ curl localhost:3006/ping?device=h5 -H "Content-Type: application/json"
 请求
 
 ```
-curl localhost:3006/ping/ping_db?device=h5 -H "Content-Type: application/json"
+curl localhost:3006/api/mobile/ping/ping_db?device=h5 -H "Content-Type: application/json"
 ```
 
 结果
@@ -57,7 +57,7 @@ curl localhost:3006/ping/ping_db?device=h5 -H "Content-Type: application/json"
 请求
 
 ```
-curl "localhost:3006/auth/login?device=h5" -H "Content-Type: application/json" -X POST -d '{"login": "test@qq.com","password": "11111111"}'
+curl "localhost:3006/api/mobile/auth/login?device=h5" -H "Content-Type: application/json" -X POST -d '{"login": "test@qq.com","password": "11111111"}'
 ```
 
 结果
@@ -80,7 +80,7 @@ curl "localhost:3006/auth/login?device=h5" -H "Content-Type: application/json" -
 请求
 
 ```
-curl 'localhost:3006/auth/ping_db?device=h5&user_token=waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4=' -H "Content-Type: application/json"
+curl 'localhost:3006/api/mobile/auth/ping_db?device=h5&user_token=waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4=' -H "Content-Type: application/json"
 ```
 
 结果

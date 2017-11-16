@@ -1,6 +1,6 @@
 # Group Ping
 
-## Ping [/ping{?device}]
+## Ping [/api/mobile/ping{?device}]
 
 ### Request ping [GET]
 ping api 服务器
@@ -16,7 +16,7 @@ ping api 服务器
                 "ping": "pong"
             }
 
-## ping db [/ping/ping_db{?device}]
+## ping db [/api/mobile/ping/ping_db{?device}]
 ### Request ping_db [GET]
 ping api 服务器数据库，得到最新的用户信息
 

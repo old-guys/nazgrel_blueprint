@@ -1,6 +1,6 @@
 # Group Auth
 
-## 登陆 [/auth/login{?device}]
+## 登陆 [/api/channel/auth/login{?device}]
 
 ### Request login [POST]
 用户登陆
@@ -31,7 +31,7 @@
                 }
             }
 
-## ping db [/auth/ping_db{?device,user_token}]
+## ping db [/api/channel/auth/ping_db{?device,user_token}]
 ### Request ping_db [GET]
 ping api 服务器数据库，得到最新的用户信息
 
