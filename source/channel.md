@@ -10,3 +10,4 @@ HOST: https://bi.ishanggang.com
 
 <!-- include(api/channel/ping.md) -->
 <!-- include(api/channel/auth.md) -->
+<!-- include(api/channel/dashboard.md) -->
