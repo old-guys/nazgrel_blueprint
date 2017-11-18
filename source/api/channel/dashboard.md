@@ -9,15 +9,14 @@
     + order_count: 3 (number) - 总订单数
     + commission_amount: 11.33, (number) - 总佣金
     + today (object)
-      + shop_count: 1 (number) - 开店数
-      + order_count: 3 (number) - 订单数
+        + shop_count: 1 (number) - 开店数
+        + order_count: 3 (number) - 订单数
 
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
 
-+ Response 200
-
++ Response 200 (application/json;charset=UTF-8)
     + Body
 
             {

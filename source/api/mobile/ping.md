@@ -8,7 +8,7 @@ ping api 服务器
 + Parameters
     + device: h5 (string, required) - 设备类型
 
-+ Response 200
++ Response 200 (application/json;charset=UTF-8)
 
     + Body
 
@@ -30,7 +30,6 @@ ping api 服务器数据库，得到最新的用户信息
     + device: h5 (string, required) - 设备类型
 
 + Response 200
-
     + Body
 
             {
@@ -39,6 +38,6 @@ ping api 服务器数据库，得到最新的用户信息
                     "id": 1,
                     "email": "test@qq.com",
                     "created_at": "2017-11-08T07:53:13.000Z",
-                    "updated_at": "2017-11-08T09:43:49.000Z
+                    "updated_at": "2017-11-08T09:43:49.000Z"
                 }
             }

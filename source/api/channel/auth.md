@@ -16,8 +16,7 @@
                 "password": "11111111"
             }
 
-+ Response 200
-
++ Response 200 (application/json;charset=UTF-8)
     + Body
 
             {
@@ -45,8 +44,7 @@ ping api 服务器数据库，得到最新的用户信息
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
 
-+ Response 200
-
++ Response 200 (application/json;charset=UTF-8)
     + Body
 
             {
@@ -55,6 +53,6 @@ ping api 服务器数据库，得到最新的用户信息
                     "id": 1,
                     "email": "test@qq.com",
                     "created_at": "2017-11-08T07:53:13.000Z",
-                    "updated_at": "2017-11-08T09:43:49.000Z
+                    "updated_at": "2017-11-08T09:43:49.000Z"
                 }
             }

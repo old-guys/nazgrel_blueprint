@@ -47,7 +47,7 @@ curl localhost:3006/api/mobile/ping/ping_db?device=h5 -H "Content-Type: applicat
         "id": 1,
         "email": "test@qq.com",
         "created_at": "2017-11-08T07:53:13.000Z",
-        "updated_at": "2017-11-08T09:43:49.000Z
+        "updated_at": "2017-11-08T09:43:49.000Z"
     }
 }
 ```
@@ -80,7 +80,7 @@ curl "localhost:3006/api/mobile/auth/login?device=h5" -H "Content-Type: applicat
 请求
 
 ```
-curl 'localhost:3006/api/mobile/auth/ping_db?device=h5&user_token=waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4=' -H "Content-Type: application/json"
+curl 'localhost:3006/api/channel/auth/ping_db?device=h5&user_token=waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4=' -H "Content-Type: application/json"
 ```
 
 结果
@@ -92,7 +92,7 @@ curl 'localhost:3006/api/mobile/auth/ping_db?device=h5&user_token=waNXHf3GnG2vKi
         "id": 1,
         "email": "test@qq.com",
         "created_at": "2017-11-08T07:53:13.000Z",
-        "updated_at": "2017-11-08T09:43:49.000Z
+        "updated_at": "2017-11-08T09:43:49.000Z"
     }
 }
 ```
