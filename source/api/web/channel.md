@@ -1,7 +1,7 @@
 # Group Channels
 
-## 店铺列表 [/api/web/channels{?device,user_token}]
-### Request channels index [GET]
+## 渠道 [/api/web/channels{?device,user_token}]
+### 渠道列表 [GET]
 获取渠道列表 数据
 
 + Attributes (object)
@@ -47,8 +47,66 @@
               }
             }
 
-### 渠道详情 [/api/web/channels/{id}{?device,user_token}]
-### Request channel show [GET]
+### 创建渠道 [POST]
+创建渠道
+
++ Parameters
+    + device: web (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+
++ Attributes (SampleChannel)
+    + channel (object) - 渠道信息
+        + name: 测试总代 (string, required) - 渠道名称
+        + category: seed_shopkeeper (string, required) - 渠道类型
+        + source: always (string, required) - 渠道来源
+        + shopkeeper_user_id: 25998 (number, required) - 店主用户ID
+        + channel_user (object) - 渠道用户信息
+            + password: 11111111 (string, required) - 密码
+
++ Request (application/json)
+
+            {
+                "channel": {
+                    "name": "测试总代",
+                    "category": "seed_shopkeeper",
+                    "source": "always",
+                    "shopkeeper_user_id": "25998",
+                    "channel_user": {
+                        "password": "11111111"
+                    }
+                }
+            }
+
++ Response 200 (application/json;charset=UTF-8)
+
+    + Body
+
+            {
+              "code": 0,
+              "data": {
+                "id": 1,
+                "name": "测试总代",
+                "category": "seed_shopkeeper",
+                "category_text": "种子店主",
+                "source": "always",
+                "source_text": "奥维思",
+                "status": "normal",
+                "status_text": "正常",
+                "updated_at": "2017-11-16T14:42:21.000+08:00",
+                "created_at": "2017-11-16T14:42:21.000+08:00",
+                "channel_user": {
+                  "id": 1,
+                  "name": "",
+                  "phone": "1234567890",
+                  "created_at": "2017-11-16T14:42:21.000+08:00",
+                  "updated_at": "2017-11-19T16:40:31.000+08:00"
+                }
+              }
+            }
+
+
+## 查看或者编辑渠道 [/api/web/channels/{id}{?device,user_token}]
+### 渠道详情 [GET]
 通过渠道ID 获取渠道详情
 
 + Parameters
@@ -57,6 +115,61 @@
     + id: 1 (string, required) - 渠道ID
 
 + Attributes (SampleChannel)
+
++ Response 200 (application/json;charset=UTF-8)
+
+    + Body
+
+            {
+              "code": 0,
+              "data": {
+                "id": 1,
+                "name": "测试总代",
+                "category": "seed_shopkeeper",
+                "category_text": "种子店主",
+                "source": "always",
+                "source_text": "奥维思",
+                "status": "normal",
+                "status_text": "正常",
+                "updated_at": "2017-11-16T14:42:21.000+08:00",
+                "created_at": "2017-11-16T14:42:21.000+08:00",
+                "channel_user": {
+                  "id": 1,
+                  "name": "",
+                  "phone": "1234567890",
+                  "created_at": "2017-11-16T14:42:21.000+08:00",
+                  "updated_at": "2017-11-19T16:40:31.000+08:00"
+                }
+              }
+            }
+
+### 更新渠道 [PUT]
+通过渠道id更新渠道的名称, 登陆密码, 状态等
+
++ Parameters
+    + device: web (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + id: 1 (number, required) - 渠道id
+
++ Attributes (SampleChannel)
+    + channel (object) - 渠道信息
+        + name: 测试总代 (string, required) - 渠道名称
+        + status: locked (string) - 渠道状态
+        + channel_user (object) - 渠道用户信息
+            + password: 11111111 (string, required) - 密码
+
++ Request (application/json)
+
+            {
+                "channel": {
+                    "name": "测试总代",
+                    "category": "seed_shopkeeper",
+                    "status": "always",
+                    "channel_user": {
+                        "password": "11111111"
+                    }
+                }
+            }
 
 + Response 200 (application/json;charset=UTF-8)
 
