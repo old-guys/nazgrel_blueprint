@@ -1,0 +1,168 @@
+# Group Shops
+
+## 店铺列表 [/api/channel/shops{?device,user_token,filters%5b%5d}]
+### Request shops index [GET]
+获取工作台 summary 数据
+
++ Attributes (object)
+    + total_count: 366 (number) - 总店数
+    + per_page: 15 (number) - 每页条数
+    + page: 0 (number) - 页码
+    + models (array[SampleShop])
+
++ Parameters
+    + device: h5 (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
+        + For example: `profiles?ids[]=35&ids[]=47&ids[]=12`
+
++ Response 200 (application/json;charset=UTF-8)
+    + Body
+
+            {
+              "code": 0,
+              "data": {
+                "total_count": 366,
+                "per_page": 2,
+                "page": 0,
+                "models": [
+                  {
+                    "id": 10,
+                    "name": "cpencil芝蚂店",
+                    "parent_shopkeeper_name": "高强",
+                    "child_count": 3,
+                    "indirectly_descendant": 0,
+                    "commission_amount": "0.0",
+                    "created_at": "2017-08-10T04:42:08.000+08:00"
+                  },
+                  {
+                    "id": 19,
+                    "name": "路路通",
+                    "parent_shopkeeper_name": "嘻嘻嘻",
+                    "child_count": 0,
+                    "indirectly_descendant": 0,
+                    "commission_amount": "0.0",
+                    "created_at": "2017-08-10T22:41:19.000+08:00"
+                  }
+                ]
+              }
+            }
+
+### 店铺详情 [/api/channel/shops/{id}{?device,user_token}]
+### Request shop show [GET]
+通过店铺ID 获取店铺详情
+
++ Parameters
+    + device: h5 (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + id: 10 (string, required) - 店铺ID
+
++ Attributes (object)
+    + id: 10 (string) - 店铺ID
+    + name: cpencil芝蚂店 (string) - 店铺名称
+    + desc: 我的小店开张啦！欢迎大家常来逛 (string) - 店铺描述
+    + shopkeeper (shopkeeperProfile) - 店主信息
+        + child_count (object) - 直接邀请个数
+            + count: 10 (number) - 个数
+            + grade_platinum_count: 3 (number) - 白金店主个数
+            + grade_gold_count: 7 (number) - 黄金店主个数
+        + indirectly_descendant_count (object) - 间接邀请个数
+            + count: 30 (number) - 个数
+            + grade_platinum_count: 8 (number) - 白金店主个数
+            + grade_gold_count: 22 (number) - 黄金店主个数
+        + parent (shopkeeperProfile) - 上级店主
+            + tree_list (array[shopkeeperProfile]) - 邀请人列表
+        + total_income_amount: 2000 (number) - 账户总收入
+        + commission_income_amount: 233 (number) - 佣金收入
+        + withdraw_amount: 23 (number) - 已提现金额
+        + invite_amount: 23 (number) - 邀请收入 培训奖励
+        + invite_number: 23 (number) - 邀请总人数
+        + order_amount: 3 (number) - 邀请总人数
+        + order_number: 3 (number) - 订单总数
+        + share_journal_count: 133 (number) - 分享次数
+        + view_journal_count: 35 (number) - 访问次数
+
++ Response 200 (application/json;charset=UTF-8)
+
+    + Body
+
+            {
+              "code": 0,
+              "data": {
+                "id": 10,
+                "name": "cpencil芝蚂店",
+                "desc": "我的小店开张啦！欢迎大家常来逛",
+                "shopkeeper": {
+                  "user_name": "嘻嘻嘻",
+                  "user_grade": "grade_platinum",
+                  "user_grade_text": "白金店主",
+                  "user_phone": "13022189206",
+                  "user_photo": "http://zmcimg.ishanggang.com/default/shop/keeper/default_avatar.png",
+                  "child_count": {
+                    "count": 3,
+                    "grade_platinum_count": 3,
+                    "grade_gold_count": 0
+                  },
+                  "indirectly_descendant_count": {
+                    "count": 0,
+                    "grade_platinum_count": 0,
+                    "grade_gold_count": 0
+                  },
+                  "parent": {
+                    "user_name": "高强",
+                    "user_grade": "grade_platinum",
+                    "user_grade_text": "白金店主",
+                    "user_phone": "13661638426",
+                    "user_photo": "http://inte.ishanggang.com/upload/upload/user/Head/user_25998_1505274624483.jpeg",
+                    "tree_list": [
+                      {
+                        "user_name": "高强",
+                        "user_grade": "grade_platinum",
+                        "user_grade_text": "白金店主",
+                        "user_phone": "13661638426",
+                        "user_photo": "http://inte.ishanggang.com/upload/upload/user/Head/user_25998_1505274624483.jpeg"
+                      },
+                      {
+                        "user_name": "嘻嘻嘻",
+                        "user_grade": "grade_platinum",
+                        "user_grade_text": "白金店主",
+                        "user_phone": "13022189206",
+                        "user_photo": "http://zmcimg.ishanggang.com/default/shop/keeper/default_avatar.png"
+                      }
+                    ]
+                  },
+                  "total_income_amount": "0.0",
+                  "withdraw_amount": "0.0",
+                  "invite_amount": "0.003",
+                  "invite_number": 3,
+                  "order_amount": "0.0",
+                  "order_number": 3,
+                  "share_journal_count": 47,
+                  "view_journal_count": 16
+                }
+              }
+            }
+
+## Data Structures
+### Filter (object)
++ name: created_at (string, required) - 字段名
++ field_type: datetime (string, optional) - 字段类型
++ operator: within (string) - 操作
++ query: today (string) - 查询值
+
+### SampleShop (object)
++ id: 10 (number) - 店铺ID
++ name: cpencil芝蚂店 (string) - 店铺名称
++ parent_shopkeeper_name: 高强 (string) - 上级店主
++ child_count: 3 (number) - 直接邀请数
++ indirectly_descendant: 8 (number) - 间接邀请数
++ commission_amount: 200.0 (string) - 佣金
++ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
+
+### shopkeeperProfile (object)
++ user_id: 25998 (number) - 用户ID
++ user_name: 高强 (string) - 店主姓名
++ user_grade: grade_platinum (string) - 店主等级
++ user_grade_text: 白金店主 (string) - 店主等级显示值
++ user_phone: 13661638426 (string) - 店主手机号
++ user_photo: http://url (string) - 店主头像
