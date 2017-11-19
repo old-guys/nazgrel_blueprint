@@ -16,7 +16,7 @@
     + device: web (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + phone: 15888888888 (string, required) - 店主手机号
-    + user_id: 12345 (number) - 店主用户ID
+    + user_id: 12345 (number, optional) - 店主用户ID
 
 + Response 200 (application/json;charset=UTF-8)
     + Body
