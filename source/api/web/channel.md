@@ -1,0 +1,105 @@
+# Group Channels
+
+## 店铺列表 [/api/web/channels{?device,user_token}]
+### Request channels index [GET]
+获取渠道列表 数据
+
++ Attributes (object)
+    + total_count: 366 (number) - 总条数
+    + per_page: 15 (number) - 每页条数
+    + page: 0 (number) - 页码
+    + models (array[SampleChannel])
+
++ Parameters
+    + device: web (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+
++ Response 200 (application/json;charset=UTF-8)
+    + Body
+
+            {
+              "code": 0,
+              "data": {
+                "total_count": 0,
+                "per_page": 1,
+                "page": 0,
+                "models": [
+                  {
+                    "id": 1,
+                    "name": "测试总代",
+                    "category": "seed_shopkeeper",
+                    "category_text": "种子店主",
+                    "source": "always",
+                    "source_text": "奥维思",
+                    "status": "normal",
+                    "status_text": "正常",
+                    "updated_at": "2017-11-16T14:42:21.000+08:00",
+                    "created_at": "2017-11-16T14:42:21.000+08:00",
+                    "channel_user": {
+                      "id": 1,
+                      "name": "",
+                      "phone": "1234567890",
+                      "created_at": "2017-11-16T14:42:21.000+08:00",
+                      "updated_at": "2017-11-19T16:40:31.000+08:00"
+                    }
+                  }
+                ]
+              }
+            }
+
+### 渠道详情 [/api/web/channels/{id}{?device,user_token}]
+### Request channel show [GET]
+通过渠道ID 获取渠道详情
+
++ Parameters
+    + device: web (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + id: 1 (string, required) - 渠道ID
+
++ Attributes (SampleChannel)
+
++ Response 200 (application/json;charset=UTF-8)
+
+    + Body
+
+            {
+              "code": 0,
+              "data": {
+                "id": 1,
+                "name": "测试总代",
+                "category": "seed_shopkeeper",
+                "category_text": "种子店主",
+                "source": "always",
+                "source_text": "奥维思",
+                "status": "normal",
+                "status_text": "正常",
+                "updated_at": "2017-11-16T14:42:21.000+08:00",
+                "created_at": "2017-11-16T14:42:21.000+08:00",
+                "channel_user": {
+                  "id": 1,
+                  "name": "",
+                  "phone": "1234567890",
+                  "created_at": "2017-11-16T14:42:21.000+08:00",
+                  "updated_at": "2017-11-19T16:40:31.000+08:00"
+                }
+              }
+            }
+
+## Data Structures
+### SampleChannel (object)
++ id: 1 (number) - 渠道ID
++ name: 测试总代 (string) - 渠道名称
++ category: seed_shopkeeper (string) - 类型
++ category_text: 种子店主 (string) - 类型显示值
++ source: always (string) - 来源
++ source_text: 奥维思 (string) - 来源显示值
++ status: normal (string) - 状态
++ status_text: 正常 (string) - 状态显示值
++ channel_user (object)
+    + id: 1 (number) - 用户ID
+    + name: 测试 (string) - 名称
+    + phone: 1234567890 (string) - 手机
+    + created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
+    + updated_at: 2017-08-10T04:42:08.000+08:00 (string) - 更新时间
++ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
++ updated_at: 2017-08-10T04:42:08.000+08:00 (string) - 更新时间

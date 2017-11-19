@@ -40,6 +40,12 @@ You're going to need:
  2. Generate html file: `npm run generate_mobile`
  3. test mock api: `npm run test_mobile`
 
+### Development Web api
+
+ 1. Start the Mock server: `npm run start_web`
+ 2. Generate html file: `npm run generate_web`
+ 3. test mock api: `npm run test_web`
+
 ### Clean Html
 
 1. Start the Mock server: `npm run clean`

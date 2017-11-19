@@ -2,10 +2,10 @@
 
 ## 店铺列表 [/api/channel/shops{?device,user_token,filters%5b%5d}]
 ### Request shops index [GET]
-获取工作台 summary 数据
+获取店铺列表 数据
 
 + Attributes (object)
-    + total_count: 366 (number) - 总店数
+    + total_count: 366 (number) - 总条数
     + per_page: 15 (number) - 每页条数
     + page: 0 (number) - 页码
     + models (array[SampleShop])
@@ -14,7 +14,7 @@
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
-        + For example: `profiles?ids[]=35&ids[]=47&ids[]=12`
+        + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
 
 + Response 200 (application/json;charset=UTF-8)
     + Body
@@ -29,6 +29,7 @@
                   {
                     "id": 10,
                     "name": "cpencil芝蚂店",
+                    "shopkeeper_name": "高强",
                     "parent_shopkeeper_name": "高强",
                     "child_count": 3,
                     "indirectly_descendant": 0,
@@ -153,6 +154,7 @@
 ### SampleShop (object)
 + id: 10 (number) - 店铺ID
 + name: cpencil芝蚂店 (string) - 店铺名称
++ shopkeeper_name: 高强 (string) - 店主姓名
 + parent_shopkeeper_name: 高强 (string) - 上级店主
 + child_count: 3 (number) - 直接邀请数
 + indirectly_descendant: 8 (number) - 间接邀请数
