@@ -1,7 +1,7 @@
 # Group Dashboard
 
 ## dashboard index [/api/channel/dashboard{?device,user_token}]
-### Request dashboard index [GET]
+### 工作台 [GET]
 获取工作台 summary 数据
 
 + Attributes (object)

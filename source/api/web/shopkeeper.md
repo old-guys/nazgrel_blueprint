@@ -1,7 +1,7 @@
 # Group Shopkeepers
 
 ## 查询店主 [/api/web/shopkeepers/check{?device,user_token,phone,user_id}]
-### Request shopkeeper check [GET]
+### 查询店主 [GET]
 通过手机号, 店主用户ID, 获取店主信息
 
 + Attributes (object)

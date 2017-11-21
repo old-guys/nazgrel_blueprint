@@ -1,7 +1,7 @@
 # Group Shops
 
 ## 店铺列表 [/api/channel/shops{?device,user_token,filters%5b%5d}]
-### Request shops index [GET]
+### 店铺列表 [GET]
 获取店铺列表 数据
 
 + Attributes (object)
@@ -101,7 +101,7 @@
 
 
 ### 店铺详情 [/api/channel/shops/{id}{?device,user_token}]
-### Request shop show [GET]
+### 店铺详情 [GET]
 通过店铺ID 获取店铺详情
 
 + Parameters

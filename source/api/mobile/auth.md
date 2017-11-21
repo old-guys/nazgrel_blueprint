@@ -2,7 +2,7 @@
 
 ## 登陆 [/api/mobile/auth/login{?device}]
 
-### Request login [POST]
+### 用户登陆 [POST]
 用户登陆
 
 + Parameters
@@ -32,7 +32,7 @@
             }
 
 ## ping db [/api/mobile/auth/ping_db{?device,user_token}]
-### Request ping_db [GET]
+### ping api 服务器数据库 [GET]
 ping api 服务器数据库，得到最新的用户信息
 
 + Attributes (object)

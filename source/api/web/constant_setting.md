@@ -2,7 +2,7 @@
 
 ## constant_setting [/api/constant_setting{?device}]
 
-### Request constant_setting [GET]
+### 全局数据 [GET]
 获取全局数据
 
 + Parameters
@@ -24,8 +24,8 @@
             }
 
 ## constant_setting enum_field [/api/web/constant_setting/enum_field{?device}]
-### Request enum_field constant_setting [GET]
-获取下来类型字段的选项信息
+### 下拉类型字段信息 [GET]
+获取下拉类型字段的选项信息
 
 + Attributes (object)
     + md5 0513016322ac1698f09d94a93eb52f3e (string) - 数据的md5

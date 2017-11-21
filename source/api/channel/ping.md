@@ -2,7 +2,7 @@
 
 ## Ping [/api/channel/ping{?device}]
 
-### Request ping [GET]
+### 服务器 [GET]
 ping api 服务器
 
 + Parameters
@@ -16,7 +16,7 @@ ping api 服务器
             }
 
 ## ping db [/api/channel/ping/ping_db{?device}]
-### Request ping_db [GET]
+### 服务器数据库 [GET]
 ping api 服务器数据库，得到最新的用户信息
 
 + Attributes (object)
