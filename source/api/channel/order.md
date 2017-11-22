@@ -258,15 +258,11 @@
               }
             }
 
-## 订单详情 [/api/channel/orders{id}{?device,user_token}]
+## 订单详情 [/api/channel/orders/{id}{?device,user_token}]
 ### 订单详情 [GET]
 获取订单详情数据
 
-+ Attributes (object)
-    + total_count: 366 (number) - 总条数
-    + per_page: 15 (number) - 每页条数
-    + page: 1 (number) - 页码
-    + models (array[SampleOrder])
++ Attributes (SampleOrder)
 
 + Parameters
     + device: h5 (string, required) - 设备类型
