@@ -49,6 +49,57 @@
               }
             }
 
+## 店铺销售 [/api/channel/shops/sales{?device,user_token,filters%5b%5d}]
+### 店铺销售 [GET]
+获取店铺销售 数据
+
++ Attributes (object)
+    + total_count: 366 (number) - 总条数
+    + per_page: 15 (number) - 每页条数
+    + page: 0 (number) - 页码
+    + models (array[SampleShop])
+
++ Parameters
+    + device: h5 (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
+        + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
+
++ Response 200 (application/json;charset=UTF-8)
+    + Body
+
+            {
+              "code": 0,
+              "data": {
+                "total_count": 366,
+                "per_page": 2,
+                "page": 0,
+                "models": [
+                  {
+                    "id": 10,
+                    "name": "cpencil芝蚂店",
+                    "shopkeeper_name": "高强",
+                    "user_grade": "grade_platinum",
+                    "user_grade_text": "白金店主",
+                    "order_amount": 0,
+                    "order_number": 0,
+                    "created_at": "2017-08-10T04:42:08.000+08:00"
+                  },
+                  {
+                    "id": 19,
+                    "name": "路路通",
+                    "shopkeeper_name": "嘻嘻嘻",
+                    "user_grade": "grade_platinum",
+                    "user_grade_text": "白金店主",
+                    "order_amount": 0,
+                    "order_number": 0,
+                    "created_at": "2017-08-10T22:41:19.000+08:00"
+                  }
+                ]
+              }
+            }
+
+
 ### 店铺详情 [/api/channel/shops/{id}{?device,user_token}]
 ### Request shop show [GET]
 通过店铺ID 获取店铺详情
