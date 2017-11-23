@@ -4,17 +4,25 @@
 ### 渠道列表 [GET]
 获取渠道列表 数据
 
-+ Attributes (object)
-    + total_count: 366 (number) - 总条数
-    + per_page: 15 (number) - 每页条数
-    + page: 0 (number) - 页码
-    + models (array[SampleChannel])
-
 + Parameters
     + device: web (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
 
 + Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+            + total_count: 366 (number) - 总条数
+            + total_pages: 124 (number) - 总页数
+            + current_page: 1 (number) - 当前页
+            + next_page (number, nullable) - 下一页
+            + prev_page (number, nullable) - 前一页
+            + first_page? (string) - 是否第一页
+            + last_page? (string) - 是否最后一页
+            + per_page: 15 (number) - 每页条数
+            + page: 1 (number) - 页码
+            + models (array[SampleChannel])
+
     + Body
 
             {
@@ -54,8 +62,8 @@
     + device: web (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
 
-+ Attributes (SampleChannel)
-    + channel (object) - 渠道信息
++ Request (application/json)
+    + Attributes (ChannelParams)
         + name: 测试总代 (string, required) - 渠道名称
         + category: seed_shopkeeper (string, required) - 渠道类型
         + source: always (string, required) - 渠道来源
@@ -63,7 +71,7 @@
         + channel_user (object) - 渠道用户信息
             + password: 11111111 (string, required) - 密码
 
-+ Request (application/json)
+    + Body
 
             {
                 "channel": {
@@ -78,6 +86,9 @@
             }
 
 + Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (SampleChannel)
 
     + Body
 
@@ -114,9 +125,10 @@
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + id: 1 (string, required) - 渠道ID
 
-+ Attributes (SampleChannel)
-
 + Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (SampleChannel)
 
     + Body
 
@@ -151,14 +163,15 @@
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + id: 1 (number, required) - 渠道id
 
-+ Attributes (SampleChannel)
-    + channel (object) - 渠道信息
-        + name: 测试总代 (string, required) - 渠道名称
-        + status: locked (string) - 渠道状态
-        + channel_user (object) - 渠道用户信息
-            + password: 11111111 (string, required) - 密码
-
 + Request (application/json)
+    + Attributes (ChannelParams)
+        + channel (object) - 渠道信息
+            + name: 测试总代 (string, required) - 渠道名称
+            + status: locked (string) - 渠道状态
+            + channel_user (object) - 渠道用户信息
+                + password: 11111111 (string, required) - 密码
+
+    + Body
 
             {
                 "channel": {
@@ -172,6 +185,9 @@
             }
 
 + Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (SampleChannel)
 
     + Body
 
@@ -199,6 +215,10 @@
             }
 
 ## Data Structures
+### ChannelParams (object)
++ name: 测试总代 (string) - 渠道名称
++ channel_user (object)
+    + name: 测试 (string) - 名称
 ### SampleChannel (object)
 + id: 1 (number) - 渠道ID
 + name: 测试总代 (string) - 渠道名称

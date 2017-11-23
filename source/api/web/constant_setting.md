@@ -45,6 +45,12 @@
                     "first_agent": "一级代理",
                     "channel_manager": "渠道经理"
                   },
+                  "channel_user": {
+                    "category": {
+                      "normal_user": "普通用户",
+                      "manager": "管理员"
+                    }
+                  },
                   "source": {
                     "always": "奥维思",
                     "weichaishi": "微差事",
