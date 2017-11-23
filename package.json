@@ -9,15 +9,15 @@
   "private": true,
   "scripts": {
     "start_channel": "drakov --config channel_config.js",
-    "generate_channel": "aglio -i ./source/channel.md -o ./public/channel.html",
+    "generate_channel": "aglio --theme-template triple --theme-variables flatly -i ./source/channel.md -o ./public/channel.html",
     "test_channel": "dredd ./source/api/channel/**/*.md http://127.0.0.1:3006",
 
     "start_mobile": "drakov --config mobile_config.js",
-    "generate_mobile": "aglio -i ./source/mobile.md -o ./public/mobile.html",
+    "generate_mobile": "aglio --theme-template triple --theme-variables flatly -i ./source/mobile.md -o ./public/mobile.html",
     "test_mobile": "dredd ./source/api/mobile/**/*.md http://127.0.0.1:3007",
 
     "start_web": "drakov --config web_config.js",
-    "generate_web": "aglio -i ./source/web.md -o ./public/web.html",
+    "generate_web": "aglio --theme-template triple --theme-variables flatly -i ./source/web.md -o ./public/web.html",
     "test_web": "dredd ./source/api/web/**/*.md http://127.0.0.1:3008",
 
     "clean": "rimraf ./public/*.html"
