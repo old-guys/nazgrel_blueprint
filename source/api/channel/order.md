@@ -17,8 +17,8 @@
             + total_count: 366 (number) - 总条数
             + total_pages: 124 (number) - 总页数
             + current_page: 1 (number) - 当前页
-            + next_page: 2 (number) - 下一页
-            + prev_page (number) - 前一页
+            + next_page (number, nullable) - 下一页
+            + prev_page (number, nullable) - 前一页
             + first_page? (string) - 是否第一页
             + last_page? (string) - 是否最后一页
             + per_page: 15 (number) - 每页条数
@@ -110,8 +110,8 @@
             + total_count: 366 (number) - 总条数
             + total_pages: 124 (number) - 总页数
             + current_page: 1 (number) - 当前页
-            + next_page: 2 (number) - 下一页
-            + prev_page (number) - 前一页
+            + next_page (number, nullable) - 下一页
+            + prev_page (number, nullable) - 前一页
             + first_page? (string) - 是否第一页
             + last_page? (string) - 是否最后一页
             + per_page: 15 (number) - 每页条数
@@ -203,8 +203,8 @@
             + total_count: 366 (number) - 总条数
             + total_pages: 124 (number) - 总页数
             + current_page: 1 (number) - 当前页
-            + next_page: 2 (number) - 下一页
-            + prev_page (number) - 前一页
+            + next_page (number, nullable) - 下一页
+            + prev_page (number, nullable) - 前一页
             + first_page? (string) - 是否第一页
             + last_page? (string) - 是否最后一页
             + per_page: 15 (number) - 每页条数
