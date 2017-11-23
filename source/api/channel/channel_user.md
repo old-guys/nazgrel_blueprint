@@ -1,8 +1,8 @@
-# Group Channel
+# Group ChannelUser
 
-## 当前渠道 [/api/channel/channels/my{?device,user_token}]
-### [弃用]当前渠道 [GET]
-获取当前渠道信息数据, 使用 [当前渠道用户](#channeluser-当前渠道用户-get)
+## 当前渠道用户 [/api/channel/channel_users/my{?device,user_token}]
+### 当前渠道用户 [GET]
+获取当前渠道用户信息数据
 
 + Parameters
     + device: h5 (string, required) - 设备类型
@@ -11,7 +11,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (myChannel) - 渠道用户信息
+        + data (myChannelUser) - 渠道用户信息
     + Body
 
             {
@@ -49,7 +49,7 @@
 
 
 ## Data Structures
-### myChannel (object)
+### myChannelUser (object)
 + name: 测试渠道 (string) - 渠道名称
 + shop_name: 李小宝的店 (string) - 店铺名称
 + shopkeeper (object) - 店主

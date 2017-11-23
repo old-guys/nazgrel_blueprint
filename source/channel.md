@@ -14,3 +14,4 @@ HOST: https://bi.ishanggang.com
 <!-- include(api/channel/shop.md) -->
 <!-- include(api/channel/order.md) -->
 <!-- include(api/channel/channel.md) -->
+<!-- include(api/channel/channel_user.md) -->

@@ -4,12 +4,6 @@
 ### 店铺列表 [GET]
 获取店铺列表 数据
 
-+ Attributes (object)
-    + total_count: 366 (number) - 总条数
-    + per_page: 15 (number) - 每页条数
-    + page: 0 (number) - 页码
-    + models (array[SampleShop])
-
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
@@ -17,6 +11,19 @@
         + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
 
 + Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+            + total_count: 366 (number) - 总条数
+            + total_pages: 124 (number) - 总页数
+            + current_page: 1 (number) - 当前页
+            + next_page (number, nullable) - 下一页
+            + prev_page (number, nullable) - 前一页
+            + first_page? (string) - 是否第一页
+            + last_page? (string) - 是否最后一页
+            + per_page: 15 (number) - 每页条数
+            + page: 1 (number) - 页码
+            + models (array[SampleShop])
     + Body
 
             {
@@ -53,12 +60,6 @@
 ### 店铺销售 [GET]
 获取店铺销售 数据
 
-+ Attributes (object)
-    + total_count: 366 (number) - 总条数
-    + per_page: 15 (number) - 每页条数
-    + page: 0 (number) - 页码
-    + models (array[SampleShop])
-
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
@@ -66,6 +67,19 @@
         + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
 
 + Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+            + total_count: 366 (number) - 总条数
+            + total_pages: 124 (number) - 总页数
+            + current_page: 1 (number) - 当前页
+            + next_page (number, nullable) - 下一页
+            + prev_page (number, nullable) - 前一页
+            + first_page? (string) - 是否第一页
+            + last_page? (string) - 是否最后一页
+            + per_page: 15 (number) - 每页条数
+            + page: 1 (number) - 页码
+            + models (array[SampleShop])
     + Body
 
             {
@@ -109,33 +123,33 @@
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + id: 10 (string, required) - 店铺ID
 
-+ Attributes (object)
-    + id: 10 (string) - 店铺ID
-    + name: cpencil芝蚂店 (string) - 店铺名称
-    + desc: 我的小店开张啦！欢迎大家常来逛 (string) - 店铺描述
-    + shopkeeper (shopkeeperProfile) - 店主信息
-        + child_count (object) - 直接邀请个数
-            + count: 10 (number) - 个数
-            + grade_platinum_count: 3 (number) - 白金店主个数
-            + grade_gold_count: 7 (number) - 黄金店主个数
-        + indirectly_descendant_count (object) - 间接邀请个数
-            + count: 30 (number) - 个数
-            + grade_platinum_count: 8 (number) - 白金店主个数
-            + grade_gold_count: 22 (number) - 黄金店主个数
-        + parent (shopkeeperProfile) - 上级店主
-            + tree_list (array[shopkeeperProfile]) - 邀请人列表
-        + total_income_amount: 2000 (number) - 账户总收入
-        + commission_income_amount: 233 (number) - 佣金收入
-        + withdraw_amount: 23 (number) - 已提现金额
-        + invite_amount: 23 (number) - 邀请收入 培训奖励
-        + invite_number: 23 (number) - 邀请总人数
-        + order_amount: 3 (number) - 邀请总人数
-        + order_number: 3 (number) - 订单总数
-        + share_journal_count: 133 (number) - 分享次数
-        + view_journal_count: 35 (number) - 访问次数
-
 + Response 200 (application/json;charset=UTF-8)
-
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+          + id: 10 (number) - 店铺ID
+          + name: cpencil芝蚂店 (string) - 店铺名称
+          + desc: 我的小店开张啦！欢迎大家常来逛 (string) - 店铺描述
+          + shopkeeper (shopkeeperProfile) - 店主信息
+              + child_count (object) - 直接邀请个数
+                  + count: 10 (number) - 个数
+                  + grade_platinum_count: 3 (number) - 白金店主个数
+                  + grade_gold_count: 7 (number) - 黄金店主个数
+              + indirectly_descendant_count (object) - 间接邀请个数
+                  + count: 30 (number) - 个数
+                  + grade_platinum_count: 8 (number) - 白金店主个数
+                  + grade_gold_count: 22 (number) - 黄金店主个数
+              + parent (shopkeeperProfile) - 上级店主
+                  + tree_list (array[shopkeeperProfile]) - 邀请人列表
+              + total_income_amount: 2000 (string) - 账户总收入
+              + commission_income_amount: 233 (string) - 佣金收入
+              + withdraw_amount: 23 (string) - 已提现金额
+              + invite_amount: 23 (string) - 邀请收入 培训奖励
+              + invite_number: 23 (number) - 邀请总人数
+              + order_amount: 3 (string) - 邀请总人数
+              + order_number: 3 (number) - 订单总数
+              + share_journal_count: 133 (number) - 分享次数
+              + view_journal_count: 35 (number) - 访问次数
     + Body
 
             {
