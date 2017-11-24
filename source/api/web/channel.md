@@ -17,8 +17,8 @@
             + current_page: 1 (number) - 当前页
             + next_page (number, nullable) - 下一页
             + prev_page (number, nullable) - 前一页
-            + first_page? (string) - 是否第一页
-            + last_page? (string) - 是否最后一页
+            + first_page? (boolean) - 是否第一页
+            + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
             + models (array[SampleChannel])
@@ -63,13 +63,14 @@
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
 
 + Request (application/json)
-    + Attributes (ChannelParams)
-        + name: 测试总代 (string, required) - 渠道名称
-        + category: seed_shopkeeper (string, required) - 渠道类型
-        + source: always (string, required) - 渠道来源
-        + shopkeeper_user_id: 25998 (number, required) - 店主用户ID
-        + channel_user (object) - 渠道用户信息
-            + password: 11111111 (string, required) - 密码
+    + Attributes (object)
+        + channel (ChannelParams)
+            + name: 测试总代 (string, required) - 渠道名称
+            + category: seed_shopkeeper (string, required) - 渠道类型
+            + source: always (string, required) - 渠道来源
+            + shopkeeper_user_id: 25998 (number, required) - 店主用户ID
+            + channel_user (object) - 渠道用户信息
+                + password: 11111111 (string, required) - 密码
 
     + Body
 
@@ -164,8 +165,8 @@
     + id: 1 (number, required) - 渠道id
 
 + Request (application/json)
-    + Attributes (ChannelParams)
-        + channel (object) - 渠道信息
+    + Attributes (object)
+        + channel (ChannelParams)
             + name: 测试总代 (string, required) - 渠道名称
             + status: locked (string) - 渠道状态
             + channel_user (object) - 渠道用户信息

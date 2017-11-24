@@ -75,20 +75,21 @@
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
 
 + Request (application/json)
-    + Attributes (ChannelUserParams)
-        + name: 测试总代 (string, required) - 渠道用户名称
-        + phone: 123456789 (number, required) - 手机号
-        + password: 11111111 (string, required) - 密码
-        + role_type: manager (enum[string], required) - 角色类型
-            + Members
-                + manager
-                + normal_user
-        shopkeeper_user_id: 25998 (string, optional) - 角色类型
+    + Attributes (object)
+        + channel_user (ChannelUserParams)
+            + name: 测试总代 (string, required) - 渠道用户名称
+            + phone: 123456789 (number, required) - 手机号
+            + password: 11111111 (string, required) - 密码
+            + role_type: manager (enum[string], required) - 角色类型
+                + Members
+                    + manager
+                    + normal_user
+            shopkeeper_user_id: 25998 (string, optional) - 角色类型
 
     + Body
 
             {
-                "channel": {
+                "channel_user": {
                     "name": "测试总代",
                     "phone": "123456789",
                     "password": "11111111",
@@ -162,19 +163,20 @@
     + id: 1 (number, required) - 渠道用户id
 
 + Request (application/json)
-    + Attributes (ChannelUserParams)
-        + name: 测试总代 (string, required) - 渠道用户名称
-        + phone: 123456789 (number, required) - 手机号
-        + password: 11111111 (string, required) - 密码
-        + role_type: manager (enum[string], required) - 角色类型
-            + Members
-                + manager
-                + normal_user
+    + Attributes (object)
+        + channel_user (ChannelUserParams)
+            + name: 测试总代 (string, required) - 渠道用户名称
+            + phone: 123456789 (number, required) - 手机号
+            + password: 11111111 (string, required) - 密码
+            + role_type: manager (enum[string], required) - 角色类型
+                + Members
+                    + manager
+                    + normal_user
 
     + Body
 
             {
-                "channel": {
+                "channel_user": {
                     "name": "测试总代",
                     "phone": "123456789",
                     "password": "11111111",

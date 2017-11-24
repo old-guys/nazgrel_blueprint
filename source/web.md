@@ -13,6 +13,7 @@ HOST: https://bi.ishanggang.com
 <!-- include(api/web/auth.md) -->
 
 <!-- include(api/web/constant_setting.md) -->
+<!-- include(api/web/channel_region.md) -->
 <!-- include(api/web/channel.md) -->
 <!-- include(api/web/channel_user.md) -->
 <!-- include(api/web/shopkeeper.md) -->
