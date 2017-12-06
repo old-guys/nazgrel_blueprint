@@ -8,6 +8,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "generate_index": "aglio --theme-template triple --theme-variables flatly -i ./source/index.md -o ./public/index.html",
+
     "start_channel": "drakov --config channel_config.js",
     "generate_channel": "aglio --theme-template triple --theme-variables flatly -i ./source/channel.md -o ./public/channel.html",
     "test_channel": "dredd ./source/api/channel/**/*.md http://127.0.0.1:3006",
@@ -19,6 +21,12 @@
     "start_web": "drakov --config web_config.js",
     "generate_web": "aglio --theme-template triple --theme-variables flatly -i ./source/web.md -o ./public/web.html",
     "test_web": "dredd ./source/api/web/**/*.md http://127.0.0.1:3008",
+
+    "deploy-channel-prod": "rm -rf ./public/channel.html && npm run generate_channel && ./config/deploy/prod.sh",
+    "deploy-web-prod": "rm -rf ./public/web.html && npm run generate_web && ./config/deploy/prod.sh",
+    "deploy-mobile-prod": "rm -rf ./public/mobile.html && npm run generate_mobile && ./config/deploy/prod.sh",
+
+    "deploy-index-prod": "rm -rf ./public/index.html && npm run generate_index && ./config/deploy/prod.sh",
 
     "clean": "rimraf ./public/*.html"
   },

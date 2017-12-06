@@ -1,0 +1,19 @@
+server {
+
+  listen 80;
+  server_name doc.bi.ishanggang.com;
+
+  root  /ishanggang/apps/nazgrel_blueprint_production;
+  index index.html;
+
+  gzip_static on;
+  expires max;
+  add_header Cache-Control public;
+  autoindex on;
+
+  access_log /var/log/nginx/nazgrel_blueprint_production_access.log;
+  error_log /var/log/nginx/nazgrel_blueprint_production_error.log;
+
+  client_max_body_size 4G;
+  keepalive_timeout 10;
+}
