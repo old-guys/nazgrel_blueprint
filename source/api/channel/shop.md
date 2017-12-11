@@ -1,12 +1,19 @@
 # Group Shops
 
-## 店铺列表 [/api/channel/shops{?device,user_token,filters%5b%5d}]
+## 店铺列表 [/api/channel/shops{?device,user_token,order,channel_id,query,filters%5b%5d}]
 ### 店铺列表 [GET]
 获取店铺列表 数据
 
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + order: order_number desc (string, optional) - 排序
+        + Members
+            + order_number desc
+            + shopkeeper.commission_income_amount ASC
+            + created_at desc
+    + channel_id: 1 (number, optional) - 渠道ID
+    + query: 张三 (string, optional) - 查询
     + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
         + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
 
@@ -56,13 +63,20 @@
               }
             }
 
-## 店铺销售 [/api/channel/shops/sales{?device,user_token,filters%5b%5d}]
+## 店铺销售 [/api/channel/shops/sales{?device,user_token,channel_id,order,query,filters%5b%5d}]
 ### 店铺销售 [GET]
 获取店铺销售 数据
 
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + order: order_number desc (string, optional) - 排序
+        + Members
+            + order_number desc
+            + shopkeeper.commission_income_amount ASC
+            + created_at desc
+    + channel_id: 1 (number, optional) - 渠道ID
+    + query: 张三 (string, optional) - 查询
     + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
         + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
 

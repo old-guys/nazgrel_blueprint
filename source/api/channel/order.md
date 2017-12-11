@@ -1,12 +1,19 @@
 # Group Order
 
-## 订单列表 [/api/channel/orders{?device,user_token,filters%5b%5d}]
+## 订单列表 [/api/channel/orders{?device,user_token,order,channel_id,query,filters%5b%5d}]
 ### 订单列表 [GET]
 获取订单列表数据
 
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + order: total_price desc (string, optional) - 排序
+        + Members
+            + total_price desc
+            + shopkeeper.user_name ASC
+            + created_at desc
+    + channel_id: 1 (number, optional) - 渠道ID
+    + query: 1008141001729 (string, optional) - 查询
     + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
         + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
 
@@ -93,13 +100,20 @@
               }
             }
 
-## 待发货订单 [/api/channel/orders/awaiting_delivery{?device,user_token,filters%5b%5d}]
+## 待发货订单 [/api/channel/orders/awaiting_delivery{?device,user_token,order,channel_id,query,filters%5b%5d}]
 ### 待发货订单 [GET]
 获取待发货订单列表数据
 
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + order: total_price desc (string, optional) - 排序
+        + Members
+            + total_price desc
+            + shopkeeper.user_name ASC
+            + created_at desc
+    + channel_id: 1 (number, optional) - 渠道ID
+    + query: 1008141001729 (string, optional) - 查询
     + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
         + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
 
@@ -186,13 +200,20 @@
               }
             }
 
-## 退款订单 [/api/channel/orders/refund{?device,user_token,filters%5b%5d}]
+## 退款订单 [/api/channel/orders/refund{?device,user_token,order,channel_id,query,filters%5b%5d}]
 ### 退款订单 [GET]
 获取退款订单列表数据
 
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + order: total_price desc (string, optional) - 排序
+        + Members
+            + total_price desc
+            + shopkeeper.user_name ASC
+            + created_at desc
+    + channel_id: 1 (number, optional) - 渠道ID
+    + query: 1008141001729 (string, optional) - 查询
     + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
         + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
 
