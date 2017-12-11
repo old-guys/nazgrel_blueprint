@@ -12,10 +12,10 @@
             + order_number desc
             + shopkeeper.commission_income_amount ASC
             + created_at desc
-    + channel_id: 1 (enum[string], optional) - 渠道ID
+    + channel_id: 1 (enum[string], optional) - 渠道筛选
         + Members
             + 1
-            + channel_only
+            + channel_only - 筛选种子店主
     + query: 张三 (string, optional) - 查询
     + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
         + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
@@ -78,10 +78,10 @@
             + order_number desc
             + shopkeeper.commission_income_amount ASC
             + created_at desc
-    + channel_id: 1 (enum[string], optional) - 渠道ID
+    + channel_id: 1 (enum[string], optional) - 渠道筛选
         + Members
             + 1
-            + channel_only
+            + channel_only - 筛选种子店主
     + query: 张三 (string, optional) - 查询
     + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
         + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
