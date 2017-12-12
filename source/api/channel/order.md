@@ -7,7 +7,7 @@
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
-    + order: total_price desc (string, optional) - 排序
+    + order: orders.total_price desc (string, optional) - 排序
         + Members
             + orders.total_price desc
             + shopkeepers.user_name ASC
@@ -110,7 +110,7 @@
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
-    + order: total_price desc (string, optional) - 排序
+    + order: orders.total_price desc (string, optional) - 排序
         + Members
             + orders.total_price desc
             + shopkeepers.user_name ASC
@@ -213,7 +213,7 @@
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
-    + order: total_price desc (string, optional) - 排序
+    + order: orders.total_price desc (string, optional) - 排序
         + Members
             + orders.total_price desc
             + shopkeepers.user_name ASC
