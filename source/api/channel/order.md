@@ -9,9 +9,9 @@
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + order: total_price desc (string, optional) - 排序
         + Members
-            + total_price desc
-            + shopkeeper.user_name ASC
-            + created_at desc
+            + orders.total_price desc
+            + shopkeepers.user_name ASC
+            + orders.created_at desc
     + channel_id: 1 (enum[string], optional) - 渠道筛选
         + Members
             + 1
@@ -112,9 +112,9 @@
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + order: total_price desc (string, optional) - 排序
         + Members
-            + total_price desc
-            + shopkeeper.user_name ASC
-            + created_at desc
+            + orders.total_price desc
+            + shopkeepers.user_name ASC
+            + orders.created_at desc
     + channel_id: 1 (enum[string], optional) - 渠道筛选
         + Members
             + 1
@@ -215,9 +215,9 @@
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + order: total_price desc (string, optional) - 排序
         + Members
-            + total_price desc
-            + shopkeeper.user_name ASC
-            + created_at desc
+            + orders.total_price desc
+            + shopkeepers.user_name ASC
+            + orders.created_at desc
     + channel_id: 1 (enum[string], optional) - 渠道筛选
         + Members
             + 1
