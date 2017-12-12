@@ -76,6 +76,7 @@
     + order: order_number desc (string, optional) - 排序
         + Members
             + shopkeepers.order_number desc
+            + shopkeepers.order_amount desc
             + shopkeepers.commission_income_amount ASC
             + shops.created_at desc
     + channel_id: 1 (enum[string], optional) - 渠道筛选
