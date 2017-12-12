@@ -31,7 +31,7 @@
   "devDependencies": {
     "aglio": "^2.3.0",
     "drakov": "^1.0.4",
-    "dredd": "^4.8.0",
+    "dredd": "^4.8.2",
     "rimraf": "^2.6.2"
   }
 }
