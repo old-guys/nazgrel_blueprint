@@ -134,6 +134,58 @@
               }
             }
 
+### 店铺直接邀请 [/api/channel/shops/{id}/children{?device,user_token}]
+### 店铺直接邀请 [GET]
+通过店铺ID 获取直接邀请店铺列表
+
++ Parameters
+    + device: h5 (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + id: 490 (string, required) - 店铺ID
+
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+            + id: 490 (number) - 店铺ID
+            + name: 818的小店 (string) - 店铺名称
+            + children (array[SampleShop])
+    + Body
+
+            {
+              "code": 0,
+              "data": {
+                "id": 490,
+                "name": "818的小店",
+                "children": [
+                  {
+                    "id": 492,
+                    "name": "擦的小店",
+                    "shopkeeper_name": "擦",
+                    "user_grade": "grade_platinum",
+                    "user_grade_text": "白金店主",
+                    "parent_shopkeeper_name": "818",
+                    "child_count": 0,
+                    "indirectly_descendant": 0,
+                    "commission_amount": null,
+                    "created_at": "2017-11-07T23:24:17.000+08:00"
+                  },
+                  {
+                    "id": 495,
+                    "name": "巴的小店",
+                    "shopkeeper_name": "巴",
+                    "user_grade": "grade_platinum",
+                    "user_grade_text": "白金店主",
+                    "parent_shopkeeper_name": "818",
+                    "child_count": 0,
+                    "indirectly_descendant": 0,
+                    "commission_amount": null,
+                    "created_at": "2017-11-07T23:41:48.000+08:00"
+                  }
+                ]
+              }
+            }
+
 
 ### 店铺详情 [/api/channel/shops/{id}{?device,user_token}]
 ### 店铺详情 [GET]
