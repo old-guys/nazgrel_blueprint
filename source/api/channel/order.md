@@ -526,6 +526,7 @@
 + order_express (OrderExpress) - 物流订单
 + order_details (array[OrderDetail]) - 物流订单
 + supplier_id: 1 (number) - 供应商ID
++ supplier (OrderSupplier) - 供应商
 + express_price: 0 (number) - 运费
 + express_free_price: 200 (number) - 满多少包邮
 + version: 0 (number)
