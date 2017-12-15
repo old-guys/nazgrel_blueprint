@@ -355,7 +355,7 @@
                         "product_market_price": "0.02",
                         "product_sale_price": "0.01",
                         "commission_rate": 11.0,
-                        "express_price": 0.0,
+                        "express_price": "0.0",
                         "product_group_id": null,
                         "product_old_sale_price": "0.01",
                         "is_free_delivery": "no",
@@ -366,11 +366,26 @@
                         "updated_at": "2017-12-06T11:10:35.000+08:00"
                       }
                     ],
+                    "supplier": {
+                      "id": 1,
+                      "industry_id": "c8a7b59c2e82487ea5024e8d555437cd",
+                      "sup_no": "GT20170627002",
+                      "name": "联合利华",
+                      "url": "",
+                      "logo": "",
+                      "desc": null,
+                      "status": null,
+                      "status_text": null,
+                      "created_at": "2017-06-27T14:53:04.000+08:00",
+                      "updated_at": "2017-08-10T14:36:38.000+08:00"
+                    },
                     "supplier_id": 1,
-                    "express_price": 0.0,
+                    "express_price": "0.0",
                     "express_free_price": "200.0",
                     "version": 0,
                     "activity_id": null,
+                    "order_status": "deliveried",
+                    "order_status_text": "已发货",
                     "shop_user_deliveried_push": "yes",
                     "shop_user_deliveried_push_text": "是",
                     "user_deliveried_push": "yes",
@@ -545,6 +560,17 @@
 + product_label_type_text: 是 (string) - 商品类型
 + created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
 + updated_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
+### OrderSupplier (object)
++ id: 13245149 (number) - 供应商ID
++ industry_id: 56fbb3684bb5430e87355d62bcd073af (string) - 行业ID
++ sup_no: GT20170807001 (string) - 供应商编号
++ name: 芝麻城官方 (string) - 运费
++ url (string) - 网址
++ logo (string) - logo
++ desc (string) - 简介
++ status (string) - 状态
++ status_text (string) - 状态
++ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
 ### OrderExpress (object)
 + id: 165 (number) - 物流订单ID
 + express_no: 543543532532 (string) - 物流单号
