@@ -256,5 +256,5 @@
           + 普通用户
 + shopkeeper_user_id: 1 (number) - 店主用户ID
 + shop_id: 2 (number) - 店铺ID
-+ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
-+ updated_at: 2017-08-10T04:42:08.000+08:00 (string) - 更新时间
++ created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
++ updated_at: `2017-08-10T04:42:08.000+08:00` (string) - 更新时间

@@ -297,7 +297,7 @@
 + child_count: 3 (number) - 直接邀请数
 + indirectly_descendant: 8 (number) - 间接邀请数
 + commission_amount: 200.0 (string) - 佣金
-+ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
++ created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 
 ### shopkeeperProfile (object)
 + user_id: 25998 (number) - 用户ID

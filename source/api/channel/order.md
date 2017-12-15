@@ -453,10 +453,10 @@
 + shop_name: 解忧杂货店 (string) - 店铺名
 + shop_username: 吉娜娜 (string) - 店主名
 + shop_user_id: 24420 (number) - 店主id
-+ pay_time: 2017-08-10T04:42:08.000+08:00 (string, nullable) - 支付日期
-+ deliver_time: 2017-08-10T04:42:08.000+08:00 (string, nullable) - 订单发货日期
-+ finish_time: 2017-08-10T04:42:08.000+08:00 (string, nullable) - 订单完成日期
-+ cancel_time: 2017-08-10T04:42:08.000+08:00 (string, nullable) - 订单取消日期
++ pay_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 支付日期
++ deliver_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 订单发货日期
++ finish_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 订单完成日期
++ cancel_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 订单取消日期
 + express_price: 0 (number, nullable) - 运费
 + sale_price: 0 (number) - 优惠价格
 + comm: 3.59 (number) - 佣金相关值
@@ -472,7 +472,7 @@
 + payed_push_text: 是 (string) - 是否推送文本描述
 + global_freight_flag: yes (string) - 是否满足全局包邮
 + global_freight_flag_text: 是 (string) - 是否满足全局包邮文本描述
-+ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
++ created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 ### Order (object)
 + id: 10 (number) - 订单ID
 + order_no: 1008141001729 (string) - 订单编号
@@ -499,10 +499,10 @@
 + user_ticket_id: 1 (number, nullable) - 用户优惠券ID
 + reduce_price: 0 (string) - 减免价格
 + discount_rate: 0 (string) - 折扣比例
-+ pay_time: 2017-08-10T04:42:08.000+08:00 (string, nullable) - 支付日期
-+ deliver_time: 2017-08-10T04:42:08.000+08:00 (string, nullable) - 订单发货日期
-+ finish_time: 2017-08-10T04:42:08.000+08:00 (string, optional, nullable) - 订单完成日期
-+ cancel_time: 2017-08-10T04:42:08.000+08:00 (string, optional, nullable) - 订单取消日期
++ pay_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 支付日期
++ deliver_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 订单发货日期
++ finish_time: `2017-08-10T04:42:08.000+08:00` (string, optional, nullable) - 订单完成日期
++ cancel_time: `2017-08-10T04:42:08.000+08:00` (string, optional, nullable) - 订单取消日期
 + express_price: 0 (string) - 运费
 + sale_price: 0 (string) - 优惠价格
 + comm: 3.59 (string) - 佣金相关值
@@ -519,7 +519,7 @@
 + global_freight_flag: yes (string) - 是否满足全局包邮
 + global_freight_flag_text: 是 (string) - 是否满足全局包邮文本描述
 + global_freight: 0 (string) - 全局包邮金额
-+ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
++ created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 ### OrderSub (object)
 + id: 10 (number) - 订单ID
 + sub_order_no: 1112051369610020 (string) - 子订单编号
@@ -539,8 +539,8 @@
 + supplier_deliveried_push_text: 是 (string) - 已发货状态订单, 供应商
 + is_zone_freight: yes (string) - 区域包邮
 + is_zone_freight_text: 是 (string) - 区域包邮
-+ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
-+ updated_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
++ created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
++ updated_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 ### OrderDetail (object)
 + id: 34625 (number) - 订单详情ID
 + product_sku_id: 146 (number) - 商品库存ID
@@ -559,8 +559,8 @@
 + is_free_delivery_text: 是 (string) - 是否包邮
 + product_label_type: yes (string) - 商品类型
 + product_label_type_text: 是 (string) - 商品类型
-+ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
-+ updated_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
++ created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
++ updated_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 ### OrderSupplier (object)
 + id: 13245149 (number) - 供应商ID
 + industry_id: 56fbb3684bb5430e87355d62bcd073af (string) - 行业ID
@@ -571,10 +571,10 @@
 + desc (string) - 简介
 + status (string) - 状态
 + status_text (string) - 状态
-+ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
++ created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 ### OrderExpress (object)
 + id: 165 (number) - 物流订单ID
 + express_no: 543543532532 (string) - 物流单号
 + express_name: 顺丰 (string) - 物流公司名
 + express_price (number, nullable) - 运费
-+ created_at: 2017-08-10T04:42:08.000+08:00 (string) - 创建时间
++ created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间

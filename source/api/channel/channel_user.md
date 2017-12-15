@@ -68,7 +68,7 @@
   + user_grade_text: 白金店主 (string) - 店主等级文本描述
   + user_phone: 18656783389 (string) - 用户手机号
   + user_photo: http://img.ishanggang.com/upload/upload/user/20170505/Head_20170505162149_832.jpg (string) - 用户头像
-  + created_at: 2017-08-21T11:52:03.000+08:00 (string) - 创建时间
+  + created_at: `2017-08-21T11:52:03.000+08:00` (string) - 创建时间
 + reward (object) - 奖励
   + invite_children_reward_amount: 9900 (string) - 培训奖励
   + children_comission_amount: 247.8153 (string) - 团队佣金
