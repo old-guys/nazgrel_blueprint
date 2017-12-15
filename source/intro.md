@@ -10,7 +10,7 @@
 
 ## 认证参数
 
-::: warning
+::: note
 #### <i class="fa fa-warning"></i> 关于头部参数和URI参数
 
 * URI 参数是指将参数按照 `url-encode` 编码的形式放入请求 url
@@ -67,3 +67,11 @@ code | int | 返回代码，`0` 表示返回结果正常，其它值表示出错
 message | string | 错误消息（当`code`不为`0`时，返回该字段）
 remark | string | 用户可读的消息
 data | json | 实际数据（当`code`为`0`时，返回该字段）
+
+## 约定
+::: note
+#### <i class="fa fa-warning"></i> 关于返回参数空值
+
+* 数据结构是 `object` 的空值返回 `{}`
+* 数据结构是 `array` 的空值返回 `[]`
+:::
