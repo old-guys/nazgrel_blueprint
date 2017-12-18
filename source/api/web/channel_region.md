@@ -1,12 +1,19 @@
 # Group ChannelRegions
 
-## 渠道大区 [/api/web/channel_regions{?device,user_token}]
+## 渠道大区 [/api/web/channel_regions{?device,user_token,order,query,filters%5b%5d}]
 ### 渠道大区列表 [GET]
 获取渠道大区列表 数据
 
 + Parameters
     + device: web (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + order: `channel_regions.id desc` (string, optional) - 排序
+        + Members
+            + channel_regions.id desc
+            + channel_regions.created_at desc
+    + query: 北京 (string, optional) - 查询
+    + filters%5b%5d: filters%5B%5D%5Bfield_type%5D=datetime&filters%5B%5D%5Bname%5D=created_at&filters%5B%5D%5Boperator%5D=within&filters%5B%5D%5Bquery%5D=today (array[Filter], optional) - 过滤参数
+        + For example: `filters[][field_type]=datetime&filters[][name]=created_at&filters[][operator]=within&filters[][query]=today`
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
