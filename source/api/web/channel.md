@@ -1,4 +1,4 @@
-# Group Channels
+# Group 渠道
 
 ## 渠道 [/api/web/channels{?device,user_token,order,query,filters%5b%5d}]
 ### 渠道列表 [GET]

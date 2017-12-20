@@ -1,4 +1,4 @@
-# Group ChannelUesrs
+# Group 渠道用户
 
 ## 渠道 [/api/web/channel_users{?device,user_token,channel_id,order,query,filters%5b%5d}]
 ### 渠道列表 [GET]

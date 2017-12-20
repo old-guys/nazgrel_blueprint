@@ -1,4 +1,4 @@
-# Group Shopkeepers
+# Group 店主
 
 ## 查询店主 [/api/web/shopkeepers/check{?device,user_token,phone,user_id}]
 ### 查询店主 [GET]

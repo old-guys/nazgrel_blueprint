@@ -1,4 +1,4 @@
-# Group ConstantSetting
+# Group 常量设置
 
 ## constant_setting [/api/constant_setting{?device}]
 
