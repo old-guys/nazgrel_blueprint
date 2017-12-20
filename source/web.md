@@ -17,3 +17,5 @@ HOST: https://doc.bi.ishanggang.com
 <!-- include(api/web/channel.md) -->
 <!-- include(api/web/channel_user.md) -->
 <!-- include(api/web/shopkeeper.md) -->
+
+<!-- include(api/web/report/channel_shop_newer.md) -->
