@@ -1,4 +1,4 @@
-# Group ChannelRegions
+# Group 渠道大区
 
 ## 渠道大区 [/api/web/channel_regions{?device,user_token,order,query,filters%5b%5d}]
 ### 渠道大区列表 [GET]
