@@ -1,4 +1,4 @@
-# Group Shops
+# Group 店铺
 
 ## 店铺列表 [/api/channel/shops{?device,user_token,order,channel_id,query,filters%5b%5d}]
 ### 店铺列表 [GET]

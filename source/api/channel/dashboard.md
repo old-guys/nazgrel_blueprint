@@ -1,4 +1,4 @@
-# Group Dashboard
+# Group 工作台
 
 ## 工作台 [GET /api/channel/dashboard{?device,user_token}]
 获取工作台 summary 数据

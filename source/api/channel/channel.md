@@ -1,4 +1,4 @@
-# Group Channel
+# Group 渠道
 
 ## 当前渠道 [/api/channel/channels/my{?device,user_token}]
 ### [弃用]当前渠道 [GET]

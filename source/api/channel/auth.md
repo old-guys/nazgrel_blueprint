@@ -1,4 +1,4 @@
-# Group Auth
+# Group 认证
 
 ## 登陆 [/api/channel/auth/login{?device}]
 

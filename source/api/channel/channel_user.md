@@ -1,4 +1,4 @@
-# Group ChannelUser
+# Group 渠道用户
 
 ## 当前渠道用户 [/api/channel/channel_users/my{?device,user_token}]
 ### 当前渠道用户 [GET]
