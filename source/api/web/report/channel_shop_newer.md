@@ -1,6 +1,6 @@
 # Group 渠道新增店主
 
-## 渠道新增店主列表 [GET /api/web/report/channel_shop_newer{?device,user_token,channel_id,report_date,report_date%5b%5d}]
+## 渠道新增店主列表 [GET /api/web/report/channel_shop_newers{?device,user_token,channel_id,report_date,report_date%5b%5d}]
 获取渠道新增店主列表
 
 + Parameters
@@ -64,7 +64,7 @@
               }
             }
 
-## 渠道新增店主报表 [GET /api/web/report/channel_shop_newer/report{?device,user_token,time_type,channel_id,report_date}]
+## 渠道新增店主报表 [GET /api/web/report/channel_shop_newers/report{?device,user_token,time_type,channel_id,report_date}]
 渠道新增店主报表
 
 + Parameters
