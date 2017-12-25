@@ -46,6 +46,12 @@ You're going to need:
  2. Generate html file: `npm run generate_web`
  3. test mock api: `npm run test_web`
 
+### Development Dev api
+
+ 1. Start the Mock server: `npm run start_dev`
+ 2. Generate html file: `npm run generate_dev`
+ 3. test mock api: `npm run test_dev`
+
 ### Deploy document
 
  1. Deploy index html: `npm run deploy-index-prod`

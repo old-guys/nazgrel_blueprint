@@ -18,9 +18,13 @@
     "start_web": "drakov --config web_config.js",
     "generate_web": "aglio --theme-template triple --theme-variables flatly -i ./source/web.md -o ./public/web.html",
     "test_web": "dredd ./source/api/web/**/*.md http://127.0.0.1:3008",
+    "start_dev": "drakov --config dev_config.js",
+    "generate_dev": "aglio --theme-template triple --theme-variables flatly -i ./source/dev.md -o ./public/dev.html",
+    "test_dev": "dredd ./source/api/dev/**/*.md http://127.0.0.1:3009",
     "deploy-channel-prod": "rm -rf ./public/channel.html && npm run generate_channel && ./config/deploy/prod.sh",
     "deploy-web-prod": "rm -rf ./public/web.html && npm run generate_web && ./config/deploy/prod.sh",
     "deploy-mobile-prod": "rm -rf ./public/mobile.html && npm run generate_mobile && ./config/deploy/prod.sh",
+    "deploy-dev-prod": "rm -rf ./public/dev.html && npm run generate_dev && ./config/deploy/prod.sh",
     "deploy-index-prod": "rm -rf ./public/index.html && npm run generate_index && ./config/deploy/prod.sh",
     "clean": "rimraf ./public/*.html"
   },
