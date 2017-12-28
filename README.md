@@ -67,15 +67,15 @@ You're going to need:
 
 deploy via [shipit](https://github.com/shipitjs/shipit), [shipit-deploy](https://github.com/shipitjs/shipit-deploy)
 
+process manage via [pm2](https://github.com/Unitech/pm2)
+
 ```shell
 shipit prod pwd
 shipit prod deploy
 shipit prod npm:init npm:install
 
-shipit prod start_web &
-shipit prod start_channel &
-shipit prod start_dev &
-shipit prod start_open_mobile &
+shipit prod pm2_start
+shipit prod restart
 
 shipit prod ps
 shipit prod stop

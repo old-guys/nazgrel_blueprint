@@ -20,22 +20,23 @@ module.exports = function (shipit) {
   shipit.task('pwd', function () {
     return shipit.remote('pwd');
   });
-  shipit.task('start_channel', function () {
-    return shipit.remote('cd /ishanggang/apps/nazgrel_blueprint/current && nohup npm run start_channel > log/start_channel.log 2>&1 &');
-  });
-  shipit.task('start_web', function () {
-    return shipit.remote('cd /ishanggang/apps/nazgrel_blueprint/current && nohup npm run start_web > log/start_web.log 2>&1 &');
-  });
-  shipit.task('start_dev', function () {
-    return shipit.remote('cd /ishanggang/apps/nazgrel_blueprint/current && nohup npm run start_dev > log/start_dev.log 2>&1 &');
-  });
-  shipit.task('start_open_mobile', function () {
-    return shipit.remote('cd /ishanggang/apps/nazgrel_blueprint/current && nohup npm run start_open_mobile > log/start_open_mobile.log 2>&1 &');
+  shipit.task('pm2_start', function () {
+    // return shipit.remote('cd /ishanggang/apps/nazgrel_blueprint/current && nohup npm run start_channel > log/start_channel.log 2>&1 &');
+    return shipit.remote('cd /ishanggang/apps/nazgrel_blueprint/current && pm2 start npm --name channel_mock -- run start_channel');
+    return shipit.remote('cd /ishanggang/apps/nazgrel_blueprint/current && pm2 start npm  --name web_mock -- run start_web');
+    return shipit.remote('cd /ishanggang/apps/nazgrel_blueprint/current && pm2 start npm --name dev_mock -- run start_dev');
+    return shipit.remote('cd /ishanggang/apps/nazgrel_blueprint/current && pm2 start npm --name open_mobile_mock -- run start_open_mobile');
   });
   shipit.task('ps', function () {
-    return shipit.remote("ps aux | grep drakov | grep -v 'grep'");
+    // return shipit.remote("ps aux | grep drakov | grep -v 'grep'");
+    return shipit.remote("pm2 list");
+  });
+  shipit.task('restart', function () {
+    // return shipit.remote("ps aux|grep drakov | grep -v 'grep' |awk '{print $2}'| xargs kill");
+    return shipit.remote("pm2 restart channel_mock web_mock dev_mock open_mobile_mock");
   });
   shipit.task('stop', function () {
-    return shipit.remote("ps aux|grep drakov | grep -v 'grep' |awk '{print $2}'| xargs kill");
+    // return shipit.remote("ps aux|grep drakov | grep -v 'grep' |awk '{print $2}'| xargs kill");
+    return shipit.remote("pm2 stop channel_mock web_mock dev_mock open_mobile_mock");
   });
 };
