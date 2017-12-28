@@ -1,5 +1,11 @@
 # Group Introduction
 
+## 服务器地址
+
+- 模拟接口地址 http://mock.bi.ishanggang.com/
+- 测试环境地址 http://qa.bi.ishanggang.com/
+- 生产环境地址 http://bi.ishanggang.com/
+
 ## Api 请求目录
 
 目前系统按照 `api/${type}` 来区分请求哪个平台

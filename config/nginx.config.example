@@ -1,7 +1,7 @@
 server {
 
   listen 80;
-  server_name doc.bi.ishanggang.com;
+  server_name doc.bi.ishanggang.com mock.bi.ishanggang.com;
 
   root  /ishanggang/apps/nazgrel_blueprint_production;
   index index.html;
