@@ -2,11 +2,9 @@
 
 ## Api 请求目录
 
-目前系统按照 `api/${type}` 来区分请求哪个平台
+目前系统按照 `api/open/${type}` 来区分请求哪个平台
 
-- `channel` 渠道 app 接口
-- `mobile` BI 接口
-- `web`, `pc` PC 接口
+- `mobile` 移动端接口
 
 ## 认证参数
 
@@ -56,7 +54,6 @@ These extensions may change in the future as the [CommonMark specification](http
 字段名 | 是否必填 | 描述
 --:   | ------- | -----------
 user_token | true | 必须要有的（除了登陆接口）
-version_code | true | 必须要有的
 device | true | 设备类型（ios, android, h5, pc）
 
 全局返回参数说明
