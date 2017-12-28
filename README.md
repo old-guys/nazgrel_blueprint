@@ -63,6 +63,24 @@ You're going to need:
  1. Deploy index html: `npm run deploy-prod`
  2. Deploy mobile html: `npm run deploy-open`
 
+### Deploy Mock server
+
+deploy via [shipit](https://github.com/shipitjs/shipit), [shipit-deploy](https://github.com/shipitjs/shipit-deploy)
+
+```shell
+shipit prod pwd
+shipit prod deploy
+shipit prod npm:init npm:install
+
+shipit prod start_web &
+shipit prod start_channel &
+shipit prod start_dev &
+shipit prod start_open_mobile &
+
+shipit prod ps
+shipit prod stop
+```
+
 ### Clean Html
 
 1. Start the Mock server: `npm run clean`

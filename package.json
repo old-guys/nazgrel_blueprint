@@ -27,7 +27,8 @@
     "generate_open_mobile": "aglio --theme-template triple --theme-variables flatly -i ./source/open_mobile.md -o ./open_public/mobile.html",
     "test_open_mobile": "dredd ./source/api/open/mobile/**/*.md http://127.0.0.1:3106",
     "deploy-open": "rm -rf ./open_public/*.html && npm run generate_index_open && npm run generate_open_mobile && ./config/deploy/open.sh",
-    "clean": "rimraf ./public/*.html ./open_public/*.html"
+    "clean": "rimraf ./public/*.html ./open_public/*.html",
+    "shipit": "shipit"
   },
   "engines": {
     "node": ">= 5.0.0",
@@ -37,6 +38,9 @@
     "aglio": "^2.3.0",
     "drakov": "^1.0.4",
     "dredd": "^4.9.1",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "shipit-cli": "^3.0.0",
+    "shipit-deploy": "^2.5.1",
+    "shipit-npm": "^0.2.0"
   }
 }

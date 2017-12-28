@@ -1,6 +1,7 @@
 module.exports = {
     sourceFiles: './source/api/dev/**/*.md',
     serverPort: 3009,
+    public: true,
     disableCORS: true,
     autoOptions: true,
     debugMode: true,

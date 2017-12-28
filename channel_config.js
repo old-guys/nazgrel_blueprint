@@ -1,6 +1,7 @@
 module.exports = {
     sourceFiles: './source/api/channel/**/*.md',
     serverPort: 3006,
+    public: true,
     disableCORS: true,
     autoOptions: true,
     debugMode: true,
