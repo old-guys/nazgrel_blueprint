@@ -6,10 +6,10 @@ HOST: http://bi.ishanggang.com
 
 本文档是 nazgrel 项目移动端的 RESTful 接口文档
 
-<!-- include(content.md) -->
+<!-- include(shared/content.md) -->
 
-<!-- include(intro.md) -->
-<!-- include(guide.md) -->
+<!-- include(shared/intro.md) -->
+<!-- include(shared/guide.md) -->
 
 <!-- include(api/mobile/ping.md) -->
 <!-- include(api/mobile/auth.md) -->

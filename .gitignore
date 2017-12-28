@@ -1,5 +1,7 @@
 public/*
+open_public/*
 !/public/.keep
+!/open_public/.keep
 
 # Ignore all logfiles and tempfiles.
 /log/*

@@ -52,12 +52,16 @@ You're going to need:
  2. Generate html file: `npm run generate_dev`
  3. test mock api: `npm run test_dev`
 
+### Development Open Mobile api
+
+ 1. Start the Mock server: `npm run start_open_mobile`
+ 2. Generate html file: `npm run generate_open_mobile`
+ 3. test mock api: `npm run test_open_mobile`
+
 ### Deploy document
 
- 1. Deploy index html: `npm run deploy-index-prod`
- 2. Deploy mobile html: `npm run deploy-mobile-prod`
- 3. Deploy channel html: `npm run deploy-channel-prod`
- 4. Deploy web html: `npm run deploy-web-prod`
+ 1. Deploy index html: `npm run deploy-prod`
+ 2. Deploy mobile html: `npm run deploy-open`
 
 ### Clean Html
 

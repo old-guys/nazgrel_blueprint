@@ -6,7 +6,7 @@ HOST: http://doc.bi.ishanggang.com
 
 欢迎访问 nazgrel blueprint！
 
-<!-- include(content.md) -->
+<!-- include(shared/content.md) -->
 
-<!-- include(intro.md) -->
-<!-- include(guide.md) -->
+<!-- include(shared/intro.md) -->
+<!-- include(shared/guide.md) -->

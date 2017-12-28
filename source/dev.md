@@ -6,10 +6,10 @@ HOST: http://doc.bi.ishanggang.com
 
 本文档是 nazgrel 项目开发者文档
 
-<!-- include(content.md) -->
+<!-- include(shared/content.md) -->
 
-<!-- include(intro.md) -->
-<!-- include(guide.md) -->
+<!-- include(shared/intro.md) -->
+<!-- include(shared/guide.md) -->
 
 <!-- include(api/dev/ping.md) -->
 <!-- include(api/dev/seek.md) -->
