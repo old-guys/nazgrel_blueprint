@@ -1,5 +1,5 @@
 FORMAT: 1A9
-HOST: http://doc.bi.ishanggang.com
+HOST: http://mock.bi.ishanggang.com
 
 # Nazgrel API
 [Markdown](http://daringfireball.net/projects/markdown/syntax) **formatted** description.
