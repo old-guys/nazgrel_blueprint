@@ -37,7 +37,7 @@
   "devDependencies": {
     "aglio": "^2.3.0",
     "drakov": "^1.0.4",
-    "dredd": "^4.9.1",
+    "dredd": "^4.9.2",
     "rimraf": "^2.6.2",
     "shipit-cli": "^3.0.0",
     "shipit-deploy": "^2.5.1",
