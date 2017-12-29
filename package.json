@@ -25,7 +25,7 @@
     "generate_index_open": "aglio --theme-template triple --theme-variables flatly -i ./source/open.md -o ./open_public/index.html",
     "start_open_mobile": "drakov --config open_mobile_config.js",
     "generate_open_mobile": "aglio --theme-template triple --theme-variables flatly -i ./source/open_mobile.md -o ./open_public/mobile.html",
-    "test_open_mobile": "dredd ./source/api/open/mobile/**/*.md http://127.0.0.1:3106",
+    "test_open_mobile": "dredd ./source/api/open/mobile/**/*.md http://127.0.0.1:3107",
     "deploy-open": "rm -rf ./open_public/*.html && npm run generate_index_open && npm run generate_open_mobile && ./config/deploy/open.sh",
     "clean": "rimraf ./public/*.html ./open_public/*.html",
     "shipit": "shipit"
