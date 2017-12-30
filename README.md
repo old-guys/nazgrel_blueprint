@@ -70,15 +70,15 @@ deploy via [shipit](https://github.com/shipitjs/shipit), [shipit-deploy](https:/
 process manage via [pm2](https://github.com/Unitech/pm2)
 
 ```shell
-shipit prod pwd
-shipit prod deploy
-shipit prod npm:init npm:install
+npm run shipit prod pwd
+npm run shipit prod deploy
+npm run shipit prod npm:init npm:install
 
-shipit prod pm2_start
-shipit prod restart
+npm run shipit prod pm2_start
+npm run shipit prod restart
 
-shipit prod ps
-shipit prod stop
+npm run shipit prod ps
+npm run shipit prod stop
 ```
 
 ### Clean Html
