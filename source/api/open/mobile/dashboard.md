@@ -169,6 +169,112 @@
                 ]
             }
 
+## 店铺订单销售金额排名 [GET /api/open/mobile/dashboard/order_amount_rank{?device,user_token,limit,time_range}]
+销售达人排名
+
++ Parameters
+    + `device`: h5 (string, required) - 设备类型
+    + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `limit`: 10 (number, optional) - 排行数目
+    + `time_range`: 3_day_ago (enum[string], required) - 时间范围
+        + Members
+          + 3_day_ago - 近3天
+          + 7_day_ago - 近7天
+          + 1_month_ago - 近1月
+          + 1_year_ago - 近1年
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (array[ShopkeeperOrderAmountRank])
+
+    + Body
+
+            {
+                "code": 0,
+                "data": [
+                    {
+                        "index": 1,
+                        "shop_id": 293,
+                        "shop_name": "王秉飞的小店",
+                        "Shopkeeper_name": "王秉飞",
+                        "city": "",
+                        "amount": "122.0"
+                    },
+                    {
+                        "index": 2,
+                        "shop_id": 483,
+                        "shop_name": "徐易八的小店",
+                        "Shopkeeper_name": "徐易八",
+                        "city": "南宁",
+                        "amount": "333.0"
+                    },
+                    {
+                        "index": 3,
+                        "shop_id": 502,
+                        "shop_name": "徐见习生03的小店",
+                        "Shopkeeper_name": "徐见习生03",
+                        "city": "南宁",
+                        "amount": "55.0"
+                    },
+                    {
+                        "index": 4,
+                        "shop_id": 512,
+                        "shop_name": "徐易到25的小店",
+                        "Shopkeeper_name": "徐易到25",
+                        "city": "南宁",
+                        "amount": "0.0"
+                    },
+                    {
+                        "index": 5,
+                        "shop_id": 520,
+                        "shop_name": "徐钉钉的小店",
+                        "Shopkeeper_name": "徐钉钉",
+                        "city": "南宁",
+                        "amount": "0.0"
+                    },
+                    {
+                        "index": 6,
+                        "shop_id": 530,
+                        "shop_name": "田的小店",
+                        "Shopkeeper_name": "田",
+                        "city": "长春",
+                        "amount": "0.0"
+                    },
+                    {
+                        "index": 7,
+                        "shop_id": 2,
+                        "shop_name": "解忧杂货店",
+                        "Shopkeeper_name": "高强",
+                        "city": "",
+                        "amount": "0.0"
+                    },
+                    {
+                        "index": 8,
+                        "shop_id": 294,
+                        "shop_name": "wangbingfei的小店",
+                        "Shopkeeper_name": "wangbingfei",
+                        "city": "",
+                        "amount": "0.0"
+                    },
+                    {
+                        "index": 9,
+                        "shop_id": 484,
+                        "shop_name": "徐易九的小店",
+                        "Shopkeeper_name": "徐易九",
+                        "city": "南宁",
+                        "amount": "0.0"
+                    },
+                    {
+                        "index": 10,
+                        "shop_id": 503,
+                        "shop_name": "徐易十三的小店",
+                        "Shopkeeper_name": "徐易十三",
+                        "city": "南宁",
+                        "amount": "0.0"
+                    }
+                ]
+            }
+
 ## 热点城市排名 [GET /api/open/mobile/dashboard/city_rank{?device,user_token,limit,time_range}]
 获取全国各城市新增店铺排名数据
 
@@ -247,6 +353,13 @@
 + `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
 + `city`: `上海` (string) - 城市
 + `count`: 3 (number) - 数量
+### ShopkeeperOrderAmountRank (object)
++ `index`: 1 (number) - 排名
++ `shop_id`: 12 (number) - 店铺ID
++ `shop_name`: `XP测试店铺2018` (string) - 店铺名
++ `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
++ `city`: `上海` (string) - 城市
++ `amount`: `30.00` (string) - 金额
 ### ShopkeeperCityRank(object)
 + `index`: 1 (number) - 排名
 + `city`: `南宁` (string) - 城市
