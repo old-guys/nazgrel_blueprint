@@ -1,6 +1,6 @@
 # Group 工作台
 
-## 首页 [GET /api/channel/dashboard{?device,user_token}]
+## 首页 [GET /api/open/mobile/dashboard{?device,user_token}]
   当天运营数据接口
 
 + Parameters
@@ -28,7 +28,7 @@
             }
 
 
-## 等级店铺数量 [GET /api/channel/dashboard/user_grade_stat{?device,user_token}]
+## 等级店铺数量 [GET /api/open/mobile/dashboard/user_grade_stat{?device,user_token}]
 获取各等级店铺数量
 
 + Parameters
@@ -63,7 +63,7 @@
                 ]
             }
 
-## 开拓速度排名 [GET /api/channel/dashboard/children_rank{?device,user_token,limit,time_range}]
+## 开拓速度排名 [GET /api/open/mobile/dashboard/children_rank{?device,user_token,limit,time_range}]
 获取开拓直属下线最快的店铺排名数据
 
 + Parameters
@@ -169,7 +169,7 @@
                 ]
             }
 
-## 热点城市排名 [GET /api/channel/dashboard/city_rank{?device,user_token,limit,time_range}]
+## 热点城市排名 [GET /api/open/mobile/dashboard/city_rank{?device,user_token,limit,time_range}]
 获取全国各城市新增店铺排名数据
 
 + Parameters
