@@ -13,3 +13,4 @@ HOST: http://mock.bi.ishanggang.com
 <!-- include(api/open/mobile/auth.md) -->
 
 <!-- include(api/open/mobile/dashboard.md) -->
+<!-- include(api/open/mobile/shopkeeper.md) -->
