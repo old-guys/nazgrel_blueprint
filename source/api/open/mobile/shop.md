@@ -52,7 +52,7 @@
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
-    + shop_id: 2 (number, required) - 店铺ID
+    + `shop_id`: 2 (number, required) - 店铺ID
     + `limit`: 10 (number, optional) - 排行数目
     + `time_range`: 3_day_ago (enum[string], required) - 时间范围
         + Members
@@ -153,8 +153,56 @@
                     }
                 ]
             }
+
+## 城市分析 [/api/open/mobile/shops/{shop_id}/city_rank{?device,user_token,limit,time_range}]
+### 城市分析 [GET]
+获取当月该店铺下所有直属下级所在城市排名
+
++ Parameters
+    + `device`: h5 (string, required) - 设备类型
+    + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_id`: 2 (number, required) - 店铺ID
+    + `limit`: 10 (number, optional) - 排行数目
+
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (array[ShowShopCityRank])
+
+    + Body
+
+            {
+                "code": 0,
+                "data": [
+                    {
+                        "index": 1,
+                        "city": "南宁",
+                        "count": 6,
+                        "state": "up"
+                    },
+                    {
+                        "index": 2,
+                        "city": "长春",
+                        "count": 1,
+                        "state": "up"
+                    },
+                    {
+                        "index": 3,
+                        "city": "上海",
+                        "count": 1,
+                        "state": "up"
+                    },
+                    {
+                        "index": 4,
+                        "city": "北京",
+                        "count": 1,
+                        "state": "up"
+                    }
+                ]
+            }
+
 ## Data Structures
-### ShowShopChildrenRank(object)
+### ShowShopChildrenRank (object)
 + `index`: 1 (number) - 排名
 + `shop_id`: 12 (number) - 店铺ID
 + `shop_name`: `XP测试店铺2018` (string) - 店铺名
@@ -163,3 +211,8 @@
 + `commission_income_amount`: `0.0` (string) - 佣金额
 + `city`: `上海` (string) - 城市
 + `count`: 3 (number) - 数量
+### ShowShopCityRank (object)
++ `index`: 1 (number) - 排名
++ `city`: 南宁 (string) - 店铺ID
++ `count`: 6 (number) - 数量
++ `state`: up (string) - up 上升, down 下降, eq 不变
