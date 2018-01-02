@@ -169,6 +169,72 @@
                 ]
             }
 
+## 热点城市排名 [GET /api/channel/dashboard/city_rank{?device,user_token,limit,time_range}]
+获取全国各城市新增店铺排名数据
+
++ Parameters
+    + `device`: h5 (string, required) - 设备类型
+    + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `limit`: 10 (number, optional) - 排行数目
+    + `time_range`: 3_day_ago (enum[string], required) - 时间范围
+        + Members
+          + 3_day_ago - 近3天
+          + 7_day_ago - 近7天
+          + 1_month_ago - 近1月
+          + 1_year_ago - 近1年
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (array[ShopkeeperCityRank])
+
+    + Body
+
+            {
+                "code": 0,
+                "data": [
+                    {
+                        "index": 1,
+                        "city": "南宁",
+                        "count": 20
+                    },
+                    {
+                        "index": 2,
+                        "city": "马鞍山",
+                        "count": 2
+                    },
+                    {
+                        "index": 3,
+                        "city": "西安",
+                        "count": 1
+                    },
+                    {
+                        "index": 4,
+                        "city": "济南",
+                        "count": 1
+                    },
+                    {
+                        "index": 5,
+                        "city": "长治",
+                        "count": 1
+                    },
+                    {
+                        "index": 6,
+                        "city": "长春",
+                        "count": 1
+                    },
+                    {
+                        "index": 7,
+                        "city": "上海",
+                        "count": 1
+                    },
+                    {
+                        "index": 8,
+                        "city": "北京",
+                        "count": 1
+                    }
+                ]
+            }
+
 ## Data Structures
 ### TotalShopKeeperUsergrade (object)
 + `user_grade`: `grade_platinum` (string) - 用户等级
@@ -180,4 +246,8 @@
 + `shop_name`: `XP测试店铺2018` (string) - 店铺名
 + `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
 + `city`: `上海` (string) - 城市
++ `count`: 3 (number) - 数量
+### ShopkeeperCityRank(object)
++ `index`: 1 (number) - 排名
++ `city`: `南宁` (string) - 城市
 + `count`: 3 (number) - 数量
