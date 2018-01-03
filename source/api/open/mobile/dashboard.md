@@ -1,11 +1,12 @@
 # Group 工作台
 
-## 首页 [GET /api/open/mobile/dashboard{?device,user_token}]
+## 首页 [GET /api/open/mobile/dashboard{?device,user_token,shop_id}]
   当天运营数据接口
 
 + Parameters
-    + device: h5 (string, required) - 设备类型
-    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `device`: `h5` (string, required) - 设备类型
+    + `user_token`: `waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4=` (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
@@ -28,12 +29,13 @@
             }
 
 
-## 等级店铺数量 [GET /api/open/mobile/dashboard/user_grade_stat{?device,user_token}]
+## 等级店铺数量 [GET /api/open/mobile/dashboard/user_grade_stat{?device,user_token,shop_id}]
 获取各等级店铺数量
 
 + Parameters
-    + device: h5 (string, required) - 设备类型
-    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `device`: `h5` (string, required) - 设备类型
+    + `user_token`: `waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4=` (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
@@ -63,12 +65,13 @@
                 ]
             }
 
-## 开拓速度排名 [GET /api/open/mobile/dashboard/children_rank{?device,user_token,limit,time_range}]
+## 开拓速度排名 [GET /api/open/mobile/dashboard/children_rank{?device,user_token,shop_id,limit,time_range}]
 获取开拓直属下线最快的店铺排名数据
 
 + Parameters
     + `device`: h5 (string, required) - 设备类型
     + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
     + `limit`: 10 (number, optional) - 排行数目
     + `time_range`: 3_day_ago (enum[string], required) - 时间范围
         + Members
@@ -169,12 +172,13 @@
                 ]
             }
 
-## 店铺订单销售金额排名 [GET /api/open/mobile/dashboard/order_amount_rank{?device,user_token,limit,time_range}]
+## 店铺订单销售金额排名 [GET /api/open/mobile/dashboard/order_amount_rank{?device,user_token,shop_id,limit,time_range}]
 销售达人排名
 
 + Parameters
     + `device`: h5 (string, required) - 设备类型
     + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
     + `limit`: 10 (number, optional) - 排行数目
     + `time_range`: 3_day_ago (enum[string], required) - 时间范围
         + Members
@@ -275,12 +279,13 @@
                 ]
             }
 
-## 热点城市排名 [GET /api/open/mobile/dashboard/city_rank{?device,user_token,limit,time_range}]
+## 热点城市排名 [GET /api/open/mobile/dashboard/city_rank{?device,user_token,shop_id,limit,time_range}]
 获取全国各城市新增店铺排名数据
 
 + Parameters
     + `device`: h5 (string, required) - 设备类型
     + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
     + `limit`: 10 (number, optional) - 排行数目
     + `time_range`: 3_day_ago (enum[string], required) - 时间范围
         + Members

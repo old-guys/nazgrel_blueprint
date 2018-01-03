@@ -1,12 +1,13 @@
 # Group 店主
 
-## 店主列表 [/api/open/mobile/shopkeepers{?device,user_token,city,user_grade}]
+## 店主列表 [/api/open/mobile/shopkeepers{?device,user_token,shop_id,city,user_grade}]
 ### 店主列表 [GET]
 获取不同等级，城市下的店主列表
 
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
     + `user_grade`: `grade_platinum` (enum[string], optional) - 等级筛选
         + Members
             + `grade_platinum` - 白金店主
@@ -242,13 +243,14 @@
                 }
             }
 
-## 店主历史总销售额排名 [/api/open/mobile/shopkeepers/sales{?device,user_token,city,user_grade}]
+## 店主历史总销售额排名 [/api/open/mobile/shopkeepers/sales{?device,user_token,shop_id,city,user_grade}]
 ### 店主历史总销售额排名 [GET]
 获取店主历史总销售额数据，可以按照城市过滤
 
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
     + `user_grade`: `grade_platinum` (enum[string], optional) - 等级筛选
         + Members
             + `grade_platinum` - 白金店主
