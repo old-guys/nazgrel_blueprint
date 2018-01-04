@@ -201,6 +201,72 @@
                 ]
             }
 
+## 店铺运营分析 [/api/open/mobile/shops/{shop_id}/stat{?device,user_token}]
+### 店铺运营分析 [GET]
+获取该店铺的所有下级数量，直属下级数量，所有下级的总订单数量以及总销售额(包括本人订单)，本人订单数量以及销售额。最近30天内开拓下级最多的直属下级店铺详情，以及该店铺最近30天的开拓下级数量和在所有下级中的占比,最近30天内销售额最高的直属下级
+
++ Parameters
+    + device: h5 (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + shop_id: 2 (number, required) - 店铺ID
+
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+          + `id`: 2 (number) - 店铺ID
+          + `descendant_count`: 379 (number) - 下属店主数
+          + `children_count`: 46 (number) - 直接邀请店主数
+          + `order_number`: 2 (number) - 本店订单数
+          + `order_amount`: "12990.03" (string) - 本店订单金额
+          + `all_order_number`: 462 (number) - 下属订单数
+          + `all_order_amount`: `81425.62` (string) - 下属订单金额
+          + `fast_add_shop` (object) - 30天内开拓下级最多的直属下级店铺
+            + `shop_id`: 302 (number) - 店铺ID
+            + `shop_name`: `法拉利的小店` (string) - 店铺名
+            + `shopkeeper_name`: `法拉利2017` (string) - 店主姓名
+            + `city`: `南宁` (string) - 城市
+            + `count`: 1 (number) - 数量
+            + `proportion`: `0.1%` (string) - 在所有下级中的占比
+          + `top_sales_shop` (object) - 30天内销售额最高的直属下级
+            + `shop_id`: 489 (number) - 店铺ID
+            + `shop_name`: `见习的小店` (string) - 店铺名
+            + `shopkeeper_name`: `见习` (string) - 店主姓名
+            + `city`: `南宁` (string) - 城市
+            + `amount`: 0.02 (string) - 金额
+
+    + Body
+
+            {
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "id": 2,
+                    "descendant_count": 379,
+                    "children_count": 46,
+                    "order_number": 2,
+                    "order_amount": "12990.03",
+                    "all_order_number": 460,
+                    "all_order_amount": "68435.59",
+                    "fast_add_shop": {
+                        "shop_id": 302,
+                        "shop_name": "法拉利的小店",
+                        "shopkeeper_name": "法拉利2017",
+                        "city": "南宁",
+                        "count": 1,
+                        "proportion": "0.1%"
+                    },
+                    "top_sales_shop": {
+                        "shop_id": 489,
+                        "shop_name": "见习的小店",
+                        "shopkeeper_name": "见习",
+                        "city": "",
+                        "amount": "0.02"
+                    }
+                }
+            }
+
 ## Data Structures
 ### ShowShopChildrenRank (object)
 + `index`: 1 (number) - 排名
