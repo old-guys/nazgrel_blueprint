@@ -426,6 +426,198 @@
                 }
             }
 
+## 店主关系拓扑 [/api/open/mobile/report{?device,user_token,shop_id,city,user_grade}]
+### 店主关系拓扑 [GET]
+店主关系拓扑图接口
+
++ Parameters
+    + device: h5 (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
+
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+            + total_count: 366 (number) - 总条数
+            + total_pages: 124 (number) - 总页数
+            + current_page: 1 (number) - 当前页
+            + next_page (number, nullable) - 下一页
+            + prev_page (number, nullable) - 前一页
+            + first_page? (boolean) - 是否第一页
+            + last_page? (boolean) - 是否最后一页
+            + per_page: 15 (number) - 每页条数
+            + page: 1 (number) - 页码
+            + models (array[ReportShopkeeper])
+    + Body
+
+            {
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "total_count": 419,
+                    "total_pages": 84,
+                    "current_page": 1,
+                    "next_page": 2,
+                    "prev_page": null,
+                    "first_page?": true,
+                    "last_page?": false,
+                    "per_page": 5,
+                    "page": 0,
+                    "models": [
+                        {
+                            "id": 1,
+                            "user_id": 12345,
+                            "shopkeeper_name": "Andox",
+                            "province": "浙江",
+                            "city": "杭州",
+                            "user_phone": "15888888888",
+                            "shop_name": "张三小店12千千万",
+                            "user_grade": "grade_platinum",
+                            "user_grade_text": "白金店主",
+                            "parent_shopkeeper_id": null,
+                            "parent_shopkeeper_name": null,
+                            "parent_user_phone": null,
+                            "order_number": 15507,
+                            "order_amount": "0.0",
+                            "descendant_order_number": 31014,
+                            "descendant_order_amount": "0.023",
+                            "children_count": 1,
+                            "descendant_count": 2,
+                            "tree_depth": 1,
+                            "parent_names": [
+                                "Andox"
+                            ],
+                            "parent_ids": [
+                                "12345"
+                            ],
+                            "created_at": "2017-07-28T00:54:27.000+08:00"
+                        },
+                        {
+                            "id": 2,
+                            "user_id": 25998,
+                            "shopkeeper_name": "高强",
+                            "province": "上海",
+                            "city": "",
+                            "user_phone": "13661638426",
+                            "shop_name": "解忧杂货店",
+                            "user_grade": "grade_platinum",
+                            "user_grade_text": "白金店主",
+                            "parent_shopkeeper_id": null,
+                            "parent_shopkeeper_name": null,
+                            "parent_user_phone": null,
+                            "order_number": 2,
+                            "order_amount": "12990.03",
+                            "descendant_order_number": 460,
+                            "descendant_order_amount": "68435.59",
+                            "children_count": 46,
+                            "descendant_count": 379,
+                            "tree_depth": 1,
+                            "parent_names": [
+                                "高强"
+                            ],
+                            "parent_ids": [
+                                "25998"
+                            ],
+                            "created_at": "2017-07-29T21:31:08.000+08:00"
+                        },
+                        {
+                            "id": 3,
+                            "user_id": 8910,
+                            "shopkeeper_name": "王健雄",
+                            "province": null,
+                            "city": null,
+                            "user_phone": "19888888888",
+                            "shop_name": "gg=jasldfjadsklf",
+                            "user_grade": "grade_platinum",
+                            "user_grade_text": "白金店主",
+                            "parent_shopkeeper_id": null,
+                            "parent_shopkeeper_name": null,
+                            "parent_user_phone": null,
+                            "order_number": 0,
+                            "order_amount": "0.0",
+                            "descendant_order_number": 0,
+                            "descendant_order_amount": "0.0",
+                            "children_count": 0,
+                            "descendant_count": 0,
+                            "tree_depth": 2,
+                            "parent_names": [
+                                "高强",
+                                "王健雄"
+                            ],
+                            "parent_ids": [
+                                "25998",
+                                "8910"
+                            ],
+                            "created_at": "2017-07-29T22:15:43.000+08:00"
+                        },
+                        {
+                            "id": 4,
+                            "user_id": 12311,
+                            "shopkeeper_name": "李航",
+                            "province": null,
+                            "city": null,
+                            "user_phone": "12111111111",
+                            "shop_name": "张三小店12千千万",
+                            "user_grade": "grade_platinum",
+                            "user_grade_text": "白金店主",
+                            "parent_shopkeeper_id": null,
+                            "parent_shopkeeper_name": null,
+                            "parent_user_phone": null,
+                            "order_number": 15507,
+                            "order_amount": "0.003",
+                            "descendant_order_number": 15507,
+                            "descendant_order_amount": "0.02",
+                            "children_count": 1,
+                            "descendant_count": 1,
+                            "tree_depth": 2,
+                            "parent_names": [
+                                "Andox",
+                                "李航"
+                            ],
+                            "parent_ids": [
+                                "12345",
+                                "12311"
+                            ],
+                            "created_at": "2017-07-28T00:54:27.000+08:00"
+                        },
+                        {
+                            "id": 10,
+                            "user_id": 26049,
+                            "shopkeeper_name": "张三",
+                            "province": "湖南",
+                            "city": "株洲",
+                            "user_phone": "15207400547",
+                            "shop_name": "张三小店12千千万",
+                            "user_grade": "grade_platinum",
+                            "user_grade_text": "白金店主",
+                            "parent_shopkeeper_id": 25998,
+                            "parent_shopkeeper_name": "高强",
+                            "parent_user_phone": "13661638426",
+                            "order_number": 15507,
+                            "order_amount": "0.02",
+                            "descendant_order_number": 0,
+                            "descendant_order_amount": "0.0",
+                            "children_count": 0,
+                            "descendant_count": 0,
+                            "tree_depth": 3,
+                            "parent_names": [
+                                "Andox",
+                                "李航",
+                                "张三"
+                            ],
+                            "parent_ids": [
+                                "12345",
+                                "12311",
+                                "26049"
+                            ],
+                            "created_at": "2017-07-28T00:54:27.000+08:00"
+                        }
+                    ]
+                }
+            }
+
 ## Data Structures
 ### SampleShopkeeper (object)
 + `id`: 10 (number) - ID
@@ -447,3 +639,28 @@
 + `province`: `吉林` (string) - 省份
 + `city`: `长春` (string) - 城市
 + `order_amount`: 0.0 (string) - 订单销售金额
+### ReportShopkeeper (object)
++ `id`: 10 (number) - ID
++ `user_id`: 26049 (number) - 店主用户ID
++ `shopkeeper_name`: `张三` (string) - 店主姓名
++ `province`: `湖南` (string) - 省份
++ `city`: `株洲` (string) - 城市
++ `user_phone`: `15207400547` (string) - 店主手机号
++ `shop_name`: `张三小店12千千万` (string) - 店铺名
++ `user_grade`: `grade_platinum` (string) - 店铺等级
++ `user_grade_text`: `白金店主` (string) - 店铺等级
++ `parent_shopkeeper_user_id`: 25998 (number, nullable) - 上级店主用户ID
++ `parent_shopkeeper_name`: `高强` (string) - 上级店主用户姓名
++ `parent_user_phone`: `13661638426` (string) - 上级店主用户手机号
++ `order_number`: 15507 (number) - 订单数
++ `order_amount`: 0.02 (string) - 订单销售金额
++ `descendant_order_number`: 0 (number) - 下级店铺订单数
++ `descendant_order_amount`: 0.0 (string) - 下级店铺订单销售金额
++ `children_count`: 0 (number) - 店主直接下级数量
++ `descendant_count`: 0 (number) - 店主所有下级数量
++ `tree_depth`: 3 (number) - 店主所在层级
++ `parent_names`: `高强` (array[string]) - 上级名称
+  + `掌柜`
++ `parent_ids`: 25998 (array[string]) - 上级用户ID
+  + `1656`
++ `created_at`: `2017-07-28T00:54:27.000+08:00` (string) - 订单销售金额
