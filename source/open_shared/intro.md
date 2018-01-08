@@ -72,6 +72,13 @@ message | string | 错误消息（当`code`不为`0`时，返回该字段）
 remark | string | 用户可读的消息
 data | json | 实际数据（当`code`为`0`时，返回该字段）
 
+分页参数说明（一般来说列表页返回有`per_page`,`page`这样的参数都支持分页）
+
+字段名 | 数据类型 | 描述
+--:   | ------  | -----------
+per_page | int | 每页返回条数, 默认 `15`
+page | int | 页码,默认 `1`
+
 ## 约定
 ::: note
 #### <i class="fa fa-warning"></i> 关于返回参数空值
