@@ -21,3 +21,4 @@ HOST: http://mock.bi.ishanggang.com
 <!-- include(api/web/shopkeeper.md) -->
 
 <!-- include(api/web/report/channel_shop_newer.md) -->
+<!-- include(api/web/report/channel_shop_activity.md) -->
