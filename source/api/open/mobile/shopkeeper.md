@@ -426,7 +426,7 @@
                 }
             }
 
-## 店主关系拓扑 [/api/open/mobile/report{?device,user_token,shop_id,city,user_grade}]
+## 店主关系拓扑 [/api/open/mobile/shopkeepers/report{?device,user_token,shop_id,city,user_grade}]
 ### 店主关系拓扑 [GET]
 店主关系拓扑图接口
 
