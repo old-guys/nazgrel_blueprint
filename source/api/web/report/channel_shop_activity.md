@@ -1,14 +1,13 @@
 # Group 渠道店主行为
 
-## 渠道店主行为列表 [GET /api/web/report/channel_shop_activities{?device,user_token,channel_id,report_date,report_date%5b%5d}]
+## 渠道店主行为列表 [GET /api/web/report/channel_shop_activities{?device,user_token,channel_id,report_date}]
 获取渠道店主行为列表
 
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + report_date: `2017-12-01` (string, optional)
-    + report_date%5b%5d (string, optional)
-        + For example: `report_date[]=2017-12-01&report_date[]=2017-12-31`
+        + For example: `report_date=2017-12-01..2017-12-31`
     + channel_id: 1 (number, optional) - 渠道ID
 
 + Response 200 (application/json;charset=UTF-8)
