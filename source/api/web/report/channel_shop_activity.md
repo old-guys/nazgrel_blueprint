@@ -215,16 +215,7 @@
                         "stage_3_children_grade_gold_count": 0,
                         "month_children_grade_gold_count": 4,
                         "year_children_grade_gold_count": 16,
-                        "stage_1_ecn_grade_platinum_count": 0,
-                        "stage_2_ecn_grade_platinum_count": 0,
-                        "stage_3_ecn_grade_platinum_count": 0,
-                        "month_ecn_grade_platinum_count": 0,
-                        "year_ecn_grade_platinum_count": 970,
-                        "stage_1_ecn_grade_gold_count": 0,
-                        "stage_2_ecn_grade_gold_count": 0,
-                        "stage_3_ecn_grade_gold_count": 0,
-                        "month_ecn_grade_gold_count": 26,
-                        "year_ecn_grade_gold_count": 164
+                        "ecn_count": 164
                     },
                     "total_count": 1,
                     "total_pages": 1,
@@ -304,18 +295,7 @@
                             "stage_3_children_grade_gold_count": 0,
                             "month_children_grade_gold_count": 4,
                             "year_children_grade_gold_count": 16,
-                            "ecn_grade_platinum_count": 0,
-                            "stage_1_ecn_grade_platinum_count": 0,
-                            "stage_2_ecn_grade_platinum_count": 0,
-                            "stage_3_ecn_grade_platinum_count": 0,
-                            "month_ecn_grade_platinum_count": 0,
-                            "year_ecn_grade_platinum_count": 970,
-                            "ecn_grade_gold_count": 0,
-                            "stage_1_ecn_grade_gold_count": 0,
-                            "stage_2_ecn_grade_gold_count": 0,
-                            "stage_3_ecn_grade_gold_count": 0,
-                            "month_ecn_grade_gold_count": 26,
-                            "year_ecn_grade_gold_count": 164
+                            "ecn_count": 164
                         }
                     ]
                 }
@@ -441,13 +421,4 @@
 + stage_3_children_grade_gold_count: 0 (number) - 18:00-24:00 邀请黄金店主数
 + month_children_grade_gold_count: 9 (number) - 本月累计邀请黄金店主数
 + year_children_grade_gold_count: 9 (number) - 本年累计邀请黄金店主数
-+ stage_1_ecn_grade_platinum_count: 0 (number) - 00:00-9:00 ECN白金店主数
-+ stage_2_ecn_grade_platinum_count: 0 (number) - 09:00-18:00 ECN白金店主数
-+ stage_3_ecn_grade_platinum_count: 0 (number) - 18:00-24:00 ECN白金店主数
-+ month_ecn_grade_platinum_count: 9 (number) - 本月累计ECN白金店主数
-+ year_ecn_grade_platinum_count: 9 (number) - 本年累计ECN白金店主数
-+ stage_1_ecn_grade_gold_count: 0 (number) - 00:00-9:00 ECN黄金店主数
-+ stage_2_ecn_grade_gold_count: 0 (number) - 09:00-18:00 ECN黄金店主数
-+ stage_3_ecn_grade_gold_count: 0 (number) - 18:00-24:00 ECN黄金店主数
-+ month_ecn_grade_gold_count: 9 (number) - 本月累计ECN黄金店主数
-+ year_ecn_grade_gold_count: 9 (number) - 本年累计ECN黄金店主数
++ ecn_count: 9 (number) - ECN店主数
