@@ -12,19 +12,21 @@
     + Attributes (object)
         + code: 0 (number) - 错误码
         + data (object)
-            + date: `2017-12-29` (string) - 日期
+            + datetime: `2018-01-12 13:44:55` (string) - 日期
             + shop_count: 5 (number) - 开店数
             + order_count: 3 (number) - 订单数
+            + commission_income_amount: `0.08` (string) - 佣金收入
             + order_amount: 11.33 (string) - 销售金额
     + Body
 
             {
                 "code": 0,
                 "data": {
-                  "date": "2017-12-29",
+                  "datetime": "2018-01-12 13:44:55",
                   "shop_count": 5,
                   "order_count": 3,
-                  "order_amount": "11.33"
+                  "order_amount": "11.33",
+                  "commission_income_amount": "11.33"
                 }
             }
 
