@@ -17,16 +17,29 @@
             + order_count: 3 (number) - 订单数
             + commission_income_amount: `0.08` (string) - 佣金收入
             + order_amount: 11.33 (string) - 销售金额
+            + shop (object) - 当前店铺
+              + `id`: 2 (number) - 店铺ID
+              + `name`: `解忧杂货店` (string) - 店铺名
+              + `shopkeeper_user_name`: `高强` (string) - 店主名
+              + `shopkeeper_user_phone`: `13661638426` (string) - 店主手机号
     + Body
 
             {
                 "code": 0,
+                "message": "",
+                "remark": "",
                 "data": {
-                  "datetime": "2018-01-12 13:44:55",
-                  "shop_count": 5,
-                  "order_count": 3,
-                  "order_amount": "11.33",
-                  "commission_income_amount": "11.33"
+                    "shop_count": 0,
+                    "order_count": 1,
+                    "commission_income_amount": "4.0",
+                    "order_amount": "40.0",
+                    "datetime": "2018-01-14 14:09:32",
+                    "shop": {
+                        "id": 2,
+                        "name": "解忧杂货店",
+                        "shopkeeper_user_name": "高强",
+                        "shopkeeper_user_phone": "13661638426"
+                    }
                 }
             }
 
