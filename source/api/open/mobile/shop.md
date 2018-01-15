@@ -163,6 +163,12 @@
     + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + `shop_id`: 2 (number, required) - 店铺ID
     + `limit`: 10 (number, optional) - 排行数目
+    + `time_range`: 3_day_ago (enum[string], required) - 时间范围
+        + Members
+          + 3_day_ago - 近3天
+          + 7_day_ago - 近7天
+          + 1_month_ago - 近1月
+          + 1_year_ago - 近1年
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)

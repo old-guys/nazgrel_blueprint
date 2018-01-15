@@ -328,6 +328,89 @@
                 ]
             }
 
+## 店铺流量渠道汇总 [/api/open/mobile/shop_activities/{shop_id}/summary{?device,user_token}]
+### 店铺流量渠道汇总 [GET]
+店铺流量渠道汇总
+
++ Parameters
+    + device: h5 (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + shop_id: 532 (number, required) - 店铺ID
+
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+          + `id`: 10 (number) - 店铺ID
+          + `shop_name`: cpencil芝蚂店 (string) - 店铺名称
+          + `shopkeeper_name`: 17500000007 (string) - 店主姓名
+          + `province`: 北京 (string) - 省份
+          + `city`: 北京 (string) - 城市
+          + `descendant_activation_rate`: `98.4%` (string) - 下级店铺激活率
+          + `descendant_count`: 384 (number) - 下级店铺数
+          + `activity_info` (array[ShopActivityActivityInfo]) - 流量信息
+
+    + Body
+
+            {
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "id": 2,
+                    "shop_name": "解忧杂货店",
+                    "shopkeeper_name": "高强",
+                    "province": "上海",
+                    "city": "",
+                    "descendant_activation_rate": "98.4%",
+                    "descendant_count": 384,
+                    "activity_info": [
+                        {
+                            "type": "wechat_friend",
+                            "type_text": "微信好友",
+                            "view_count": 9,
+                            "shared_count": 0
+                        },
+                        {
+                            "type": "app",
+                            "type_text": "app",
+                            "view_count": 0,
+                            "shared_count": 0
+                        },
+                        {
+                            "type": "wechat_moment",
+                            "type_text": "微信朋友圈",
+                            "view_count": 0,
+                            "shared_count": 0
+                        },
+                        {
+                            "type": "qq",
+                            "type_text": "qq",
+                            "view_count": 0,
+                            "shared_count": 0
+                        },
+                        {
+                            "type": "qq_zone",
+                            "type_text": "qq空间",
+                            "view_count": 0,
+                            "shared_count": 0
+                        },
+                        {
+                            "type": "sms",
+                            "type_text": "短信",
+                            "view_count": 1,
+                            "shared_count": 0
+                        },
+                        {
+                            "type": "qrcord",
+                            "type_text": "二维码",
+                            "view_count": 0,
+                            "shared_count": 0
+                        }
+                    ]
+                }
+            }
+
 ## Data Structures
 ### ShopActivityViewCountRank(object)
 + `index`: 1 (number) - 排名
@@ -338,3 +421,8 @@
 + `count`: 3 (number) - 数量
 ### ShopActivitySharedCountRank (ShopActivityViewCountRank)
 ### ShopActivityViewerCountRank (ShopActivityViewCountRank)
+### ShopActivityActivityInfo (object)
++ `type`: sms (string) - 类型
++ `type_text`: 短信 (string) - 类型
++ `view_count`: 1 (number) - 浏览量
++ `shared_count`: 0 (number) - 分享量
