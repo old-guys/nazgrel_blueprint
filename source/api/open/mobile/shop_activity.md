@@ -1,0 +1,340 @@
+# Group 店主流量分析
+
+## 店主浏览量排名 [GET /api/open/mobile/shop_activities/view_count_rank{?device,user_token,shop_id,limit,time_range}]
+获取当天全平台或者该店铺下，店铺的浏览量排名
+
++ Parameters
+    + `device`: h5 (string, required) - 设备类型
+    + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
+    + `limit`: 10 (number, optional) - 排行数目
+    + `time_range`: 3_day_ago (enum[string], required) - 时间范围
+        + Members
+          + 3_day_ago - 近3天
+          + 7_day_ago - 近7天
+          + 1_month_ago - 近1月
+          + 1_year_ago - 近1年
+
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (array[ShopActivityViewCountRank])
+
+    + Body
+
+            {
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": [
+                    {
+                        "index": 1,
+                        "shop_id": 1,
+                        "shop_name": "张三小店12千千万",
+                        "Shopkeeper_name": "Andox",
+                        "city": "杭州",
+                        "amount": 1490
+                    },
+                    {
+                        "index": 2,
+                        "shop_id": 34,
+                        "shop_name": "@fd**",
+                        "Shopkeeper_name": "美美",
+                        "city": "南京",
+                        "amount": 1324
+                    },
+                    {
+                        "index": 3,
+                        "shop_id": 12,
+                        "shop_name": "XP测试店铺2018",
+                        "Shopkeeper_name": "兰博基尼",
+                        "city": "",
+                        "amount": 1073
+                    },
+                    {
+                        "index": 4,
+                        "shop_id": 13,
+                        "shop_name": "何以解忧 唯有暴富",
+                        "Shopkeeper_name": "王秉飞1",
+                        "city": "",
+                        "amount": 473
+                    },
+                    {
+                        "index": 5,
+                        "shop_id": 8,
+                        "shop_name": "¥ātomoの㊣",
+                        "Shopkeeper_name": "郑明",
+                        "city": "长沙",
+                        "amount": 382
+                    },
+                    {
+                        "index": 6,
+                        "shop_id": 376,
+                        "shop_name": "❤️我的",
+                        "Shopkeeper_name": "(ಥ_ಥ)✔",
+                        "city": "",
+                        "amount": 381
+                    },
+                    {
+                        "index": 7,
+                        "shop_id": 29,
+                        "shop_name": "I'm",
+                        "Shopkeeper_name": "OK",
+                        "city": "",
+                        "amount": 360
+                    },
+                    {
+                        "index": 8,
+                        "shop_id": 180,
+                        "shop_name": "哈哈哈",
+                        "Shopkeeper_name": "",
+                        "city": "上海",
+                        "amount": 354
+                    },
+                    {
+                        "index": 9,
+                        "shop_id": 527,
+                        "shop_name": "徐千四的小店",
+                        "Shopkeeper_name": "徐千四",
+                        "city": "南宁",
+                        "amount": 342
+                    },
+                    {
+                        "index": 10,
+                        "shop_id": 524,
+                        "shop_name": "徐千一的小店2018",
+                        "Shopkeeper_name": "徐千一（徐）",
+                        "city": "南宁",
+                        "amount": 287
+                    }
+                ]
+            }
+
+## 店主分享排名 [GET /api/open/mobile/shop_activities/shared_count_rank{?device,user_token,shop_id,limit,time_range}]
+获取当天全平台或者该店铺下，店铺的分享量排名
+
++ Parameters
+    + `device`: h5 (string, required) - 设备类型
+    + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
+    + `limit`: 10 (number, optional) - 排行数目
+    + `time_range`: 3_day_ago (enum[string], required) - 时间范围
+        + Members
+          + 3_day_ago - 近3天
+          + 7_day_ago - 近7天
+          + 1_month_ago - 近1月
+          + 1_year_ago - 近1年
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (array[ShopActivitySharedCountRank])
+
+    + Body
+
+            {
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": [
+                    {
+                        "index": 1,
+                        "shop_id": 34,
+                        "shop_name": "@fd**",
+                        "Shopkeeper_name": "美美",
+                        "city": "南京",
+                        "count": 117
+                    },
+                    {
+                        "index": 2,
+                        "shop_id": 12,
+                        "shop_name": "XP测试店铺2018",
+                        "Shopkeeper_name": "兰博基尼",
+                        "city": "",
+                        "count": 79
+                    },
+                    {
+                        "index": 3,
+                        "shop_id": 29,
+                        "shop_name": "I'm",
+                        "Shopkeeper_name": "OK",
+                        "city": "",
+                        "count": 62
+                    },
+                    {
+                        "index": 4,
+                        "shop_id": 25,
+                        "shop_name": "测试",
+                        "Shopkeeper_name": "123",
+                        "city": "南昌",
+                        "count": 62
+                    },
+                    {
+                        "index": 5,
+                        "shop_id": 376,
+                        "shop_name": "❤️我的",
+                        "Shopkeeper_name": "(ಥ_ಥ)✔",
+                        "city": "",
+                        "count": 55
+                    },
+                    {
+                        "index": 6,
+                        "shop_id": 524,
+                        "shop_name": "徐千一的小店2018",
+                        "Shopkeeper_name": "徐千一（徐）",
+                        "city": "南宁",
+                        "count": 51
+                    },
+                    {
+                        "index": 7,
+                        "shop_id": 38,
+                        "shop_name": "罗掌柜",
+                        "Shopkeeper_name": "罗康3",
+                        "city": "",
+                        "count": 40
+                    },
+                    {
+                        "index": 8,
+                        "shop_id": 521,
+                        "shop_name": "王秉飞的小123",
+                        "Shopkeeper_name": "王秉飞",
+                        "city": "",
+                        "count": 37
+                    },
+                    {
+                        "index": 9,
+                        "shop_id": 8,
+                        "shop_name": "¥ātomoの㊣",
+                        "Shopkeeper_name": "郑明",
+                        "city": "长沙",
+                        "count": 33
+                    },
+                    {
+                        "index": 10,
+                        "shop_id": 522,
+                        "shop_name": "王秉飞2的小店",
+                        "Shopkeeper_name": "王秉飞2",
+                        "city": "",
+                        "count": 29
+                    }
+                ]
+            }
+
+## 店铺访客量排名 [GET /api/open/mobile/shop_activities/viewer_count_rank{?device,user_token,shop_id,limit,time_range}]
+获取当天全平台或者该店铺下，店铺的访客量排名
+
++ Parameters
+    + `device`: h5 (string, required) - 设备类型
+    + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID，则为该店铺下所有下级店铺的数据
+    + `limit`: 10 (number, optional) - 排行数目
+    + `time_range`: 3_day_ago (enum[string], required) - 时间范围
+        + Members
+          + 3_day_ago - 近3天
+          + 7_day_ago - 近7天
+          + 1_month_ago - 近1月
+          + 1_year_ago - 近1年
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (array[ShopActivityViewerCountRank])
+
+    + Body
+
+            {
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": [
+                    {
+                        "index": 1,
+                        "shop_id": 8,
+                        "shop_name": "¥ātomoの㊣",
+                        "Shopkeeper_name": "郑明",
+                        "city": "长沙",
+                        "count": 21
+                    },
+                    {
+                        "index": 2,
+                        "shop_id": 34,
+                        "shop_name": "@fd**",
+                        "Shopkeeper_name": "美美",
+                        "city": "南京",
+                        "count": 20
+                    },
+                    {
+                        "index": 3,
+                        "shop_id": 376,
+                        "shop_name": "❤️我的",
+                        "Shopkeeper_name": "(ಥ_ಥ)✔",
+                        "city": "",
+                        "count": 16
+                    },
+                    {
+                        "index": 4,
+                        "shop_id": 440,
+                        "shop_name": "徐易三的小店",
+                        "Shopkeeper_name": "徐易三",
+                        "city": "南宁",
+                        "count": 14
+                    },
+                    {
+                        "index": 5,
+                        "shop_id": 13,
+                        "shop_name": "何以解忧 唯有暴富",
+                        "Shopkeeper_name": "王秉飞1",
+                        "city": "",
+                        "count": 14
+                    },
+                    {
+                        "index": 6,
+                        "shop_id": 29,
+                        "shop_name": "I'm",
+                        "Shopkeeper_name": "OK",
+                        "city": "",
+                        "count": 13
+                    },
+                    {
+                        "index": 7,
+                        "shop_id": 521,
+                        "shop_name": "王秉飞的小123",
+                        "Shopkeeper_name": "王秉飞",
+                        "city": "",
+                        "count": 13
+                    },
+                    {
+                        "index": 8,
+                        "shop_id": 49,
+                        "shop_name": "培训奖励11111",
+                        "Shopkeeper_name": "培训奖励测试1",
+                        "city": "昆明",
+                        "count": 11
+                    },
+                    {
+                        "index": 9,
+                        "shop_id": 1,
+                        "shop_name": "张三小店12千千万",
+                        "Shopkeeper_name": "Andox",
+                        "city": "杭州",
+                        "count": 11
+                    },
+                    {
+                        "index": 10,
+                        "shop_id": 91,
+                        "shop_name": "徐氏子店铺12",
+                        "Shopkeeper_name": "徐小十二",
+                        "city": "南宁",
+                        "count": 11
+                    }
+                ]
+            }
+
+## Data Structures
+### ShopActivityViewCountRank(object)
++ `index`: 1 (number) - 排名
++ `shop_id`: 12 (number) - 店铺ID
++ `shop_name`: `XP测试店铺2018` (string) - 店铺名
++ `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
++ `city`: `上海` (string) - 城市
++ `count`: 3 (number) - 数量
+### ShopActivitySharedCountRank (ShopActivityViewCountRank)
+### ShopActivityViewerCountRank (ShopActivityViewCountRank)
