@@ -233,6 +233,7 @@
           + 7_day_ago - 近7天
           + 1_month_ago - 近1月
           + 1_year_ago - 近1年
+
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
@@ -411,6 +412,93 @@
                 }
             }
 
+## 店铺每日流量详情 [/api/open/mobile/shop_activities/{shop_id}{?device,user_token,time_range}]
+### 店铺每日流量详情 [GET]
+根据店铺ID和时间段获取店铺的每日流量详情
+
++ Parameters
+    + device: h5 (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + shop_id: 532 (number, required) - 店铺ID
+    + `time_range`: 3_day_ago (enum[string], required) - 时间范围
+        + Members
+          + 3_day_ago - 近3天
+          + 7_day_ago - 近7天
+          + 1_month_ago - 近1月
+          + 1_year_ago - 近1年
+
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+          + `view_count`: 30 (number) - 浏览量
+          + `shared_count`: 2 (number) - 分享量
+          + `viewer_count`: 5 (number) - 访客量
+          + `details` (array[ShopActivityActivityDetail]) - 流量信息
+
+    + Body
+
+            {
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "view_count": 30,
+                    "shared_count": 2,
+                    "viewer_count": 6,
+                    "details": [
+                        {
+                            "date": "2018-01-09",
+                            "view_count": 10,
+                            "shared_count": 1,
+                            "viewer_count": 2
+                        },
+                        {
+                            "date": "2018-01-10",
+                            "view_count": 12,
+                            "shared_count": 0,
+                            "viewer_count": 2
+                        },
+                        {
+                            "date": "2018-01-11",
+                            "view_count": 0,
+                            "shared_count": 0,
+                            "viewer_count": 0
+                        },
+                        {
+                            "date": "2018-01-12",
+                            "view_count": 8,
+                            "shared_count": 1,
+                            "viewer_count": 2
+                        },
+                        {
+                            "date": "2018-01-13",
+                            "view_count": 0,
+                            "shared_count": 0,
+                            "viewer_count": 0
+                        },
+                        {
+                            "date": "2018-01-14",
+                            "view_count": 0,
+                            "shared_count": 0,
+                            "viewer_count": 0
+                        },
+                        {
+                            "date": "2018-01-15",
+                            "view_count": 0,
+                            "shared_count": 0,
+                            "viewer_count": 0
+                        },
+                        {
+                            "date": "2018-01-16",
+                            "view_count": 0,
+                            "shared_count": 0,
+                            "viewer_count": 0
+                        }
+                    ]
+                }
+            }
+
 ## Data Structures
 ### ShopActivityViewCountRank(object)
 + `index`: 1 (number) - 排名
@@ -426,3 +514,8 @@
 + `type_text`: 短信 (string) - 类型
 + `view_count`: 1 (number) - 浏览量
 + `shared_count`: 0 (number) - 分享量
+### ShopActivityActivityDetail (object)
++ `date`: `2018-01-14` (string) - 日期
++ `view_count`: 30 (number) - 浏览量
++ `shared_count`: 2 (number) - 分享量
++ `viewer_count`: 5 (number) - 访客量
