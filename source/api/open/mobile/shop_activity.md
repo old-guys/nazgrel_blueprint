@@ -499,6 +499,111 @@
                 }
             }
 
+## 店铺激活率排行 [/api/open/mobile/shop_activities/activation_rank{?device,user_token,order,shop_ids%5b%5d}]
+### 店铺激活率排行 [GET]
+根据指定的多个店铺ID 获得店主激活率排行
+
++ Parameters
+    + device: h5 (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
+    + `shop_ids%5b%5d` (string, optional)
+        + For example: `shop_ids[]=2&shop_ids[]=3`
+    + `order`: `descendant_activation_rate desc` (enum[string], optional) - 排序
+        + Members
+          + `descendant_activation_rate desc` - 降序
+          + `descendant_activation_rate asc` - 升序
+
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+          + `models` (array[ShopActivityActivationRank])
+
+    + Body
+
+            {
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "models": [
+                        {
+                            "shop_id": 1,
+                            "shop_name": "张三小店12千千万",
+                            "shopkeeper_name": "Andox",
+                            "province": "浙江",
+                            "city": "杭州",
+                            "descendant_activation_rate": "100.0%"
+                        },
+                        {
+                            "shop_id": 2,
+                            "shop_name": "解忧杂货店",
+                            "shopkeeper_name": "高强",
+                            "province": "上海",
+                            "city": "",
+                            "descendant_activation_rate": "98.4%"
+                        }
+                    ]
+                }
+            }
+
+### 店铺激活率排行 [POST]
+根据指定的多个店铺ID 获得店主激活率排行
+
++ Parameters
+    + device: h5 (string, required) - 设备类型
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
++ Request (application/json)
+    + Attributes (object)
+        + `shop_ids`: 2 (array[number]) - 店铺ID
+          + `3`
+        + `order`: `descendant_activation_rate desc` (enum[string], optional) - 排序
+            + Members
+              + `descendant_activation_rate desc` - 降序
+              + `descendant_activation_rate asc` - 升序
+    + Body
+
+            {
+                "shop_ids": [
+                   2, 3
+                ],
+                "order": "descendant_activation_rate desc"
+            }
+
++ Response 200 (application/json;charset=UTF-8)
+    + Attributes (object)
+        + code: 0 (number) - 错误码
+        + data (object)
+          + `models` (array[ShopActivityActivationRank])
+
+    + Body
+
+            {
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "models": [
+                        {
+                            "shop_id": 1,
+                            "shop_name": "张三小店12千千万",
+                            "shopkeeper_name": "Andox",
+                            "province": "浙江",
+                            "city": "杭州",
+                            "descendant_activation_rate": "100.0%"
+                        },
+                        {
+                            "shop_id": 2,
+                            "shop_name": "解忧杂货店",
+                            "shopkeeper_name": "高强",
+                            "province": "上海",
+                            "city": "",
+                            "descendant_activation_rate": "98.4%"
+                        }
+                    ]
+                }
+            }
+
 ## Data Structures
 ### ShopActivityViewCountRank(object)
 + `index`: 1 (number) - 排名
@@ -519,3 +624,9 @@
 + `view_count`: 30 (number) - 浏览量
 + `shared_count`: 2 (number) - 分享量
 + `viewer_count`: 5 (number) - 访客量
+### ShopActivityActivationRank (object)
++ `shop_id`: 12 (number) - 店铺ID
++ `shop_name`: `XP测试店铺2018` (string) - 店铺名
++ `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
++ `city`: `上海` (string) - 城市
++ `descendant_activation_rate`: `98.4%` (string) - 下级店铺激活率
