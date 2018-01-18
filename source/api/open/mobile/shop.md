@@ -15,6 +15,7 @@
         + data (object)
           + `id`: 10 (number) - 店铺ID
           + `shop_name`: cpencil芝蚂店 (string) - 店铺名称
+          + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
           + `shopkeeper_name`: 17500000007 (string) - 店主姓名
           + `province`: 北京 (string) - 省份
           + `city`: 北京 (string) - 城市
@@ -32,6 +33,7 @@
                 "data": {
                     "id": 8458,
                     "shop_name": "17500000007的小店",
+                    "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                     "shopkeeper_name": "17500000007",
                     "province": "北京",
                     "city": "北京",
@@ -75,6 +77,7 @@
                         "index": 1,
                         "shop_id": 302,
                         "shop_name": "法拉利的小店",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "法拉利2017",
                         "order_amount": "0.0",
                         "commission_income_amount": "0.0",
@@ -85,6 +88,7 @@
                         "index": 2,
                         "shop_id": 332,
                         "shop_name": "奥迪的小店",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "奥迪",
                         "order_amount": "0.0",
                         "commission_income_amount": "0.0",
@@ -95,6 +99,7 @@
                         "index": 3,
                         "shop_id": 525,
                         "shop_name": "万里长城",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "万里",
                         "order_amount": "0.0",
                         "commission_income_amount": "0.0",
@@ -105,6 +110,7 @@
                         "index": 4,
                         "shop_id": 324,
                         "shop_name": "玛莎拉蒂的小店2018",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "玛莎拉蒂V8",
                         "order_amount": "0.007",
                         "commission_income_amount": "0.007",
@@ -115,6 +121,7 @@
                         "index": 5,
                         "shop_id": 528,
                         "shop_name": "阿里",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "十7",
                         "order_amount": "0.005",
                         "commission_income_amount": "0.005",
@@ -125,6 +132,7 @@
                         "index": 6,
                         "shop_id": 25,
                         "shop_name": "测试",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "123",
                         "order_amount": "162.305",
                         "commission_income_amount": "162.305",
@@ -135,6 +143,7 @@
                         "index": 7,
                         "shop_id": 521,
                         "shop_name": "王秉飞的小店",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "王秉飞",
                         "order_amount": "0.006",
                         "commission_income_amount": "0.006",
@@ -145,6 +154,7 @@
                         "index": 8,
                         "shop_id": 530,
                         "shop_name": "田的小店",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "田",
                         "order_amount": null,
                         "commission_income_amount": null,
@@ -230,6 +240,7 @@
           + `fast_add_shop` (object) - 30天内开拓下级最多的直属下级店铺
             + `shop_id`: 302 (number) - 店铺ID
             + `shop_name`: `法拉利的小店` (string) - 店铺名
+            + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
             + `shopkeeper_name`: `法拉利2017` (string) - 店主姓名
             + `city`: `南宁` (string) - 城市
             + `count`: 1 (number) - 数量
@@ -237,6 +248,7 @@
           + `top_sales_shop` (object) - 30天内销售额最高的直属下级
             + `shop_id`: 489 (number) - 店铺ID
             + `shop_name`: `见习的小店` (string) - 店铺名
+            + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
             + `shopkeeper_name`: `见习` (string) - 店主姓名
             + `city`: `南宁` (string) - 城市
             + `amount`: 0.02 (string) - 金额
@@ -258,6 +270,7 @@
                     "fast_add_shop": {
                         "shop_id": 302,
                         "shop_name": "法拉利的小店",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "shopkeeper_name": "法拉利2017",
                         "city": "南宁",
                         "count": 1,
@@ -266,6 +279,7 @@
                     "top_sales_shop": {
                         "shop_id": 489,
                         "shop_name": "见习的小店",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "shopkeeper_name": "见习",
                         "city": "",
                         "amount": "0.02"
@@ -278,6 +292,7 @@
 + `index`: 1 (number) - 排名
 + `shop_id`: 12 (number) - 店铺ID
 + `shop_name`: `XP测试店铺2018` (string) - 店铺名
++ `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
 + `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
 + `order_amount`: `0.0` (string) - 销售额
 + `commission_income_amount`: `0.0` (string) - 佣金额

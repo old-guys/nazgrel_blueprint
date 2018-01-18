@@ -31,6 +31,7 @@
                         "index": 1,
                         "shop_id": 1,
                         "shop_name": "张三小店12千千万",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "Andox",
                         "city": "杭州",
                         "amount": 1490
@@ -39,6 +40,7 @@
                         "index": 2,
                         "shop_id": 34,
                         "shop_name": "@fd**",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "美美",
                         "city": "南京",
                         "amount": 1324
@@ -47,6 +49,7 @@
                         "index": 3,
                         "shop_id": 12,
                         "shop_name": "XP测试店铺2018",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "兰博基尼",
                         "city": "",
                         "amount": 1073
@@ -55,6 +58,7 @@
                         "index": 4,
                         "shop_id": 13,
                         "shop_name": "何以解忧 唯有暴富",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "王秉飞1",
                         "city": "",
                         "amount": 473
@@ -63,6 +67,7 @@
                         "index": 5,
                         "shop_id": 8,
                         "shop_name": "¥ātomoの㊣",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "郑明",
                         "city": "长沙",
                         "amount": 382
@@ -71,6 +76,7 @@
                         "index": 6,
                         "shop_id": 376,
                         "shop_name": "❤️我的",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "(ಥ_ಥ)✔",
                         "city": "",
                         "amount": 381
@@ -79,6 +85,7 @@
                         "index": 7,
                         "shop_id": 29,
                         "shop_name": "I'm",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "OK",
                         "city": "",
                         "amount": 360
@@ -87,6 +94,7 @@
                         "index": 8,
                         "shop_id": 180,
                         "shop_name": "哈哈哈",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "",
                         "city": "上海",
                         "amount": 354
@@ -95,6 +103,7 @@
                         "index": 9,
                         "shop_id": 527,
                         "shop_name": "徐千四的小店",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "徐千四",
                         "city": "南宁",
                         "amount": 342
@@ -103,6 +112,7 @@
                         "index": 10,
                         "shop_id": 524,
                         "shop_name": "徐千一的小店2018",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "徐千一（徐）",
                         "city": "南宁",
                         "amount": 287
@@ -140,6 +150,7 @@
                         "index": 1,
                         "shop_id": 34,
                         "shop_name": "@fd**",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "美美",
                         "city": "南京",
                         "count": 117
@@ -148,6 +159,7 @@
                         "index": 2,
                         "shop_id": 12,
                         "shop_name": "XP测试店铺2018",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "兰博基尼",
                         "city": "",
                         "count": 79
@@ -156,6 +168,7 @@
                         "index": 3,
                         "shop_id": 29,
                         "shop_name": "I'm",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "OK",
                         "city": "",
                         "count": 62
@@ -164,6 +177,7 @@
                         "index": 4,
                         "shop_id": 25,
                         "shop_name": "测试",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "123",
                         "city": "南昌",
                         "count": 62
@@ -172,6 +186,7 @@
                         "index": 5,
                         "shop_id": 376,
                         "shop_name": "❤️我的",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "(ಥ_ಥ)✔",
                         "city": "",
                         "count": 55
@@ -180,6 +195,7 @@
                         "index": 6,
                         "shop_id": 524,
                         "shop_name": "徐千一的小店2018",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "徐千一（徐）",
                         "city": "南宁",
                         "count": 51
@@ -188,6 +204,7 @@
                         "index": 7,
                         "shop_id": 38,
                         "shop_name": "罗掌柜",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "罗康3",
                         "city": "",
                         "count": 40
@@ -196,6 +213,7 @@
                         "index": 8,
                         "shop_id": 521,
                         "shop_name": "王秉飞的小123",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "王秉飞",
                         "city": "",
                         "count": 37
@@ -204,6 +222,7 @@
                         "index": 9,
                         "shop_id": 8,
                         "shop_name": "¥ātomoの㊣",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "郑明",
                         "city": "长沙",
                         "count": 33
@@ -212,6 +231,7 @@
                         "index": 10,
                         "shop_id": 522,
                         "shop_name": "王秉飞2的小店",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "王秉飞2",
                         "city": "",
                         "count": 29
@@ -250,6 +270,7 @@
                         "index": 1,
                         "shop_id": 8,
                         "shop_name": "¥ātomoの㊣",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "郑明",
                         "city": "长沙",
                         "count": 21
@@ -259,6 +280,7 @@
                         "shop_id": 34,
                         "shop_name": "@fd**",
                         "Shopkeeper_name": "美美",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "city": "南京",
                         "count": 20
                     },
@@ -266,6 +288,7 @@
                         "index": 3,
                         "shop_id": 376,
                         "shop_name": "❤️我的",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "(ಥ_ಥ)✔",
                         "city": "",
                         "count": 16
@@ -274,6 +297,7 @@
                         "index": 4,
                         "shop_id": 440,
                         "shop_name": "徐易三的小店",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "徐易三",
                         "city": "南宁",
                         "count": 14
@@ -282,6 +306,7 @@
                         "index": 5,
                         "shop_id": 13,
                         "shop_name": "何以解忧 唯有暴富",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "王秉飞1",
                         "city": "",
                         "count": 14
@@ -290,6 +315,7 @@
                         "index": 6,
                         "shop_id": 29,
                         "shop_name": "I'm",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "OK",
                         "city": "",
                         "count": 13
@@ -298,6 +324,7 @@
                         "index": 7,
                         "shop_id": 521,
                         "shop_name": "王秉飞的小123",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "王秉飞",
                         "city": "",
                         "count": 13
@@ -306,6 +333,7 @@
                         "index": 8,
                         "shop_id": 49,
                         "shop_name": "培训奖励11111",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "培训奖励测试1",
                         "city": "昆明",
                         "count": 11
@@ -314,6 +342,7 @@
                         "index": 9,
                         "shop_id": 1,
                         "shop_name": "张三小店12千千万",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "Andox",
                         "city": "杭州",
                         "count": 11
@@ -322,6 +351,7 @@
                         "index": 10,
                         "shop_id": 91,
                         "shop_name": "徐氏子店铺12",
+                        "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                         "Shopkeeper_name": "徐小十二",
                         "city": "南宁",
                         "count": 11
@@ -360,6 +390,7 @@
                 "data": {
                     "id": 2,
                     "shop_name": "解忧杂货店",
+                    "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                     "shopkeeper_name": "高强",
                     "province": "上海",
                     "city": "",
@@ -530,6 +561,7 @@
                         {
                             "shop_id": 1,
                             "shop_name": "张三小店12千千万",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                             "shopkeeper_name": "Andox",
                             "province": "浙江",
                             "city": "杭州",
@@ -538,6 +570,7 @@
                         {
                             "shop_id": 2,
                             "shop_name": "解忧杂货店",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                             "shopkeeper_name": "高强",
                             "province": "上海",
                             "city": "",
@@ -587,6 +620,7 @@
                         {
                             "shop_id": 1,
                             "shop_name": "张三小店12千千万",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                             "shopkeeper_name": "Andox",
                             "province": "浙江",
                             "city": "杭州",
@@ -595,6 +629,7 @@
                         {
                             "shop_id": 2,
                             "shop_name": "解忧杂货店",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
                             "shopkeeper_name": "高强",
                             "province": "上海",
                             "city": "",
@@ -609,6 +644,7 @@
 + `index`: 1 (number) - 排名
 + `shop_id`: 12 (number) - 店铺ID
 + `shop_name`: `XP测试店铺2018` (string) - 店铺名
++ `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
 + `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
 + `city`: `上海` (string) - 城市
 + `count`: 3 (number) - 数量
@@ -627,6 +663,7 @@
 ### ShopActivityActivationRank (object)
 + `shop_id`: 12 (number) - 店铺ID
 + `shop_name`: `XP测试店铺2018` (string) - 店铺名
++ `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
 + `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
 + `city`: `上海` (string) - 城市
 + `descendant_activation_rate`: `98.4%` (string) - 下级店铺激活率
