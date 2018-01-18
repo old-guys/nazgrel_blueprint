@@ -2,7 +2,7 @@ module.exports = {
     sourceFiles: './source/api/mobile/**/*.md',
     serverPort: 3007,
     public: true,
-    disableCORS: true,
+    disableCORS: false,
     autoOptions: true,
     debugMode: true,
     discover: true,
