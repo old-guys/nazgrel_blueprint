@@ -487,13 +487,13 @@
                 "remark": "",
                 "data": {
                     "total_count": 424,
-                    "total_pages": 29,
+                    "total_pages": 85,
                     "current_page": 1,
                     "next_page": 2,
                     "prev_page": null,
                     "first_page?": true,
                     "last_page?": false,
-                    "per_page": 15,
+                    "per_page": 5,
                     "page": 0,
                     "models": [
                         {
@@ -501,11 +501,12 @@
                             "shop_id": 1,
                             "user_id": 12345,
                             "shopkeeper_name": "Andox",
+                            "shopkeeper_real_name": null,
                             "province": "浙江",
                             "city": "杭州",
                             "user_phone": "15888888888",
                             "shop_name": "张三小店12千千万",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/9fa53b1117ea46ac81f12d1f55fa0d50.jpg",
                             "user_grade": "grade_platinum",
                             "user_grade_text": "白金店主",
                             "parent_shopkeeper_id": null,
@@ -514,10 +515,10 @@
                             "parent_shop_id": null,
                             "order_number": 15507,
                             "order_amount": "0.0",
-                            "commission_income_amount": null,
+                            "commission_income_amount": "0.0",
                             "descendant_order_number": 31014,
                             "descendant_order_amount": "0.023",
-                            "descendant_commission_income_amount": "0.023",
+                            "descendant_commission_income_amount": "0.0",
                             "children_count": 1,
                             "descendant_count": 2,
                             "tree_depth": 1,
@@ -537,11 +538,12 @@
                             "shop_id": 2,
                             "user_id": 25998,
                             "shopkeeper_name": "高强",
+                            "shopkeeper_real_name": "",
                             "province": "上海",
                             "city": "",
                             "user_phone": "13661638426",
                             "shop_name": "解忧杂货店",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/25b773c1f4644fcdbcca1cc1dee90659.jpg",
                             "user_grade": "grade_platinum",
                             "user_grade_text": "白金店主",
                             "parent_shopkeeper_id": null,
@@ -551,9 +553,9 @@
                             "order_number": 2,
                             "order_amount": "12990.03",
                             "commission_income_amount": "2054.003",
-                            "descendant_order_number": 462,
-                            "descendant_order_amount": "68435.61",
-                            "descendant_commission_income_amount": "68435.61",
+                            "descendant_order_number": 472,
+                            "descendant_order_amount": "68435.78",
+                            "descendant_commission_income_amount": "10920.294",
                             "children_count": 46,
                             "descendant_count": 384,
                             "tree_depth": 1,
@@ -573,11 +575,12 @@
                             "shop_id": 3,
                             "user_id": 8910,
                             "shopkeeper_name": "王健雄",
+                            "shopkeeper_real_name": null,
                             "province": null,
                             "city": null,
                             "user_phone": "19888888888",
                             "shop_name": "gg=jasldfjadsklf",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/5b0272f43df84733b932c40741e69860.jpg",
                             "user_grade": "grade_platinum",
                             "user_grade_text": "白金店主",
                             "parent_shopkeeper_id": null,
@@ -612,11 +615,12 @@
                             "shop_id": 1,
                             "user_id": 12311,
                             "shopkeeper_name": "李航",
+                            "shopkeeper_real_name": null,
                             "province": null,
                             "city": null,
                             "user_phone": "12111111111",
                             "shop_name": "张三小店12千千万",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/9fa53b1117ea46ac81f12d1f55fa0d50.jpg",
                             "user_grade": "grade_platinum",
                             "user_grade_text": "白金店主",
                             "parent_shopkeeper_id": null,
@@ -625,10 +629,10 @@
                             "parent_shop_id": null,
                             "order_number": 15507,
                             "order_amount": "0.003",
-                            "commission_income_amount": null,
+                            "commission_income_amount": "0.0",
                             "descendant_order_number": 15507,
                             "descendant_order_amount": "0.02",
-                            "descendant_commission_income_amount": "0.02",
+                            "descendant_commission_income_amount": "0.0",
                             "children_count": 1,
                             "descendant_count": 1,
                             "tree_depth": 2,
@@ -651,11 +655,12 @@
                             "shop_id": 1,
                             "user_id": 26049,
                             "shopkeeper_name": "张三",
+                            "shopkeeper_real_name": null,
                             "province": "湖南",
                             "city": "株洲",
                             "user_phone": "15207400547",
                             "shop_name": "张三小店12千千万",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/9fa53b1117ea46ac81f12d1f55fa0d50.jpg",
                             "user_grade": "grade_platinum",
                             "user_grade_text": "白金店主",
                             "parent_shopkeeper_id": 25998,
@@ -664,7 +669,7 @@
                             "parent_shop_id": 2,
                             "order_number": 15507,
                             "order_amount": "0.02",
-                            "commission_income_amount": null,
+                            "commission_income_amount": "0.0",
                             "descendant_order_number": 0,
                             "descendant_order_amount": "0.0",
                             "descendant_commission_income_amount": "0.0",
@@ -687,429 +692,6 @@
                                 10
                             ],
                             "created_at": "2017-07-28T00:54:27.000+08:00"
-                        },
-                        {
-                            "id": 11,
-                            "shop_id": 6,
-                            "user_id": 1656,
-                            "shopkeeper_name": "掌柜",
-                            "province": "上海",
-                            "city": "",
-                            "user_phone": "18621806536",
-                            "shop_name": "我的好店铺8888",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": 25998,
-                            "parent_shopkeeper_name": "高强",
-                            "parent_user_phone": "13661638426",
-                            "parent_shop_id": 2,
-                            "order_number": 7,
-                            "order_amount": "0.12",
-                            "commission_income_amount": "0.013",
-                            "descendant_order_number": 292,
-                            "descendant_order_amount": "46574.39",
-                            "descendant_commission_income_amount": "46574.39",
-                            "children_count": 12,
-                            "descendant_count": 213,
-                            "tree_depth": 2,
-                            "parent_names": [
-                                "高强",
-                                "掌柜"
-                            ],
-                            "parent_shop_ids": [
-                                2,
-                                6
-                            ],
-                            "parent_ids": [
-                                2,
-                                11
-                            ],
-                            "created_at": "2017-08-09T23:52:47.000+08:00"
-                        },
-                        {
-                            "id": 12,
-                            "shop_id": 8,
-                            "user_id": 17512,
-                            "shopkeeper_name": "郑明",
-                            "province": "湖南",
-                            "city": "长沙",
-                            "user_phone": "13808483343",
-                            "shop_name": "¥ātomoの㊣",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": 1656,
-                            "parent_shopkeeper_name": "掌柜",
-                            "parent_user_phone": "18621806536",
-                            "parent_shop_id": 6,
-                            "order_number": 18,
-                            "order_amount": "0.47",
-                            "commission_income_amount": "0.211",
-                            "descendant_order_number": 0,
-                            "descendant_order_amount": "0.0",
-                            "descendant_commission_income_amount": "0.0",
-                            "children_count": 0,
-                            "descendant_count": 0,
-                            "tree_depth": 3,
-                            "parent_names": [
-                                "高强",
-                                "掌柜",
-                                "郑明"
-                            ],
-                            "parent_shop_ids": [
-                                2,
-                                6,
-                                8
-                            ],
-                            "parent_ids": [
-                                2,
-                                11,
-                                12
-                            ],
-                            "created_at": "2017-08-09T20:16:38.000+08:00"
-                        },
-                        {
-                            "id": 14,
-                            "shop_id": 10,
-                            "user_id": 24454,
-                            "shopkeeper_name": "嘻嘻嘻",
-                            "province": "上海",
-                            "city": "",
-                            "user_phone": "13022189206",
-                            "shop_name": "cpencil芝蚂店",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": 25998,
-                            "parent_shopkeeper_name": "高强",
-                            "parent_user_phone": "13661638426",
-                            "parent_shop_id": 2,
-                            "order_number": 0,
-                            "order_amount": "0.0",
-                            "commission_income_amount": "0.0",
-                            "descendant_order_number": 2,
-                            "descendant_order_amount": "0.02",
-                            "descendant_commission_income_amount": "0.02",
-                            "children_count": 3,
-                            "descendant_count": 3,
-                            "tree_depth": 2,
-                            "parent_names": [
-                                "高强",
-                                "嘻嘻嘻"
-                            ],
-                            "parent_shop_ids": [
-                                2,
-                                10
-                            ],
-                            "parent_ids": [
-                                2,
-                                14
-                            ],
-                            "created_at": "2017-08-10T04:42:08.000+08:00"
-                        },
-                        {
-                            "id": 15,
-                            "shop_id": 99,
-                            "user_id": 24420,
-                            "shopkeeper_name": "李大强",
-                            "province": "上海",
-                            "city": "",
-                            "user_phone": "13916025169",
-                            "shop_name": "提现测试1",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": null,
-                            "parent_shopkeeper_name": null,
-                            "parent_user_phone": null,
-                            "parent_shop_id": null,
-                            "order_number": 1,
-                            "order_amount": "5.0",
-                            "commission_income_amount": "0.6",
-                            "descendant_order_number": 0,
-                            "descendant_order_amount": "0.0",
-                            "descendant_commission_income_amount": "0.0",
-                            "children_count": 0,
-                            "descendant_count": 0,
-                            "tree_depth": 1,
-                            "parent_names": [
-                                "李大强"
-                            ],
-                            "parent_shop_ids": [
-                                99
-                            ],
-                            "parent_ids": [
-                                15
-                            ],
-                            "created_at": "2017-08-12T23:41:45.000+08:00"
-                        },
-                        {
-                            "id": 17,
-                            "shop_id": 12,
-                            "user_id": 26303,
-                            "shopkeeper_name": "兰博基尼",
-                            "province": "上海",
-                            "city": "",
-                            "user_phone": "13764684843",
-                            "shop_name": "XP测试店铺2018",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": 26133,
-                            "parent_shopkeeper_name": "王秉飞1",
-                            "parent_user_phone": "13162865863",
-                            "parent_shop_id": 13,
-                            "order_number": 8,
-                            "order_amount": "9.97",
-                            "commission_income_amount": "1.037",
-                            "descendant_order_number": 34,
-                            "descendant_order_amount": "1050.08",
-                            "descendant_commission_income_amount": "1050.08",
-                            "children_count": 29,
-                            "descendant_count": 59,
-                            "tree_depth": 4,
-                            "parent_names": [
-                                "高强",
-                                "掌柜",
-                                "兰博基尼",
-                                "王秉飞1"
-                            ],
-                            "parent_shop_ids": [
-                                2,
-                                6,
-                                12,
-                                13
-                            ],
-                            "parent_ids": [
-                                2,
-                                11,
-                                17,
-                                18
-                            ],
-                            "created_at": "2017-08-10T10:58:36.000+08:00"
-                        },
-                        {
-                            "id": 18,
-                            "shop_id": 13,
-                            "user_id": 26133,
-                            "shopkeeper_name": "王秉飞1",
-                            "province": "上海",
-                            "city": "",
-                            "user_phone": "13162865863",
-                            "shop_name": "何以解忧 唯有暴富",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": 1656,
-                            "parent_shopkeeper_name": "掌柜",
-                            "parent_user_phone": "18621806536",
-                            "parent_shop_id": 6,
-                            "order_number": 16,
-                            "order_amount": "5311.15",
-                            "commission_income_amount": "635.136",
-                            "descendant_order_number": 203,
-                            "descendant_order_amount": "16685.68",
-                            "descendant_commission_income_amount": "16685.68",
-                            "children_count": 17,
-                            "descendant_count": 184,
-                            "tree_depth": 3,
-                            "parent_names": [
-                                "高强",
-                                "掌柜",
-                                "王秉飞1"
-                            ],
-                            "parent_shop_ids": [
-                                2,
-                                6,
-                                13
-                            ],
-                            "parent_ids": [
-                                2,
-                                11,
-                                18
-                            ],
-                            "created_at": "2017-08-10T19:01:24.000+08:00"
-                        },
-                        {
-                            "id": 19,
-                            "shop_id": 14,
-                            "user_id": 26324,
-                            "shopkeeper_name": "Leslie",
-                            "province": "上海",
-                            "city": "",
-                            "user_phone": "18221849989",
-                            "shop_name": "Leslie shop",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": 1656,
-                            "parent_shopkeeper_name": "掌柜",
-                            "parent_user_phone": "18621806536",
-                            "parent_shop_id": 6,
-                            "order_number": 6,
-                            "order_amount": "5.65",
-                            "commission_income_amount": "0.676",
-                            "descendant_order_number": 0,
-                            "descendant_order_amount": "0.0",
-                            "descendant_commission_income_amount": "0.0",
-                            "children_count": 0,
-                            "descendant_count": 0,
-                            "tree_depth": 3,
-                            "parent_names": [
-                                "高强",
-                                "掌柜",
-                                "Leslie"
-                            ],
-                            "parent_shop_ids": [
-                                2,
-                                6,
-                                14
-                            ],
-                            "parent_ids": [
-                                2,
-                                11,
-                                19
-                            ],
-                            "created_at": "2017-08-10T21:05:16.000+08:00"
-                        },
-                        {
-                            "id": 21,
-                            "shop_id": 19,
-                            "user_id": 16543,
-                            "shopkeeper_name": "李明松",
-                            "province": "安徽",
-                            "city": "亳州",
-                            "user_phone": "18656783389",
-                            "shop_name": "路路通",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": 24454,
-                            "parent_shopkeeper_name": "嘻嘻嘻",
-                            "parent_user_phone": "13022189206",
-                            "parent_shop_id": 10,
-                            "order_number": 0,
-                            "order_amount": "0.0",
-                            "commission_income_amount": "0.0",
-                            "descendant_order_number": 0,
-                            "descendant_order_amount": "0.0",
-                            "descendant_commission_income_amount": "0.0",
-                            "children_count": 0,
-                            "descendant_count": 0,
-                            "tree_depth": 3,
-                            "parent_names": [
-                                "高强",
-                                "嘻嘻嘻",
-                                "李明松"
-                            ],
-                            "parent_shop_ids": [
-                                2,
-                                10,
-                                19
-                            ],
-                            "parent_ids": [
-                                2,
-                                14,
-                                21
-                            ],
-                            "created_at": "2017-08-10T22:41:19.000+08:00"
-                        },
-                        {
-                            "id": 23,
-                            "shop_id": 21,
-                            "user_id": 26325,
-                            "shopkeeper_name": "",
-                            "province": "广西",
-                            "city": "南宁",
-                            "user_phone": "13300000001",
-                            "shop_name": "阳光店铺_爱茜茜里总部分店",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": 26303,
-                            "parent_shopkeeper_name": "兰博基尼",
-                            "parent_user_phone": "13764684843",
-                            "parent_shop_id": 12,
-                            "order_number": 11,
-                            "order_amount": "643.11",
-                            "commission_income_amount": "121.634",
-                            "descendant_order_number": 0,
-                            "descendant_order_amount": "0.0",
-                            "descendant_commission_income_amount": "0.0",
-                            "children_count": 3,
-                            "descendant_count": 8,
-                            "tree_depth": 5,
-                            "parent_names": [
-                                "高强",
-                                "掌柜",
-                                "兰博基尼",
-                                "王秉飞1",
-                                ""
-                            ],
-                            "parent_shop_ids": [
-                                2,
-                                6,
-                                12,
-                                13,
-                                21
-                            ],
-                            "parent_ids": [
-                                2,
-                                11,
-                                17,
-                                18,
-                                23
-                            ],
-                            "created_at": "2017-08-10T22:53:38.000+08:00"
-                        },
-                        {
-                            "id": 24,
-                            "shop_id": 22,
-                            "user_id": 26327,
-                            "shopkeeper_name": "徐氏二",
-                            "province": "广西",
-                            "city": "南宁",
-                            "user_phone": "13300000002",
-                            "shop_name": "徐氏子店铺2",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": 26303,
-                            "parent_shopkeeper_name": "兰博基尼",
-                            "parent_user_phone": "13764684843",
-                            "parent_shop_id": 12,
-                            "order_number": 0,
-                            "order_amount": "0.0",
-                            "commission_income_amount": "0.0",
-                            "descendant_order_number": 0,
-                            "descendant_order_amount": "0.0",
-                            "descendant_commission_income_amount": "0.0",
-                            "children_count": 2,
-                            "descendant_count": 2,
-                            "tree_depth": 5,
-                            "parent_names": [
-                                "高强",
-                                "掌柜",
-                                "兰博基尼",
-                                "王秉飞1",
-                                "徐氏二"
-                            ],
-                            "parent_shop_ids": [
-                                2,
-                                6,
-                                12,
-                                13,
-                                22
-                            ],
-                            "parent_ids": [
-                                2,
-                                11,
-                                17,
-                                18,
-                                24
-                            ],
-                            "created_at": "2017-08-10T23:24:25.000+08:00"
                         }
                     ]
                 }
@@ -1123,6 +705,7 @@
 + `shop_name`: `王1的小店` (string) - 店铺名称
 + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
 + `shopkeeper_name`: `高强` (string) - 店主姓名
++ `shopkeeper_real_name`: `高强` (string, nullable) - 店主真实姓名
 + `province`: `吉林` (string) - 省份
 + `city`: `长春` (string) - 城市
 + `user_grade`: `grade_gold` (string) - 等级
@@ -1142,13 +725,13 @@
 ### ReportShopkeeper (object)
 + `id`: 10 (number) - ID
 + `shop_id`: 2 (number) - 店铺ID
-+ `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
 + `user_id`: 26049 (number) - 店主用户ID
 + `shopkeeper_name`: `张三` (string) - 店主姓名
 + `province`: `湖南` (string) - 省份
 + `city`: `株洲` (string) - 城市
 + `user_phone`: `15207400547` (string) - 店主手机号
 + `shop_name`: `张三小店12千千万` (string) - 店铺名
++ `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
 + `user_grade`: `grade_platinum` (string) - 店铺等级
 + `user_grade_text`: `白金店主` (string) - 店铺等级
 + `parent_shopkeeper_user_id`: 25998 (number, nullable) - 上级店主用户ID
