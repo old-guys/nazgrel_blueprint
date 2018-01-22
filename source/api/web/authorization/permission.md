@@ -1,12 +1,12 @@
-# Group 角色管理
+# Group 权限管理
 
-## 角色 [/api/web/roles{?device,user_token}]
-### 角色列表 [GET]
-获取角色列表数据
+## 权限 [/api/web/permissions{?device,user_token}]
+### 权限列表 [GET]
+获取权限列表数据
 
 + Parameters
     + device: web (string, required) - 设备类型
-    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 角色 Token
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 权限 Token
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
@@ -21,7 +21,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleRole])
+            + models (array[SamplePermission])
 
     + Body
 
@@ -54,9 +54,9 @@
                                 },
                                 {
                                     "id": 7,
-                                    "name": "角色配置",
+                                    "name": "权限配置",
                                     "subject": "权限管理",
-                                    "uid": "/roles",
+                                    "uid": "/permissions",
                                     "updated_at": "2018-01-19T15:27:32.000+08:00",
                                     "created_at": "2018-01-19T15:27:32.000+08:00"
                                 }
@@ -78,9 +78,9 @@
                                 },
                                 {
                                     "id": 7,
-                                    "name": "角色配置",
+                                    "name": "权限配置",
                                     "subject": "权限管理",
-                                    "uid": "/roles",
+                                    "uid": "/permissions",
                                     "updated_at": "2018-01-19T15:27:32.000+08:00",
                                     "created_at": "2018-01-19T15:27:32.000+08:00"
                                 }
@@ -92,33 +92,34 @@
                 }
             }
 
-### 创建角色 [POST]
-创建角色
+### 创建权限 [POST]
+创建权限
 
 + Parameters
     + device: web (string, required) - 设备类型
-    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 角色 Token
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 权限 Token
 
 + Request (application/json)
     + Attributes (object)
-        + role (RoleParams)
-            + `name`: `开发人员` (string, required) - 角色名称
-            + `permission_ids`: `1` (array[number], optional) - 权限IDs
-              + `2`
+        + permission (PermissionParams)
+            + `name`: `开发人员` (string, required) - 权限名称
+            + `subject`: `权限配置` (string, optional) - 主题
+            + `uid`: `/permissions` (string, optional) - UID
 
     + Body
 
             {
-                "role": {
+                "permission": {
                     "name": "开发人员",
-                    "permission_ids": [1,2]
+                    "subject": "权限配置",
+                    "uid": "/permissions",
                 }
             }
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (SampleRole)
+        + data (SamplePermission)
 
     + Body
 
@@ -140,9 +141,9 @@
                         },
                         {
                             "id": 7,
-                            "name": "角色配置",
+                            "name": "权限配置",
                             "subject": "权限管理",
-                            "uid": "/roles",
+                            "uid": "/permissions",
                             "updated_at": "2018-01-19T15:27:32.000+08:00",
                             "created_at": "2018-01-19T15:27:32.000+08:00"
                         }
@@ -153,19 +154,19 @@
             }
 
 
-## 查看或者编辑角色 [/api/web/roles/{id}{?device,user_token}]
-### 角色详情 [GET]
-通过角色ID 获取角色详情
+## 查看或者编辑权限 [/api/web/permissions/{id}{?device,user_token}]
+### 权限详情 [GET]
+通过权限ID 获取权限详情
 
 + Parameters
     + device: web (string, required) - 设备类型
-    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 角色 Token
-    + id: 1 (string, required) - 角色ID
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 权限 Token
+    + id: 1 (string, required) - 权限ID
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (SampleRole)
+        + data (SamplePermission)
 
     + Body
 
@@ -187,9 +188,9 @@
                         },
                         {
                             "id": 7,
-                            "name": "角色配置",
+                            "name": "权限配置",
                             "subject": "权限管理",
-                            "uid": "/roles",
+                            "uid": "/permissions",
                             "updated_at": "2018-01-19T15:27:32.000+08:00",
                             "created_at": "2018-01-19T15:27:32.000+08:00"
                         }
@@ -199,34 +200,35 @@
                 }
             }
 
-### 更新角色 [PUT]
-通过渠道id更新角色的名称, 登陆密码, 状态等
+### 更新权限 [PUT]
+通过渠道id更新权限的名称, 登陆密码, 状态等
 
 + Parameters
     + device: web (string, required) - 设备类型
-    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 角色 Token
-    + id: 1 (number, required) - 角色id
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 权限 Token
+    + id: 1 (number, required) - 权限id
 
 + Request (application/json)
     + Attributes (object)
-        + role (RoleParams)
-            + `name`: `开发人员` (string, required) - 角色名称
-            + `permission_ids`: `1` (array[number], optional) - 权限IDs
-              + `2`
+        + permission (PermissionParams)
+            + `name`: `开发人员` (string, required) - 权限名称
+            + `subject`: `权限配置` (string, optional) - 主题
+            + `uid`: `/permissions` (string, optional) - UID
 
     + Body
 
             {
-                "role": {
+                "permission": {
                     "name": "开发人员",
-                    "permission_ids": [1,2]
+                    "subject": "权限配置",
+                    "uid": "/permissions",
                 }
             }
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (SampleRole)
+        + data (SamplePermission)
 
     + Body
 
@@ -248,9 +250,9 @@
                         },
                         {
                             "id": 7,
-                            "name": "角色配置",
+                            "name": "权限配置",
                             "subject": "权限管理",
-                            "uid": "/roles",
+                            "uid": "/permissions",
                             "updated_at": "2018-01-19T15:27:32.000+08:00",
                             "created_at": "2018-01-19T15:27:32.000+08:00"
                         }
@@ -260,18 +262,18 @@
                 }
             }
 
-### 删除角色 [DELETE]
-删除角色
+### 删除权限 [DELETE]
+删除权限
 
 + Parameters
     + device: web (string, required) - 设备类型
-    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 角色 Token
-    + id: 3 (number, required) - 角色id
+    + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 权限 Token
+    + id: 3 (number, required) - 权限id
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (SampleRole)
+        + data (SamplePermission)
 
     + Body
 
@@ -293,9 +295,9 @@
                         },
                         {
                             "id": 7,
-                            "name": "角色配置",
+                            "name": "权限配置",
                             "subject": "权限管理",
-                            "uid": "/roles",
+                            "uid": "/permissions",
                             "updated_at": "2018-01-19T15:27:32.000+08:00",
                             "created_at": "2018-01-19T15:27:32.000+08:00"
                         }
@@ -306,16 +308,12 @@
             }
 
 ## Data Structures
-### RoleParams (object)
+### PermissionParams (object)
 + `name`: `开发人员` (string) - 名称
-### SampleRole (object)
-+ `id`: 1 (number) - 角色ID
-+ `name`: `开发人员` (string) - 名称
-+ `permissions`(array[RolePermission]) - 角色权限
-### RolePermission (object)
+### SamplePermission (object)
 + `id`: 1 (number) - ID
 + `name`: `角色配置` (string) - 名称
 + `subject`: `权限管理` (string) - 主题
-+ `uid`: `/roles` (string) - UID
++ `uid`: `/permissions` (string) - UID
 + `created_at`: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 + `updated_at`: `2017-08-10T04:42:08.000+08:00` (string) - 更新时间

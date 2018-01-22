@@ -1,6 +1,6 @@
 # Group 用户管理
 
-## 用户 [/api/web/users{?device,user_token,channel_id,order,query,filters%5b%5d}]
+## 用户 [/api/web/users{?device,user_token,order,query,filters%5b%5d}]
 ### 用户列表 [GET]
 获取用户列表数据
 
