@@ -91,7 +91,7 @@
             + `email`: `test1@qq.com` (string, required) - 用户名称
             + `phone`: 123456789 (number, required) - 手机号
             + `password`: 11111111 (string, required) - 密码
-            + `role_ids`: `1` (array[number], optional) - 权限IDs
+            + `role_ids`: `1` (array[number], optional) - 角色IDs
               + `2`
 
     + Body
@@ -195,7 +195,7 @@
             + `email`: `test1@qq.com` (string, required) - 用户名称
             + `phone`: 123456789 (number, required) - 手机号
             + `password`: 11111111 (string, required) - 密码
-            + `role_ids`: `1` (array[number], optional) - 权限IDs
+            + `role_ids`: `1` (array[number], optional) - 角色IDs
               + `2`
 
     + Body
@@ -242,7 +242,8 @@
                 }
             }
 
-### 更新用户锁定状态 [DELETE]
+## 更新用户锁定状态 [/api/web/users/{id}/access_status{?device,user_token}]
+### 更新用户锁定状态 [PUT]
 更新用户锁定状态
 
 + Parameters
@@ -318,5 +319,5 @@
           + 普通用户
 + `role_ids`: `1` (array[number], optional) - 权限IDs
       + `2`
-+ created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
-+ updated_at: `2017-08-10T04:42:08.000+08:00` (string) - 更新时间
++ `created_at`: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
++ `updated_at`: `2017-08-10T04:42:08.000+08:00` (string) - 更新时间

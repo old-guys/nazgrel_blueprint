@@ -15,6 +15,7 @@ HOST: http://mock.bi.ishanggang.com
 <!-- include(api/web/auth.md) -->
 
 <!-- include(api/web/authorization/user.md) -->
+<!-- include(api/web/authorization/role.md) -->
 
 <!-- include(api/web/constant_setting.md) -->
 <!-- include(api/web/channel_region.md) -->
