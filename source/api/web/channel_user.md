@@ -129,7 +129,7 @@
             }
 
 
-## 查看或者编辑渠道用户 [/api/web/channels_users/{id}{?device,user_token}]
+## 查看或者编辑渠道用户 [/api/web/channel_users/{id}{?device,user_token}]
 ### 渠道用户详情 [GET]
 通过渠道用户ID 获取渠道用户详情
 
