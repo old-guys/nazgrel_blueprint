@@ -517,6 +517,8 @@
                             "order_amount": "8495570.43",
                             "shopkeeper_order_number": 0,
                             "shopkeeper_order_amount": "0.0",
+                            "sale_order_number": 671,
+                            "sale_order_amount": "8495570.43",
                             "commission_income_amount": "0.0",
                             "descendant_order_number": 1342,
                             "descendant_order_amount": "16991140.86",
@@ -556,6 +558,8 @@
                             "order_amount": "12990.03",
                             "shopkeeper_order_number": 1,
                             "shopkeeper_order_amount": "12990.0",
+                            "sale_order_number": 1,
+                            "sale_order_amount": "0.03",
                             "commission_income_amount": "2054.003",
                             "descendant_order_number": 477,
                             "descendant_order_amount": "69144.84",
@@ -595,6 +599,8 @@
                             "order_amount": "0.0",
                             "shopkeeper_order_number": 0,
                             "shopkeeper_order_amount": "0.0",
+                            "sale_order_number": 0,
+                            "sale_order_amount": "0.0",
                             "commission_income_amount": "0.0",
                             "descendant_order_number": 0,
                             "descendant_order_amount": "0.0",
@@ -637,6 +643,8 @@
                             "order_amount": "8495570.43",
                             "shopkeeper_order_number": 3,
                             "shopkeeper_order_amount": "38970.0",
+                            "sale_order_number": 668,
+                            "sale_order_amount": "8456600.43",
                             "commission_income_amount": "0.0",
                             "descendant_order_number": 671,
                             "descendant_order_amount": "8495570.43",
@@ -679,6 +687,8 @@
                             "order_amount": "8495570.43",
                             "shopkeeper_order_number": 0,
                             "shopkeeper_order_amount": "0.0",
+                            "sale_order_number": 671,
+                            "sale_order_amount": "8495570.43",
                             "commission_income_amount": "0.0",
                             "descendant_order_number": 0,
                             "descendant_order_amount": "0.0",
@@ -752,6 +762,8 @@
 + `order_amount`: 0.02 (string) - 订单销售金额
 + `shopkeeper_order_number`: 2003 (number) - 自购订单数
 + `shopkeeper_order_amount`: 312.02 (string) - 自购订单销售金额
++ `sale_order_number`: 2003 (number) - 销售订单数
++ `sale_order_amount`: 312.02 (string) - 销售订单销售金额
 + `commission_income_amount`: 0.02 (string) - 店铺佣金
 + `descendant_order_number`: 0 (number) - 下级店铺订单数
 + `descendant_order_amount`: 0.0 (string) - 下级店铺订单销售金额
