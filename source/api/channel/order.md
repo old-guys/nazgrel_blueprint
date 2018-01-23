@@ -37,70 +37,232 @@
     + Body
 
             {
-              "code": 0,
-              "data": {
-                "total_count": 366,
-                "per_page": 15,
-                "page": 1,
-                "models": [
-                  {
-                    "id": 10,
-                    "order_no": "1008141001729",
-                    "user_id": 24420,
-                    "shop_name": "解忧杂货店",
-                    "shop_username": "吉娜娜",
-                    "shop_user_id": 24420,
-                    "pay_time": "2017-08-10T04:42:08.000+08:00",
-                    "deliver_time": "2017-08-10T04:42:08.000+08:00",
-                    "finish_time": "2017-08-10T04:42:08.000+08:00",
-                    "cancel_time": "2017-08-10T04:42:08.000+08:00",
-                    "express_price": 0,
-                    "sale_price": 0,
-                    "comm": 3.59,
-                    "pay_price": 35.9,
-                    "total_price": 35.9,
-                    "order_status": "deliveried",
-                    "order_status_text": "待付款",
-                    "ref_type": "wechat_friend",
-                    "ref_type_text": "微信好友",
-                    "comm_setted": "no",
-                    "comm_setted_text": "否",
-                    "payed_push": "yes",
-                    "payed_push_text": "是",
-                    "global_freight_flag": "yes",
-                    "global_freight_flag_text": "是",
-                    "created_at": "2017-08-10T04:42:08.000+08:00"
-                  },
-                  {
-                    "id": 11,
-                    "order_no": "1008141003813",
-                    "user_id": 24420,
-                    "shop_name": "解忧杂货店",
-                    "shop_username": "吉娜娜",
-                    "shop_user_id": 24420,
-                    "pay_time": "2017-08-10T04:42:08.000+08:00",
-                    "deliver_time": "2017-08-10T04:42:08.000+08:00",
-                    "finish_time": "2017-08-10T04:42:08.000+08:00",
-                    "cancel_time": "2017-08-10T04:42:08.000+08:00",
-                    "express_price": 0,
-                    "sale_price": 0,
-                    "comm": 3.59,
-                    "pay_price": 35.9,
-                    "total_price": 35.9,
-                    "order_status": "deliveried",
-                    "order_status_text": "待付款",
-                    "ref_type": "wechat_friend",
-                    "ref_type_text": "微信好友",
-                    "comm_setted": "no",
-                    "comm_setted_text": "否",
-                    "payed_push": "yes",
-                    "payed_push_text": "是",
-                    "global_freight_flag": "yes",
-                    "global_freight_flag_text": "是",
-                    "created_at": "2017-08-10T04:42:08.000+08:00"
-                  }
-                ]
-              }
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "total_count": 2064,
+                    "total_pages": 138,
+                    "current_page": 1,
+                    "next_page": 2,
+                    "prev_page": null,
+                    "first_page?": true,
+                    "last_page?": false,
+                    "per_page": 15,
+                    "page": 0,
+                    "models": [
+                        {
+                            "id": 26976,
+                            "order_no": "1001141373765252",
+                            "shop_name": "国楠",
+                            "shop_username": "国楠",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.009",
+                            "pay_price": "0.1",
+                            "total_price": "0.1",
+                            "order_status": "canceled",
+                            "order_status_text": "已取消",
+                            "created_at": "2018-01-14T19:00:16.000+08:00"
+                        },
+                        {
+                            "id": 26975,
+                            "order_no": "1001141373763441",
+                            "shop_name": "国楠",
+                            "shop_username": "国楠",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.009",
+                            "pay_price": "0.1",
+                            "total_price": "0.1",
+                            "order_status": "canceled",
+                            "order_status_text": "已取消",
+                            "created_at": "2018-01-14T18:57:56.000+08:00"
+                        },
+                        {
+                            "id": 26974,
+                            "order_no": "1001141373761857",
+                            "shop_name": "国楠",
+                            "shop_username": "国楠",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.009",
+                            "pay_price": "0.1",
+                            "total_price": "0.1",
+                            "order_status": "canceled",
+                            "order_status_text": "已取消",
+                            "created_at": "2018-01-14T18:56:35.000+08:00"
+                        },
+                        {
+                            "id": 26972,
+                            "order_no": "1001141373759662",
+                            "shop_name": "国楠",
+                            "shop_username": "国楠",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.012",
+                            "pay_price": "0.1",
+                            "total_price": "0.1",
+                            "order_status": "canceled",
+                            "order_status_text": "已取消",
+                            "created_at": "2018-01-14T18:50:04.000+08:00"
+                        },
+                        {
+                            "id": 26973,
+                            "order_no": "1001141373753980",
+                            "shop_name": "❤️我的",
+                            "shop_username": "(ಥ_ಥ)✔",
+                            "express_price": "0.0",
+                            "sale_price": "10.0",
+                            "comm": "12.0",
+                            "pay_price": "110.0",
+                            "total_price": "120.0",
+                            "order_status": "canceled",
+                            "order_status_text": "已取消",
+                            "created_at": "2018-01-14T17:54:55.000+08:00"
+                        },
+                        {
+                            "id": 26971,
+                            "order_no": "1001141373751242",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "4.0",
+                            "pay_price": "40.0",
+                            "total_price": "40.0",
+                            "order_status": "awaiting_payment",
+                            "order_status_text": "待付款",
+                            "created_at": "2018-01-14T11:39:59.000+08:00"
+                        },
+                        {
+                            "id": 26970,
+                            "order_no": "1001121373279477",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T16:42:03.000+08:00"
+                        },
+                        {
+                            "id": 26969,
+                            "order_no": "1001121373277370",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.01",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T16:38:12.000+08:00"
+                        },
+                        {
+                            "id": 26968,
+                            "order_no": "1001121373275178",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.01",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_payment",
+                            "order_status_text": "待付款",
+                            "created_at": "2018-01-12T16:37:03.000+08:00"
+                        },
+                        {
+                            "id": 26967,
+                            "order_no": "1001121373273466",
+                            "shop_name": "❤️我的",
+                            "shop_username": "(ಥ_ಥ)✔",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T16:22:46.000+08:00"
+                        },
+                        {
+                            "id": 26966,
+                            "order_no": "1001121373271159",
+                            "shop_name": "❤️我的",
+                            "shop_username": "(ಥ_ಥ)✔",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T15:53:57.000+08:00"
+                        },
+                        {
+                            "id": 26965,
+                            "order_no": "1001121373269523",
+                            "shop_name": "❤️我的",
+                            "shop_username": "(ಥ_ಥ)✔",
+                            "express_price": "0.0",
+                            "sale_price": "100.0",
+                            "comm": "1.0",
+                            "pay_price": "1.0",
+                            "total_price": "10.0",
+                            "order_status": "canceled",
+                            "order_status_text": "已取消",
+                            "created_at": "2018-01-12T15:52:01.000+08:00"
+                        },
+                        {
+                            "id": 26962,
+                            "order_no": "1001121373263477",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.01",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "canceled",
+                            "order_status_text": "已取消",
+                            "created_at": "2018-01-12T15:04:20.000+08:00"
+                        },
+                        {
+                            "id": 26961,
+                            "order_no": "1001121373261237",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "10.0",
+                            "pay_price": "10.0",
+                            "total_price": "10.0",
+                            "order_status": "canceled",
+                            "order_status_text": "已取消",
+                            "created_at": "2018-01-12T14:45:20.000+08:00"
+                        },
+                        {
+                            "id": 26960,
+                            "order_no": "1001121373259226",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.01",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "canceled",
+                            "order_status_text": "已取消",
+                            "created_at": "2018-01-12T14:40:42.000+08:00"
+                        }
+                    ]
+                }
             }
 
 ## 待发货订单 [/api/channel/orders/awaiting_delivery{?device,user_token,order,channel_id,query,filters%5b%5d}]
@@ -140,70 +302,232 @@
     + Body
 
             {
-              "code": 0,
-              "data": {
-                "total_count": 366,
-                "per_page": 15,
-                "page": 1,
-                "models": [
-                  {
-                    "id": 10,
-                    "order_no": "1008141001729",
-                    "user_id": 24420,
-                    "shop_name": "解忧杂货店",
-                    "shop_username": "吉娜娜",
-                    "shop_user_id": 24420,
-                    "pay_time": "2017-08-10T04:42:08.000+08:00",
-                    "deliver_time": "2017-08-10T04:42:08.000+08:00",
-                    "finish_time": "2017-08-10T04:42:08.000+08:00",
-                    "cancel_time": "2017-08-10T04:42:08.000+08:00",
-                    "express_price": 0,
-                    "sale_price": 0,
-                    "comm": 3.59,
-                    "pay_price": 35.9,
-                    "total_price": 35.9,
-                    "order_status": "deliveried",
-                    "order_status_text": "待付款",
-                    "ref_type": "wechat_friend",
-                    "ref_type_text": "微信好友",
-                    "comm_setted": "no",
-                    "comm_setted_text": "否",
-                    "payed_push": "yes",
-                    "payed_push_text": "是",
-                    "global_freight_flag": "yes",
-                    "global_freight_flag_text": "是",
-                    "created_at": "2017-08-10T04:42:08.000+08:00"
-                  },
-                  {
-                    "id": 11,
-                    "order_no": "1008141003813",
-                    "user_id": 24420,
-                    "shop_name": "解忧杂货店",
-                    "shop_username": "吉娜娜",
-                    "shop_user_id": 24420,
-                    "pay_time": "2017-08-10T04:42:08.000+08:00",
-                    "deliver_time": "2017-08-10T04:42:08.000+08:00",
-                    "finish_time": "2017-08-10T04:42:08.000+08:00",
-                    "cancel_time": "2017-08-10T04:42:08.000+08:00",
-                    "express_price": 0,
-                    "sale_price": 0,
-                    "comm": 3.59,
-                    "pay_price": 35.9,
-                    "total_price": 35.9,
-                    "order_status": "deliveried",
-                    "order_status_text": "待付款",
-                    "ref_type": "wechat_friend",
-                    "ref_type_text": "微信好友",
-                    "comm_setted": "no",
-                    "comm_setted_text": "否",
-                    "payed_push": "yes",
-                    "payed_push_text": "是",
-                    "global_freight_flag": "yes",
-                    "global_freight_flag_text": "是",
-                    "created_at": "2017-08-10T04:42:08.000+08:00"
-                  }
-                ]
-              }
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "total_count": 364,
+                    "total_pages": 25,
+                    "current_page": 1,
+                    "next_page": 2,
+                    "prev_page": null,
+                    "first_page?": true,
+                    "last_page?": false,
+                    "per_page": 15,
+                    "page": 0,
+                    "models": [
+                        {
+                            "id": 26970,
+                            "order_no": "1001121373279477",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T16:42:03.000+08:00"
+                        },
+                        {
+                            "id": 26969,
+                            "order_no": "1001121373277370",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.01",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T16:38:12.000+08:00"
+                        },
+                        {
+                            "id": 26967,
+                            "order_no": "1001121373273466",
+                            "shop_name": "❤️我的",
+                            "shop_username": "(ಥ_ಥ)✔",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T16:22:46.000+08:00"
+                        },
+                        {
+                            "id": 26966,
+                            "order_no": "1001121373271159",
+                            "shop_name": "❤️我的",
+                            "shop_username": "(ಥ_ಥ)✔",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T15:53:57.000+08:00"
+                        },
+                        {
+                            "id": 26953,
+                            "order_no": "1001121373245805",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.01",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T13:57:11.000+08:00"
+                        },
+                        {
+                            "id": 26952,
+                            "order_no": "1001121373243612",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T13:47:03.000+08:00"
+                        },
+                        {
+                            "id": 26950,
+                            "order_no": "1001121373239919",
+                            "shop_name": "¥ātomoの㊣",
+                            "shop_username": "郑明",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T13:38:04.000+08:00"
+                        },
+                        {
+                            "id": 26947,
+                            "order_no": "1001121373233851",
+                            "shop_name": "¥ātomoの㊣",
+                            "shop_username": "郑明",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T13:36:52.000+08:00"
+                        },
+                        {
+                            "id": 26946,
+                            "order_no": "1001121373231980",
+                            "shop_name": "¥ātomoの㊣",
+                            "shop_username": "郑明",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.01",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T13:36:14.000+08:00"
+                        },
+                        {
+                            "id": 26933,
+                            "order_no": "1001121373203632",
+                            "shop_name": "测试",
+                            "shop_username": "123",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.08",
+                            "pay_price": "0.08",
+                            "total_price": "0.08",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-12T10:56:55.000+08:00"
+                        },
+                        {
+                            "id": 26918,
+                            "order_no": "1001031371461922",
+                            "shop_name": "见习的小店",
+                            "shop_username": "见习",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.5",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2018-01-03T10:50:12.000+08:00"
+                        },
+                        {
+                            "id": 26120,
+                            "order_no": "1012071369657283",
+                            "shop_name": "玛莎拉蒂的小店",
+                            "shop_username": "玛莎拉蒂V6",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.007",
+                            "pay_price": "0.03",
+                            "total_price": "0.03",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2017-12-07T15:16:19.000+08:00"
+                        },
+                        {
+                            "id": 26119,
+                            "order_no": "1012071369655157",
+                            "shop_name": "奔驰的小店",
+                            "shop_username": "奔驰",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.007",
+                            "pay_price": "0.03",
+                            "total_price": "0.03",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2017-12-07T15:08:42.000+08:00"
+                        },
+                        {
+                            "id": 26118,
+                            "order_no": "1012071369653935",
+                            "shop_name": "奔驰的小店",
+                            "shop_username": "奔驰",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.002",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2017-12-07T15:06:16.000+08:00"
+                        },
+                        {
+                            "id": 26116,
+                            "order_no": "1012071369649698",
+                            "shop_name": "王2的小店",
+                            "shop_username": "王2",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.002",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "awaiting_delivery",
+                            "order_status_text": "待发货",
+                            "created_at": "2017-12-07T14:52:58.000+08:00"
+                        }
+                    ]
+                }
             }
 
 ## 退款订单 [/api/channel/orders/refund{?device,user_token,order,channel_id,query,filters%5b%5d}]
@@ -243,70 +567,232 @@
     + Body
 
             {
-              "code": 0,
-              "data": {
-                "total_count": 366,
-                "per_page": 15,
-                "page": 1,
-                "models": [
-                  {
-                    "id": 10,
-                    "order_no": "1008141001729",
-                    "user_id": 24420,
-                    "shop_name": "解忧杂货店",
-                    "shop_username": "吉娜娜",
-                    "shop_user_id": 24420,
-                    "pay_time": "2017-08-10T04:42:08.000+08:00",
-                    "deliver_time": "2017-08-10T04:42:08.000+08:00",
-                    "finish_time": "2017-08-10T04:42:08.000+08:00",
-                    "cancel_time": "2017-08-10T04:42:08.000+08:00",
-                    "express_price": 0,
-                    "sale_price": 0,
-                    "comm": 3.59,
-                    "pay_price": 35.9,
-                    "total_price": 35.9,
-                    "order_status": "deliveried",
-                    "order_status_text": "待付款",
-                    "ref_type": "wechat_friend",
-                    "ref_type_text": "微信好友",
-                    "comm_setted": "no",
-                    "comm_setted_text": "否",
-                    "payed_push": "yes",
-                    "payed_push_text": "是",
-                    "global_freight_flag": "yes",
-                    "global_freight_flag_text": "是",
-                    "created_at": "2017-08-10T04:42:08.000+08:00"
-                  },
-                  {
-                    "id": 11,
-                    "order_no": "1008141003813",
-                    "user_id": 24420,
-                    "shop_name": "解忧杂货店",
-                    "shop_username": "吉娜娜",
-                    "shop_user_id": 24420,
-                    "pay_time": "2017-08-10T04:42:08.000+08:00",
-                    "deliver_time": "2017-08-10T04:42:08.000+08:00",
-                    "finish_time": "2017-08-10T04:42:08.000+08:00",
-                    "cancel_time": "2017-08-10T04:42:08.000+08:00",
-                    "express_price": 0,
-                    "sale_price": 0,
-                    "comm": 3.59,
-                    "pay_price": 35.9,
-                    "total_price": 35.9,
-                    "order_status": "deliveried",
-                    "order_status_text": "待付款",
-                    "ref_type": "wechat_friend",
-                    "ref_type_text": "微信好友",
-                    "comm_setted": "no",
-                    "comm_setted_text": "否",
-                    "payed_push": "yes",
-                    "payed_push_text": "是",
-                    "global_freight_flag": "yes",
-                    "global_freight_flag_text": "是",
-                    "created_at": "2017-08-10T04:42:08.000+08:00"
-                  }
-                ]
-              }
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "total_count": 364,
+                    "total_pages": 25,
+                    "current_page": 1,
+                    "next_page": 2,
+                    "prev_page": null,
+                    "first_page?": true,
+                    "last_page?": false,
+                    "per_page": 15,
+                    "page": 0,
+                    "models": [
+                        {
+                            "id": 26970,
+                            "order_no": "1001121373279477",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-12T16:42:03.000+08:00"
+                        },
+                        {
+                            "id": 26969,
+                            "order_no": "1001121373277370",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.01",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-12T16:38:12.000+08:00"
+                        },
+                        {
+                            "id": 26967,
+                            "order_no": "1001121373273466",
+                            "shop_name": "❤️我的",
+                            "shop_username": "(ಥ_ಥ)✔",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-12T16:22:46.000+08:00"
+                        },
+                        {
+                            "id": 26966,
+                            "order_no": "1001121373271159",
+                            "shop_name": "❤️我的",
+                            "shop_username": "(ಥ_ಥ)✔",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-12T15:53:57.000+08:00"
+                        },
+                        {
+                            "id": 26953,
+                            "order_no": "1001121373245805",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.01",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-12T13:57:11.000+08:00"
+                        },
+                        {
+                            "id": 26952,
+                            "order_no": "1001121373243612",
+                            "shop_name": "@fd**",
+                            "shop_username": "美美",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-12T13:47:03.000+08:00"
+                        },
+                        {
+                            "id": 26950,
+                            "order_no": "1001121373239919",
+                            "shop_name": "¥ātomoの㊣",
+                            "shop_username": "郑明",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-12T13:38:04.000+08:00"
+                        },
+                        {
+                            "id": 26947,
+                            "order_no": "1001121373233851",
+                            "shop_name": "¥ātomoの㊣",
+                            "shop_username": "郑明",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.001",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-12T13:36:52.000+08:00"
+                        },
+                        {
+                            "id": 26946,
+                            "order_no": "1001121373231980",
+                            "shop_name": "¥ātomoの㊣",
+                            "shop_username": "郑明",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.01",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-12T13:36:14.000+08:00"
+                        },
+                        {
+                            "id": 26933,
+                            "order_no": "1001121373203632",
+                            "shop_name": "测试",
+                            "shop_username": "123",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.08",
+                            "pay_price": "0.08",
+                            "total_price": "0.08",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-12T10:56:55.000+08:00"
+                        },
+                        {
+                            "id": 26918,
+                            "order_no": "1001031371461922",
+                            "shop_name": "见习的小店",
+                            "shop_username": "见习",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.5",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2018-01-03T10:50:12.000+08:00"
+                        },
+                        {
+                            "id": 26120,
+                            "order_no": "1012071369657283",
+                            "shop_name": "玛莎拉蒂的小店",
+                            "shop_username": "玛莎拉蒂V6",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.007",
+                            "pay_price": "0.03",
+                            "total_price": "0.03",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2017-12-07T15:16:19.000+08:00"
+                        },
+                        {
+                            "id": 26119,
+                            "order_no": "1012071369655157",
+                            "shop_name": "奔驰的小店",
+                            "shop_username": "奔驰",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.007",
+                            "pay_price": "0.03",
+                            "total_price": "0.03",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2017-12-07T15:08:42.000+08:00"
+                        },
+                        {
+                            "id": 26118,
+                            "order_no": "1012071369653935",
+                            "shop_name": "奔驰的小店",
+                            "shop_username": "奔驰",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.002",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2017-12-07T15:06:16.000+08:00"
+                        },
+                        {
+                            "id": 26116,
+                            "order_no": "1012071369649698",
+                            "shop_name": "王2的小店",
+                            "shop_username": "王2",
+                            "express_price": "0.0",
+                            "sale_price": "0.0",
+                            "comm": "0.002",
+                            "pay_price": "0.01",
+                            "total_price": "0.01",
+                            "order_status": "refund",
+                            "order_status_text": "退款",
+                            "created_at": "2017-12-07T14:52:58.000+08:00"
+                        }
+                    ]
+                }
             }
 
 ## 订单详情 [/api/channel/orders/{id}{?device,user_token}]
@@ -448,15 +934,8 @@
 ### SampleOrder (object)
 + id: 10 (number) - 订单ID
 + order_no: 1008141001729 (string) - 订单编号
-+ user_id: 24420 (number) - 用户id
-+ shop_id: 1 (number) - 店铺id
 + shop_name: 解忧杂货店 (string) - 店铺名
 + shop_username: 吉娜娜 (string) - 店主名
-+ shop_user_id: 24420 (number) - 店主id
-+ pay_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 支付日期
-+ deliver_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 订单发货日期
-+ finish_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 订单完成日期
-+ cancel_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 订单取消日期
 + express_price: 0 (number, nullable) - 运费
 + sale_price: 0 (number) - 优惠价格
 + comm: 3.59 (number) - 佣金相关值
@@ -464,14 +943,6 @@
 + total_price: 35.9 (number) - 总价
 + order_status: deliveried (string) - 订单状态
 + order_status_text: 待付款 (string) - 订单状态文本描述
-+ ref_type: wechat_friend (string) - 订单渠道
-+ ref_type_text: 微信好友 (string) - 订单渠道文本描述
-+ comm_setted: no (string) - 是否已经结算佣金
-+ comm_setted_text: 否 (string) - 是否已经结算佣金文本描述
-+ payed_push: yes (string) - 是否推送
-+ payed_push_text: 是 (string) - 是否推送文本描述
-+ global_freight_flag: yes (string) - 是否满足全局包邮
-+ global_freight_flag_text: 是 (string) - 是否满足全局包邮文本描述
 + created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 ### Order (object)
 + id: 10 (number) - 订单ID
