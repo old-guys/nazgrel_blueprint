@@ -1,6 +1,6 @@
 # Group 店主ECN
 
-## 店主ECN列表 [GET /api/web/report/channel_shop_newers{?device,user_token,created_at,ecn_count,shopkeeper%5buser_name%5d,shopkeeper%5buser_phone%5d}]
+## 店主ECN列表 [GET /api/web/report/shop_ecns{?device,user_token,created_at,ecn_count,shopkeeper%5buser_name%5d,shopkeeper%5buser_phone%5d}]
 获取店主ECN列表
 
 + Parameters
