@@ -18,7 +18,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShopActivityViewCountRank])
+        + data (array[ShopActivityViewCountRank], fixed)
 
     + Body
 
@@ -137,7 +137,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShopActivitySharedCountRank])
+        + data (array[ShopActivitySharedCountRank], fixed)
 
     + Body
 
@@ -257,7 +257,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShopActivityViewerCountRank])
+        + data (array[ShopActivityViewerCountRank], fixed)
 
     + Body
 
@@ -379,7 +379,7 @@
           + `city`: 北京 (string) - 城市
           + `descendant_activation_rate`: `98.4%` (string) - 下级店铺激活率
           + `descendant_count`: 384 (number) - 下级店铺数
-          + `activity_info` (array[ShopActivityActivityInfo]) - 流量信息
+          + `activity_info` (array[ShopActivityActivityInfo], fixed) - 流量信息
 
     + Body
 
@@ -465,7 +465,7 @@
           + `view_count`: 30 (number) - 浏览量
           + `shared_count`: 2 (number) - 分享量
           + `viewer_count`: 5 (number) - 访客量
-          + `details` (array[ShopActivityActivityDetail]) - 流量信息
+          + `details` (array[ShopActivityActivityDetail], fixed) - 流量信息
 
     + Body
 
@@ -548,7 +548,7 @@
     + Attributes (object)
         + code: 0 (number) - 错误码
         + data (object)
-          + `models` (array[ShopActivityActivationRank])
+          + `models` (array[ShopActivityActivationRank], fixed)
 
     + Body
 
@@ -607,7 +607,7 @@
     + Attributes (object)
         + code: 0 (number) - 错误码
         + data (object)
-          + `models` (array[ShopActivityActivationRank])
+          + `models` (array[ShopActivityActivationRank], fixed)
 
     + Body
 

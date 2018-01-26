@@ -66,7 +66,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShowShopChildrenRank])
+        + data (array[ShowShopChildrenRank], fixed)
 
     + Body
 
@@ -183,7 +183,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShowShopCityRank])
+        + data (array[ShowShopCityRank], fixed)
 
     + Body
 

@@ -33,7 +33,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleOrder])
+            + models (array[SampleOrder], fixed)
     + Body
 
             {
@@ -298,7 +298,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleOrder])
+            + models (array[SampleOrder], fixed)
     + Body
 
             {
@@ -563,7 +563,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleOrder])
+            + models (array[SampleOrder], fixed)
     + Body
 
             {
@@ -947,7 +947,7 @@
 ### Order (object)
 + id: 10 (number) - 订单ID
 + order_no: 1008141001729 (string) - 订单编号
-+ order_subs (array[OrderSub])
++ order_subs (array[OrderSub], fixed)
 + user_id: ozaPNwWHz4uQbK8BovAsW5C9JqcQ (string) - 用户id
 + user_phone: 15901836867 (string) - 用户手机号
 + user_phone_mask: ********* (string) - 用户手机号隐藏格式
@@ -995,7 +995,7 @@
 + id: 10 (number) - 订单ID
 + sub_order_no: 1112051369610020 (string) - 子订单编号
 + order_express (OrderExpress) - 物流订单
-+ order_details (array[OrderDetail]) - 物流订单
++ order_details (array[OrderDetail], fixed) - 物流订单
 + supplier_id: 1 (number) - 供应商ID
 + supplier (OrderSupplier) - 供应商
 + express_price: 0 (number) - 运费

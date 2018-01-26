@@ -28,7 +28,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleShopkeeper])
+            + models (array[SampleShopkeeper], fixed)
     + Body
 
             {
@@ -286,7 +286,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SalesShopkeeper])
+            + models (array[SalesShopkeeper], fixed)
     + Body
 
             {
@@ -478,7 +478,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[ReportShopkeeper])
+            + models (array[ReportShopkeeper], fixed)
     + Body
 
             {
