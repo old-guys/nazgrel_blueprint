@@ -54,6 +54,9 @@
                             "day_0_order_amount": "58.0",
                             "day_7_order_amount": "200.0",
                             "day_30_order_amount": "1000.0",
+                            "day_0_commission_income_amount": "18.0",
+                            "day_7_commission_income_amount": "220.0",
+                            "day_30_commission_income_amount": "500.0",
                             "day_0_shopkeeper_order_amount": "20.0",
                             "day_7_shopkeeper_order_amount": "20.0",
                             "day_30_shopkeeper_order_amount": "230.0",
@@ -90,6 +93,9 @@
                             "day_0_order_amount": "108.0",
                             "day_7_order_amount": "200.0",
                             "day_30_order_amount": "1000.0",
+                            "day_0_commission_income_amount": "18.0",
+                            "day_7_commission_income_amount": "220.0",
+                            "day_30_commission_income_amount": "500.0",
                             "day_0_shopkeeper_order_amount": "20.0",
                             "day_7_shopkeeper_order_amount": "20.0",
                             "day_30_shopkeeper_order_amount": "230.0",
@@ -126,6 +132,9 @@
                             "day_0_order_amount": "0.0",
                             "day_7_order_amount": "0.0",
                             "day_30_order_amount": "0.0",
+                            "day_0_commission_income_amount": "0",
+                            "day_7_commission_income_amount": "0",
+                            "day_30_commission_income_amount": "0",
                             "day_0_shopkeeper_order_amount": "0.0",
                             "day_7_shopkeeper_order_amount": "0.0",
                             "day_30_shopkeeper_order_amount": "0.0",
@@ -167,6 +176,9 @@
 + `day_0_order_amount`: 0 (string) - 当天订单金额
 + `day_7_order_amount`: 10 (string) - 7天订单金额
 + `day_30_order_amount`: 13 (string) - 30天订单金额
++ `day_0_commission_income_amount`: 0 (string) - 当天店铺佣金
++ `day_7_commission_income_amount`: 10 (string) - 7天店铺佣金
++ `day_30_commission_income_amount`: 13 (string) - 30天店铺佣金
 + `day_0_shopkeeper_order_amount`: 0 (string) - 当天自购订单金额
 + `day_7_shopkeeper_order_amount`: 10 (string) - 7天自购订单金额
 + `day_30_shopkeeper_order_amount`: 13 (string) - 30天自购订单金额
