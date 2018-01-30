@@ -26,7 +26,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleReportShopEcn], fixed)
+            + models (array[SampleReportShopEcn], fixed-type)
 
     + Body
 
@@ -76,11 +76,11 @@
 + `shop_name`: 徐六六 (string) - 店铺名
 + `channel_id`: 1 (string, nullable) - 渠道ID
 + `channel_name`: 上海 (string) - 渠道名
-+ `shopkeeper_user_id`: `8910` (string) - 店主ID
++ `shopkeeper_user_id`: `8910` (number) - 店主ID
 + `shopkeeper_user_name`: `王健雄` (string) - 店主名
 + `shopkeeper_user_phone`: `19888888888` (string) - 店主手机号
 + `ecn_count`: 0 (number) - ECN数
-+ `ancestry_rate`: `0.22%` (string) - 上级总数占比
++ `ancestry_rate`: `0.22%` (string, nullable) - 上级总数占比
 + `ecn_grade_platinum_count`: 0 (number) - ECN白金数
 + `ecn_grade_gold_count`: 0 (number) - ECN黄金数
 + `children_count`: 0 (number) - 直接邀请数

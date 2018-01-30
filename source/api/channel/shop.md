@@ -33,7 +33,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleShop], fixed)
+            + models (array[SampleShop], fixed-type)
     + Body
 
             {
@@ -100,7 +100,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleShop], fixed)
+            + models (array[SampleShop], fixed-type)
     + Body
 
             {
@@ -149,7 +149,7 @@
         + data (object)
             + id: 490 (number) - 店铺ID
             + name: 818的小店 (string) - 店铺名称
-            + children (array[SampleShop], fixed)
+            + children (array[SampleShop], fixed-type)
     + Body
 
             {
@@ -213,7 +213,7 @@
                   + grade_platinum_count: 8 (number) - 白金店主个数
                   + grade_gold_count: 22 (number) - 黄金店主个数
               + parent (shopkeeperProfile) - 上级店主
-                  + tree_list (array[shopkeeperProfile], fixed) - 邀请人列表
+                  + tree_list (array[shopkeeperProfile], fixed-type) - 邀请人列表
               + total_income_amount: 2000 (string) - 账户总收入
               + commission_income_amount: 233 (string) - 佣金收入
               + withdraw_amount: 23 (string) - 已提现金额
@@ -296,7 +296,7 @@
 + parent_shopkeeper_name: 高强 (string) - 上级店主
 + child_count: 3 (number) - 直接邀请数
 + indirectly_descendant: 8 (number) - 间接邀请数
-+ commission_amount: 200.0 (string) - 佣金
++ commission_amount: 200.0 (string, nullable) - 佣金
 + created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 
 ### shopkeeperProfile (object)

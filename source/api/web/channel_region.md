@@ -28,7 +28,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleChannelRegion], fixed)
+            + models (array[SampleChannelRegion], fixed-type)
 
     + Body
 

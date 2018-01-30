@@ -21,7 +21,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleRole], fixed)
+            + models (array[SampleRole], fixed-type)
 
     + Body
 
@@ -311,7 +311,7 @@
 ### SampleRole (object)
 + `id`: 1 (number) - 角色ID
 + `name`: `开发人员` (string) - 名称
-+ `permissions`(array[RolePermission], fixed) - 角色权限
++ `permissions`(array[RolePermission], fixed-type) - 角色权限
 ### RolePermission (object)
 + `id`: 1 (number) - ID
 + `name`: `角色配置` (string) - 名称

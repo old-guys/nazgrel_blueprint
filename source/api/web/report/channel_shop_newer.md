@@ -23,7 +23,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleReportChannelShopNewer], fixed)
+            + models (array[SampleReportChannelShopNewer], fixed-type)
 
     + Body
 
@@ -91,7 +91,7 @@
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
             + summary (ReportChannelShopNewerSummary)
-            + models (array[ReportChannelShopNewerTimeType], fixed)
+            + models (array[ReportChannelShopNewerTimeType], fixed-type)
 
     + Body
 

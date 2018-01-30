@@ -33,7 +33,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleOrder], fixed)
+            + models (array[SampleOrder], fixed-type)
     + Body
 
             {
@@ -298,7 +298,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleOrder], fixed)
+            + models (array[SampleOrder], fixed-type)
     + Body
 
             {
@@ -563,7 +563,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleOrder], fixed)
+            + models (array[SampleOrder], fixed-type)
     + Body
 
             {
@@ -936,18 +936,18 @@
 + order_no: 1008141001729 (string) - 订单编号
 + shop_name: 解忧杂货店 (string) - 店铺名
 + shop_username: 吉娜娜 (string) - 店主名
-+ express_price: 0 (number, nullable) - 运费
-+ sale_price: 0 (number) - 优惠价格
-+ comm: 3.59 (number) - 佣金相关值
-+ pay_price: 35.9 (number) - 支付价格
-+ total_price: 35.9 (number) - 总价
++ express_price: 0 (string, nullable) - 运费
++ sale_price: 0 (string) - 优惠价格
++ comm: 3.59 (string) - 佣金相关值
++ pay_price: 35.9 (string) - 支付价格
++ total_price: 35.9 (string) - 总价
 + order_status: deliveried (string) - 订单状态
 + order_status_text: 待付款 (string) - 订单状态文本描述
 + created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 ### Order (object)
 + id: 10 (number) - 订单ID
 + order_no: 1008141001729 (string) - 订单编号
-+ order_subs (array[OrderSub], fixed)
++ order_subs (array[OrderSub], fixed-type)
 + user_id: ozaPNwWHz4uQbK8BovAsW5C9JqcQ (string) - 用户id
 + user_phone: 15901836867 (string) - 用户手机号
 + user_phone_mask: ********* (string) - 用户手机号隐藏格式
@@ -974,7 +974,7 @@
 + deliver_time: `2017-08-10T04:42:08.000+08:00` (string, nullable) - 订单发货日期
 + finish_time: `2017-08-10T04:42:08.000+08:00` (string, optional, nullable) - 订单完成日期
 + cancel_time: `2017-08-10T04:42:08.000+08:00` (string, optional, nullable) - 订单取消日期
-+ express_price: 0 (string) - 运费
++ express_price: 0 (string, nullable) - 运费
 + sale_price: 0 (string) - 优惠价格
 + comm: 3.59 (string) - 佣金相关值
 + pay_price: 35.9 (string) - 支付价格
@@ -993,15 +993,15 @@
 + created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 ### OrderSub (object)
 + id: 10 (number) - 订单ID
-+ sub_order_no: 1112051369610020 (string) - 子订单编号
++ sub_order_no: 1112051369610020 (number) - 子订单编号
 + order_express (OrderExpress) - 物流订单
-+ order_details (array[OrderDetail], fixed) - 物流订单
++ order_details (array[OrderDetail], fixed-type) - 物流订单
 + supplier_id: 1 (number) - 供应商ID
 + supplier (OrderSupplier) - 供应商
-+ express_price: 0 (number) - 运费
-+ express_free_price: 200 (number) - 满多少包邮
++ express_price: 0 (string) - 运费
++ express_free_price: 200 (string) - 满多少包邮
 + version: 0 (number)
-+ activity_id: 0 (number) - 活动ID
++ activity_id: 0 (number, nullable) - 活动ID
 + shop_user_deliveried_push: yes (string) - 已发货状态订单, 店主
 + shop_user_deliveried_push_text: 是 (string) - 已发货状态订单, 店主
 + user_deliveried_push: yes (string) - 已发货状态订单, 用户
@@ -1020,12 +1020,12 @@
 + product_name: 联合利华商品 (string) - 商品名称
 + product_image: image_url (string) - 商品图片
 + product_num: 1 (number) - 商品数量
-+ product_market_price: 0.02 (number) - 商品市场价格
-+ product_sale_price: 0.01 (number) - 商品销售价格
++ product_market_price: 0.02 (string) - 商品市场价格
++ product_sale_price: 0.01 (string) - 商品销售价格
 + commission_rate: 12 (number) - 佣金比例
-+ express_price: 0 (number) - 快递价格
++ express_price: 0 (string) - 快递价格
 + product_group_id: 0 (number, nullable) - 商品组合编号
-+ product_old_sale_price: 0.01 (number) - 原始价格
++ product_old_sale_price: 0.01 (string) - 原始价格
 + is_free_delivery: yes (string) - 是否包邮
 + is_free_delivery_text: 是 (string) - 是否包邮
 + product_label_type: yes (string) - 商品类型
@@ -1039,9 +1039,9 @@
 + name: 芝麻城官方 (string) - 运费
 + url (string) - 网址
 + logo (string) - logo
-+ desc (string) - 简介
-+ status (string) - 状态
-+ status_text (string) - 状态
++ desc (string, nullable) - 简介
++ status (string, nullable) - 状态
++ status_text (string, nullable) - 状态
 + created_at: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 ### OrderExpress (object)
 + id: 165 (number) - 物流订单ID

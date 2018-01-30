@@ -44,7 +44,7 @@
     + Attributes (object)
         + code: 0 (number) - 错误码
         + data (object)
-            + today (array[HotSalesProduct], fixed)
+            + today (array[HotSalesProduct], fixed-type)
     + Body
 
             {
