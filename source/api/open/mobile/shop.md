@@ -66,7 +66,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShowShopChildrenRank], fixed)
+        + data (array[ShowShopChildrenRank], fixed-type)
 
     + Body
 
@@ -183,7 +183,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShowShopCityRank], fixed)
+        + data (array[ShowShopCityRank], fixed-type)
 
     + Body
 
@@ -294,8 +294,8 @@
 + `shop_name`: `XP测试店铺2018` (string) - 店铺名
 + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
 + `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
-+ `order_amount`: `0.0` (string) - 销售额
-+ `commission_income_amount`: `0.0` (string) - 佣金额
++ `order_amount`: `0.0` (string, nullable) - 销售额
++ `commission_income_amount`: `0.0` (string, nullable) - 佣金额
 + `city`: `上海` (string) - 城市
 + `count`: 3 (number) - 数量
 ### ShowShopCityRank (object)

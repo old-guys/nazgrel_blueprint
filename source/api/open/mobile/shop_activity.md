@@ -18,7 +18,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShopActivityViewCountRank], fixed)
+        + data (array[ShopActivityViewCountRank], fixed-type)
 
     + Body
 
@@ -137,7 +137,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShopActivitySharedCountRank], fixed)
+        + data (array[ShopActivitySharedCountRank], fixed-type)
 
     + Body
 
@@ -257,7 +257,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShopActivityViewerCountRank], fixed)
+        + data (array[ShopActivityViewerCountRank], fixed-type)
 
     + Body
 
@@ -379,7 +379,7 @@
           + `city`: 北京 (string) - 城市
           + `descendant_activation_rate`: `98.4%` (string) - 下级店铺激活率
           + `descendant_count`: 384 (number) - 下级店铺数
-          + `activity_info` (array[ShopActivityActivityInfo], fixed) - 流量信息
+          + `activity_info` (array[ShopActivityActivityInfo], fixed-type) - 流量信息
 
     + Body
 
@@ -465,7 +465,7 @@
           + `view_count`: 30 (number) - 浏览量
           + `shared_count`: 2 (number) - 分享量
           + `viewer_count`: 5 (number) - 访客量
-          + `details` (array[ShopActivityActivityDetail], fixed) - 流量信息
+          + `details` (array[ShopActivityActivityDetail], fixed-type) - 流量信息
 
     + Body
 
@@ -548,7 +548,7 @@
     + Attributes (object)
         + code: 0 (number) - 错误码
         + data (object)
-          + `models` (array[ShopActivityActivationRank], fixed)
+          + `models` (array[ShopActivityActivationRank], fixed-type)
 
     + Body
 
@@ -607,7 +607,7 @@
     + Attributes (object)
         + code: 0 (number) - 错误码
         + data (object)
-          + `models` (array[ShopActivityActivationRank], fixed)
+          + `models` (array[ShopActivityActivationRank], fixed-type)
 
     + Body
 
@@ -646,7 +646,7 @@
 + `shop_name`: `XP测试店铺2018` (string) - 店铺名
 + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
 + `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
-+ `city`: `上海` (string) - 城市
++ `city`: `上海` (string, nullable) - 城市
 + `count`: 3 (number) - 数量
 ### ShopActivitySharedCountRank (ShopActivityViewCountRank)
 ### ShopActivityViewerCountRank (ShopActivityViewCountRank)
@@ -664,6 +664,6 @@
 + `shop_id`: 12 (number) - 店铺ID
 + `shop_name`: `XP测试店铺2018` (string) - 店铺名
 + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
-+ `Shopkeeper_name`: `兰博基尼` (string) - 店主姓名
-+ `city`: `上海` (string) - 城市
-+ `descendant_activation_rate`: `98.4%` (string) - 下级店铺激活率
++ `shopkeeper_name`: `兰博基尼` (string) - 店主姓名
++ `city`: `上海` (string, nullable) - 城市
++ `descendant_activation_rate`: `98.4%` (string, nullable) - 下级店铺激活率

@@ -28,7 +28,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SampleShopkeeper], fixed)
+            + models (array[SampleShopkeeper], fixed-type)
     + Body
 
             {
@@ -286,7 +286,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[SalesShopkeeper], fixed)
+            + models (array[SalesShopkeeper], fixed-type)
     + Body
 
             {
@@ -478,7 +478,7 @@
             + last_page? (boolean) - 是否最后一页
             + per_page: 15 (number) - 每页条数
             + page: 1 (number) - 页码
-            + models (array[ReportShopkeeper], fixed)
+            + models (array[ReportShopkeeper], fixed-type)
     + Body
 
             {
@@ -721,7 +721,7 @@
 ## Data Structures
 ### SampleShopkeeper (object)
 + `id`: 10 (number) - ID
-+ `shop_id`: `cpencil芝蚂店` (string) - 店铺ID
++ `shop_id`: `2` (number) - 店铺ID
 + `shop_name`: `王1的小店` (string) - 店铺名称
 + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
 + `shopkeeper_name`: `高强` (string) - 店主姓名
@@ -735,7 +735,7 @@
 + `created_at`: `2017-08-10T04:42:08.000+08:00` (string) - 创建时间
 ### SalesShopkeeper (object)
 + `id`: 10 (number) - ID
-+ `shop_id`: `cpencil芝蚂店` (string) - 店铺ID
++ `shop_id`: `2` (number) - 店铺ID
 + `shop_name`: `王1的小店` (string) - 店铺名称
 + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
 + `shopkeeper_name`: `高强` (string) - 店主姓名
@@ -747,8 +747,8 @@
 + `shop_id`: 2 (number) - 店铺ID
 + `user_id`: 26049 (number) - 店主用户ID
 + `shopkeeper_name`: `张三` (string) - 店主姓名
-+ `province`: `湖南` (string) - 省份
-+ `city`: `株洲` (string) - 城市
++ `province`: `湖南` (string, nullable) - 省份
++ `city`: `株洲` (string, nullable) - 城市
 + `user_phone`: `15207400547` (string) - 店主手机号
 + `shop_name`: `张三小店12千千万` (string) - 店铺名
 + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
@@ -756,8 +756,8 @@
 + `user_grade_text`: `白金店主` (string) - 店铺等级
 + `parent_shopkeeper_user_id`: 25998 (number, nullable) - 上级店主用户ID
 + `parent_shop_id`: 32 (number, nullable) - 上级店铺ID
-+ `parent_shopkeeper_name`: `高强` (string) - 上级店主用户姓名
-+ `parent_user_phone`: `13661638426` (string) - 上级店主用户手机号
++ `parent_shopkeeper_name`: `高强` (string, nullable) - 上级店主用户姓名
++ `parent_user_phone`: `13661638426` (string, nullable) - 上级店主用户手机号
 + `order_number`: 15507 (number) - 订单数
 + `order_amount`: 0.02 (string) - 订单销售金额
 + `shopkeeper_order_number`: 2003 (number) - 自购订单数

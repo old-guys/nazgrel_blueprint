@@ -57,7 +57,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[TotalShopKeeperUsergrade], fixed)
+        + data (array[TotalShopKeeperUsergrade], fixed-type)
 
     + Body
 
@@ -99,7 +99,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShopkeeperChildrenRank], fixed)
+        + data (array[ShopkeeperChildrenRank], fixed-type)
 
     + Body
 
@@ -216,7 +216,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShopkeeperOrderAmountRank], fixed)
+        + data (array[ShopkeeperOrderAmountRank], fixed-type)
 
     + Body
 
@@ -333,7 +333,7 @@
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
         + code: 0 (number) - 错误码
-        + data (array[ShopkeeperCityRank], fixed)
+        + data (array[ShopkeeperCityRank], fixed-type)
 
     + Body
 
