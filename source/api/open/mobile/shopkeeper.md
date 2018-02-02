@@ -470,13 +470,13 @@
         + code: 0 (number) - 错误码
         + data (object)
             + total_count: 366 (number) - 总条数
-            + total_pages: 124 (number) - 总页数
+            + total_pages: 99 (number) - 总页数
             + current_page: 1 (number) - 当前页
             + next_page (number, nullable) - 下一页
             + prev_page (number, nullable) - 前一页
             + first_page? (boolean) - 是否第一页
             + last_page? (boolean) - 是否最后一页
-            + per_page: 15 (number) - 每页条数
+            + per_page: 5 (number) - 每页条数
             + page: 1 (number) - 页码
             + models (array[ReportShopkeeper], fixed-type)
     + Body
@@ -486,8 +486,8 @@
                 "message": "",
                 "remark": "",
                 "data": {
-                    "total_count": 424,
-                    "total_pages": 85,
+                    "total_count": 494,
+                    "total_pages": 99,
                     "current_page": 1,
                     "next_page": 2,
                     "prev_page": null,
@@ -504,6 +504,8 @@
                             "shopkeeper_real_name": null,
                             "province": "浙江",
                             "city": "杭州",
+                            "status": "normal",
+                            "status_text": "正常",
                             "user_phone": "15888888888",
                             "shop_name": "张三小店12千千万",
                             "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/9fa53b1117ea46ac81f12d1f55fa0d50.jpg",
@@ -513,16 +515,23 @@
                             "parent_shopkeeper_name": null,
                             "parent_user_phone": null,
                             "parent_shop_id": null,
+                            "total_income_amount": "1441.9",
+                            "balance_amount": "1441.9",
+                            "withdraw_amount": "0.0",
+                            "blocked_amount": "0.0",
+                            "create_shop_amount": "0.0",
+                            "invite_code": "inviteCo",
+                            "invite_qrcode_url": "http://zmcimg.ishanggang.com/static/img/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
                             "order_number": 671,
                             "order_amount": "8495570.43",
                             "shopkeeper_order_number": 0,
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_number": 671,
                             "sale_order_amount": "8495570.43",
-                            "commission_income_amount": "0.0",
+                            "commission_income_amount": "1041131.246",
                             "descendant_order_number": 1342,
                             "descendant_order_amount": "16991140.86",
-                            "descendant_commission_income_amount": "0.0",
+                            "descendant_commission_income_amount": "2082262.492",
                             "children_count": 1,
                             "descendant_count": 2,
                             "tree_depth": 1,
@@ -545,6 +554,8 @@
                             "shopkeeper_real_name": "",
                             "province": "上海",
                             "city": "",
+                            "status": "normal",
+                            "status_text": "正常",
                             "user_phone": "13661638426",
                             "shop_name": "解忧杂货店",
                             "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/25b773c1f4644fcdbcca1cc1dee90659.jpg",
@@ -554,6 +565,13 @@
                             "parent_shopkeeper_name": null,
                             "parent_user_phone": null,
                             "parent_shop_id": null,
+                            "total_income_amount": "8229.557",
+                            "balance_amount": "7571.021",
+                            "withdraw_amount": "530.0",
+                            "blocked_amount": "17.136",
+                            "create_shop_amount": "0.0",
+                            "invite_code": "gaoq1234",
+                            "invite_qrcode_url": "http://zmcimg.ishanggang.com/static/img/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
                             "order_number": 2,
                             "order_amount": "12990.03",
                             "shopkeeper_order_number": 1,
@@ -561,11 +579,11 @@
                             "sale_order_number": 1,
                             "sale_order_amount": "0.03",
                             "commission_income_amount": "2054.003",
-                            "descendant_order_number": 477,
-                            "descendant_order_amount": "69144.84",
-                            "descendant_commission_income_amount": "11076.165",
-                            "children_count": 46,
-                            "descendant_count": 384,
+                            "descendant_order_number": 482,
+                            "descendant_order_amount": "69144.89",
+                            "descendant_commission_income_amount": "11085.167",
+                            "children_count": 48,
+                            "descendant_count": 454,
                             "tree_depth": 1,
                             "parent_names": [
                                 "高强"
@@ -586,6 +604,8 @@
                             "shopkeeper_real_name": null,
                             "province": null,
                             "city": null,
+                            "status": "normal",
+                            "status_text": "正常",
                             "user_phone": "19888888888",
                             "shop_name": "gg=jasldfjadsklf",
                             "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/5b0272f43df84733b932c40741e69860.jpg",
@@ -595,6 +615,13 @@
                             "parent_shopkeeper_name": null,
                             "parent_user_phone": null,
                             "parent_shop_id": null,
+                            "total_income_amount": "0.0",
+                            "balance_amount": "0.0",
+                            "withdraw_amount": "0.0",
+                            "blocked_amount": "0.0",
+                            "create_shop_amount": "0.0",
+                            "invite_code": null,
+                            "invite_qrcode_url": "http://zmcimg.ishanggang.com/static/img/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
                             "order_number": 0,
                             "order_amount": "0.0",
                             "shopkeeper_order_number": 0,
@@ -630,6 +657,8 @@
                             "shopkeeper_real_name": null,
                             "province": null,
                             "city": null,
+                            "status": "normal",
+                            "status_text": "正常",
                             "user_phone": "12111111111",
                             "shop_name": "张三小店12千千万",
                             "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/9fa53b1117ea46ac81f12d1f55fa0d50.jpg",
@@ -639,16 +668,23 @@
                             "parent_shopkeeper_name": null,
                             "parent_user_phone": null,
                             "parent_shop_id": null,
+                            "total_income_amount": "0.003",
+                            "balance_amount": "0.0",
+                            "withdraw_amount": "0.0",
+                            "blocked_amount": "0.003",
+                            "create_shop_amount": "0.0",
+                            "invite_code": null,
+                            "invite_qrcode_url": "http://zmcimg.ishanggang.com/static/img/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
                             "order_number": 671,
                             "order_amount": "8495570.43",
                             "shopkeeper_order_number": 3,
                             "shopkeeper_order_amount": "38970.0",
                             "sale_order_number": 668,
                             "sale_order_amount": "8456600.43",
-                            "commission_income_amount": "0.0",
+                            "commission_income_amount": "1041131.246",
                             "descendant_order_number": 671,
                             "descendant_order_amount": "8495570.43",
-                            "descendant_commission_income_amount": "0.0",
+                            "descendant_commission_income_amount": "1041131.246",
                             "children_count": 1,
                             "descendant_count": 1,
                             "tree_depth": 2,
@@ -674,6 +710,8 @@
                             "shopkeeper_real_name": null,
                             "province": "湖南",
                             "city": "株洲",
+                            "status": "normal",
+                            "status_text": "正常",
                             "user_phone": "15207400547",
                             "shop_name": "张三小店12千千万",
                             "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/9fa53b1117ea46ac81f12d1f55fa0d50.jpg",
@@ -683,13 +721,20 @@
                             "parent_shopkeeper_name": "高强",
                             "parent_user_phone": "13661638426",
                             "parent_shop_id": 2,
+                            "total_income_amount": "40775.434",
+                            "balance_amount": "48.012",
+                            "withdraw_amount": "0.0",
+                            "blocked_amount": "-2.978",
+                            "create_shop_amount": "0.0",
+                            "invite_code": "BnmPHocI",
+                            "invite_qrcode_url": "http://zmcimg.ishanggang.com/static/img/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
                             "order_number": 671,
                             "order_amount": "8495570.43",
                             "shopkeeper_order_number": 0,
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_number": 671,
                             "sale_order_amount": "8495570.43",
-                            "commission_income_amount": "0.0",
+                            "commission_income_amount": "1041131.246",
                             "descendant_order_number": 0,
                             "descendant_order_amount": "0.0",
                             "descendant_commission_income_amount": "0.0",
@@ -749,6 +794,9 @@
 + `shopkeeper_name`: `张三` (string) - 店主姓名
 + `province`: `湖南` (string, nullable) - 省份
 + `city`: `株洲` (string, nullable) - 城市
++ `status`: `normal` (string) - 状态
++ `status_text`: `正常` (string) - 状态
+
 + `user_phone`: `15207400547` (string) - 店主手机号
 + `shop_name`: `张三小店12千千万` (string) - 店铺名
 + `shop_img_url`: `http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg` (string) - 店铺头像
@@ -758,6 +806,13 @@
 + `parent_shop_id`: 32 (number, nullable) - 上级店铺ID
 + `parent_shopkeeper_name`: `高强` (string, nullable) - 上级店主用户姓名
 + `parent_user_phone`: `13661638426` (string, nullable) - 上级店主用户手机号
++ `total_income_amount`: 1441.9 (string) - 账户总收入
++ `balance_amount`: 1441.9 (string) - 账户余额
++ `withdraw_amount`: 0.0 (string) - 已提现金额
++ `blocked_amount`: 0.0 (string) - 冻结金额
++ `create_shop_amount`: 0.0 (string) - 开店支付金额
++ `invite_code`: `inviteCo` (string, nullable) - 邀请码
++ `invite_qrcode_url`: `http://zmcimg.ishanggang.com/static/img/static/img/qrcode/BnmPHocI_inviteQrcode.jpg` (string, nullable) - 邀请二维码图片url
 + `order_number`: 15507 (number) - 订单数
 + `order_amount`: 0.02 (string) - 订单销售金额
 + `shopkeeper_order_number`: 2003 (number) - 自购订单数
