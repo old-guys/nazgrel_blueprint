@@ -26,61 +26,72 @@
     + Body
 
             {
-                "code": 0,
-                "message": "",
-                "remark": "",
-                "data": {
-                    "total_count": 1,
-                    "total_pages": 1,
-                    "current_page": 1,
-                    "next_page": null,
-                    "prev_page": null,
-                    "first_page?": true,
-                    "last_page?": false,
-                    "per_page": 15,
-                    "page": 0,
-                    "models": [
-                        {
-                            "id": 665,
-                            "shop_id": 2,
-                            "day_0_order_number": 3,
-                            "day_7_order_number": 5,
-                            "day_30_order_number": 13,
-                            "day_0_shopkeeper_order_number": 2,
-                            "day_7_shopkeeper_order_number": 3,
-                            "day_30_shopkeeper_order_number": 8,
-                            "day_0_sale_order_number": 1,
-                            "day_7_sale_order_number": 2,
-                            "day_30_sale_order_number": 7,
-                            "day_0_order_amount": "58.0",
-                            "day_7_order_amount": "200.0",
-                            "day_30_order_amount": "1000.0",
-                            "day_0_commission_income_amount": "18.0",
-                            "day_7_commission_income_amount": "220.0",
-                            "day_30_commission_income_amount": "500.0",
-                            "day_0_shopkeeper_order_amount": "20.0",
-                            "day_7_shopkeeper_order_amount": "20.0",
-                            "day_30_shopkeeper_order_amount": "230.0",
-                            "day_0_sale_order_amount": "38.0",
-                            "day_7_sale_order_amount": "180.0",
-                            "day_30_sale_order_amount": "770.0",
-                            "day_0_children_grade_platinum_count": 1,
-                            "day_7_children_grade_platinum_count": 3,
-                            "day_30_children_grade_platinum_count": 5,
-                            "day_0_children_grade_gold_count": 2,
-                            "day_7_children_grade_gold_count": 5,
-                            "day_30_children_grade_gold_count": 10,
-                            "day_0_ecn_grade_platinum_count": 33,
-                            "day_7_ecn_grade_platinum_count": 44,
-                            "day_30_ecn_grade_platinum_count": 66,
-                            "day_0_ecn_grade_gold_count": 23,
-                            "day_7_ecn_grade_gold_count": 33,
-                            "day_30_ecn_grade_gold_count": 35,
-                            "created_at": "2018-01-25T17:56:39.000+08:00",
-                            "updated_at": "2018-01-25T17:56:39.000+08:00"
-                        }
-                    ]
-                }
+              "code": 0,
+              "message": "",
+              "remark": "",
+              "data": {
+                  "total_count": 1,
+                  "total_pages": 1,
+                  "current_page": 1,
+                  "next_page": null,
+                  "prev_page": null,
+                  "first_page?": true,
+                  "last_page?": true,
+                  "per_page": 15,
+                  "page": 0,
+                  "models": [
+                      {
+                          "id": 250,
+                          "shop_id": 2,
+                          "day_0_order_number": 0,
+                          "day_7_order_number": 0,
+                          "day_30_order_number": 0,
+                          "total_order_number": 2,
+                          "day_0_shopkeeper_order_number": 0,
+                          "day_7_shopkeeper_order_number": 0,
+                          "day_30_shopkeeper_order_number": 0,
+                          "total_shopkeeper_order_number": 1,
+                          "day_0_sale_order_number": 0,
+                          "day_7_sale_order_number": 0,
+                          "day_30_sale_order_number": 0,
+                          "total_sale_order_number": 1,
+                          "day_0_order_amount": "0.0",
+                          "day_7_order_amount": "0.0",
+                          "day_30_order_amount": "0.0",
+                          "total_order_amount": "12990.03",
+                          "day_0_commission_income_amount": "0.0",
+                          "day_7_commission_income_amount": "0.0",
+                          "day_30_commission_income_amount": "0.0",
+                          "total_commission_income_amount": "2054.003",
+                          "day_0_shopkeeper_order_amount": "0.0",
+                          "day_7_shopkeeper_order_amount": "0.0",
+                          "day_30_shopkeeper_order_amount": "0.0",
+                          "total_shopkeeper_order_amount": "12990.0",
+                          "day_0_sale_order_amount": "0.0",
+                          "day_7_sale_order_amount": "0.0",
+                          "day_30_sale_order_amount": "0.0",
+                          "total_sale_order_amount": "0.03",
+                          "day_0_children_grade_platinum_count": 0,
+                          "day_7_children_grade_platinum_count": 0,
+                          "day_30_children_grade_platinum_count": 0,
+                          "total_children_grade_platinum_count": 43,
+                          "day_0_children_grade_gold_count": 0,
+                          "day_7_children_grade_gold_count": 0,
+                          "day_30_children_grade_gold_count": 0,
+                          "total_children_grade_gold_count": 3,
+                          "day_0_ecn_grade_platinum_count": 0,
+                          "day_7_ecn_grade_platinum_count": 2,
+                          "day_30_ecn_grade_platinum_count": 2,
+                          "total_ecn_grade_platinum_count": 373,
+                          "day_0_ecn_grade_gold_count": 0,
+                          "day_7_ecn_grade_gold_count": 0,
+                          "day_30_ecn_grade_gold_count": 0,
+                          "total_ecn_grade_gold_count": 61,
+                          "created_at": "2018-01-25T17:56:39.000+08:00",
+                          "updated_at": "2018-02-05T17:23:19.000+08:00"
+                      }
+                  ]
+              }
             }
 
 ## Data Structures
@@ -90,35 +101,46 @@
 + `day_0_order_number`: 3 (number) - 当天订单数
 + `day_7_order_number`: 5 (number) - 7天订单数
 + `day_30_order_number`: 13 (number) - 30天订单数
++ `total_order_number`: 22 (number) - 订单数
 + `day_0_shopkeeper_order_number`: 2 (number) - 当天自购订单数
 + `day_7_shopkeeper_order_number`: 3 (number) - 7天自购订单数
 + `day_30_shopkeeper_order_number`: 8 (number) - 30天自购订单数
++ `total_shopkeeper_order_number`: 23 (number) - 自购订单数
 + `day_0_sale_order_number`: 1 (number) - 当天销售订单数
 + `day_7_sale_order_number`: 2 (number) - 7天销售订单数
 + `day_30_sale_order_number`: 7 (number) - 30天销售订单数
++ `total_sale_order_number`: 13 (number) - 销售订单数
 + `day_0_order_amount`: 58.0 (string) - 当天订单金额
 + `day_7_order_amount`: 200.0 (string) - 7天订单金额
 + `day_30_order_amount`: 1000.0 (string) - 30天订单金额
++ `total_order_amount`: 2130.0 (string) - 订单金额
 + `day_0_commission_income_amount`: 18.0 (string) - 当天店铺佣金
 + `day_7_commission_income_amount`: 220.0 (string) - 7天店铺佣金
 + `day_30_commission_income_amount`: 500.0 (string) - 30天店铺佣金
++ `total_commission_income_amount`: 830.0 (string) - 店铺佣金
 + `day_0_shopkeeper_order_amount`: 20.0 (string) - 当天自购订单金额
 + `day_7_shopkeeper_order_amount`: 20.0 (string) - 7天自购订单金额
 + `day_30_shopkeeper_order_amount`: 230.0 (string) - 30天自购订单金额
++ `total_shopkeeper_order_amount`: 330.0 (string) - 自购订单金额
 + `day_0_sale_order_amount`: 38.0 (string) - 当天销售订单金额
 + `day_7_sale_order_amount`: 180.0 (string) - 7天销售订单金额
 + `day_30_sale_order_amount`: 770.0 (string) - 30天销售订单金额
++ `total_sale_order_amount`: 1270.0 (string) - 销售订单金额
 + `day_0_children_grade_platinum_count`: 1 (number) - 当天直接邀请白金用户数
 + `day_7_children_grade_platinum_count`: 3 (number) - 7天直接邀请白金用户数
 + `day_30_children_grade_platinum_count`: 5 (number) - 30天直接邀请白金用户数
++ `total_children_grade_platinum_count`: 12 (number) - 直接邀请白金用户数
 + `day_0_children_grade_gold_count`: 2 (number) - 当天直接邀请黄金店主数
 + `day_7_children_grade_gold_count`: 5 (number) - 7天直接邀请黄金店主数
 + `day_30_children_grade_gold_count`: 10 (number) - 30天直接邀黄金店主数
++ `total_children_grade_gold_count`: 13 (number) - 直接邀黄金店主数
 + `day_0_ecn_grade_platinum_count`: 33 (number) - 当天ECN白金店主数
 + `day_7_ecn_grade_platinum_count`: 44 (number) - 7天ECN白金店主数
 + `day_30_ecn_grade_platinum_count`: 66 (number) - 30天ECN白金店主数
++ `total_ecn_grade_platinum_count`: 166 (number) - ECN白金店主数
 + `day_0_ecn_grade_gold_count`: 23 (number) - 当天ECN黄金店主数
 + `day_7_ecn_grade_gold_count`: 33 (number) - 7天ECN黄金店主数
 + `day_30_ecn_grade_gold_count`: 35 (number) - 30天ECN黄金店主数
++ `total_ecn_grade_gold_count`: 135 (number) - ECN黄金店主数
 + created_at: `2018-01-25T17:56:39.000+08:00` (string) - 创建时间
 + updated_at: `2018-01-25T17:56:39.000+08:00` (string) - 更新时间
