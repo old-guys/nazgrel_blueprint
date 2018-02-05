@@ -456,7 +456,7 @@
                 }
             }
 
-## 店主关系拓扑 [/api/open/mobile/shopkeepers/report{?device,user_token,shop_id}]
+## 店主关系拓扑 [/api/open/mobile/shopkeepers/report{?device,user_token,shop_id,time_range}]
 ### 店主关系拓扑 [GET]
 店主关系拓扑图接口
 
@@ -464,6 +464,13 @@
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID只返回特定店铺的结果
+    + `time_range`: 3_day_ago (enum[string], required) - 更新时间范围
+        + Members
+          + 1_day_ago - 近1天
+          + 3_day_ago - 近3天
+          + 7_day_ago - 近7天
+          + 1_month_ago - 近1月
+          + 1_year_ago - 近1年
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
