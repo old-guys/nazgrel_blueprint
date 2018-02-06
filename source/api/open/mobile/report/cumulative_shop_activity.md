@@ -26,78 +26,102 @@
     + Body
 
             {
-              "code": 0,
-              "message": "",
-              "remark": "",
-              "data": {
-                  "total_count": 1,
-                  "total_pages": 1,
-                  "current_page": 1,
-                  "next_page": null,
-                  "prev_page": null,
-                  "first_page?": true,
-                  "last_page?": true,
-                  "per_page": 15,
-                  "page": 0,
-                  "models": [
-                      {
-                          "id": 250,
-                          "shop_id": 2,
-                          "day_0_order_number": 0,
-                          "day_7_order_number": 0,
-                          "day_30_order_number": 0,
-                          "total_order_number": 2,
-                          "day_0_shopkeeper_order_number": 0,
-                          "day_7_shopkeeper_order_number": 0,
-                          "day_30_shopkeeper_order_number": 0,
-                          "total_shopkeeper_order_number": 1,
-                          "day_0_sale_order_number": 0,
-                          "day_7_sale_order_number": 0,
-                          "day_30_sale_order_number": 0,
-                          "total_sale_order_number": 1,
-                          "day_0_order_amount": "0.0",
-                          "day_7_order_amount": "0.0",
-                          "day_30_order_amount": "0.0",
-                          "total_order_amount": "12990.03",
-                          "day_0_commission_income_amount": "0.0",
-                          "day_7_commission_income_amount": "0.0",
-                          "day_30_commission_income_amount": "0.0",
-                          "total_commission_income_amount": "2054.003",
-                          "day_0_shopkeeper_order_amount": "0.0",
-                          "day_7_shopkeeper_order_amount": "0.0",
-                          "day_30_shopkeeper_order_amount": "0.0",
-                          "total_shopkeeper_order_amount": "12990.0",
-                          "day_0_sale_order_amount": "0.0",
-                          "day_7_sale_order_amount": "0.0",
-                          "day_30_sale_order_amount": "0.0",
-                          "total_sale_order_amount": "0.03",
-                          "day_0_children_grade_platinum_count": 0,
-                          "day_7_children_grade_platinum_count": 0,
-                          "day_30_children_grade_platinum_count": 0,
-                          "total_children_grade_platinum_count": 43,
-                          "day_0_children_grade_gold_count": 0,
-                          "day_7_children_grade_gold_count": 0,
-                          "day_30_children_grade_gold_count": 0,
-                          "total_children_grade_gold_count": 3,
-                          "day_0_ecn_grade_platinum_count": 0,
-                          "day_7_ecn_grade_platinum_count": 2,
-                          "day_30_ecn_grade_platinum_count": 2,
-                          "total_ecn_grade_platinum_count": 373,
-                          "day_0_ecn_grade_gold_count": 0,
-                          "day_7_ecn_grade_gold_count": 0,
-                          "day_30_ecn_grade_gold_count": 0,
-                          "total_ecn_grade_gold_count": 61,
-                          "created_at": "2018-01-25T17:56:39.000+08:00",
-                          "updated_at": "2018-02-05T17:23:19.000+08:00"
-                      }
-                  ]
-              }
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "total_count": 1,
+                    "total_pages": 1,
+                    "current_page": 1,
+                    "next_page": null,
+                    "prev_page": null,
+                    "first_page?": true,
+                    "last_page?": true,
+                    "per_page": 15,
+                    "page": 0,
+                    "models": [
+                        {
+                            "id": 250,
+                            "shop_id": 2,
+                            "day_0_shared_count": 0,
+                            "day_7_shared_count": 0,
+                            "day_30_shared_count": 35,
+                            "total_shared_count": 0,
+                            "day_0_view_count": 0,
+                            "day_7_view_count": 0,
+                            "day_30_view_count": 3,
+                            "total_view_count": 660,
+                            "day_0_viewer_count": 0,
+                            "day_7_viewer_count": 0,
+                            "day_30_viewer_count": 3,
+                            "total_viewer_count": 50,
+                            "day_0_order_number": 0,
+                            "day_7_order_number": 0,
+                            "day_30_order_number": 0,
+                            "total_order_number": 2,
+                            "day_0_shopkeeper_order_number": 0,
+                            "day_7_shopkeeper_order_number": 0,
+                            "day_30_shopkeeper_order_number": 0,
+                            "total_shopkeeper_order_number": 1,
+                            "day_0_sale_order_number": 0,
+                            "day_7_sale_order_number": 0,
+                            "day_30_sale_order_number": 0,
+                            "total_sale_order_number": 1,
+                            "day_0_order_amount": "0.0",
+                            "day_7_order_amount": "0.0",
+                            "day_30_order_amount": "0.0",
+                            "total_order_amount": "12990.03",
+                            "day_0_commission_income_amount": "0.0",
+                            "day_7_commission_income_amount": "0.0",
+                            "day_30_commission_income_amount": "0.0",
+                            "total_commission_income_amount": "2054.003",
+                            "day_0_shopkeeper_order_amount": "0.0",
+                            "day_7_shopkeeper_order_amount": "0.0",
+                            "day_30_shopkeeper_order_amount": "0.0",
+                            "total_shopkeeper_order_amount": "12990.0",
+                            "day_0_sale_order_amount": "0.0",
+                            "day_7_sale_order_amount": "0.0",
+                            "day_30_sale_order_amount": "0.0",
+                            "total_sale_order_amount": "0.03",
+                            "day_0_children_grade_platinum_count": 0,
+                            "day_7_children_grade_platinum_count": 0,
+                            "day_30_children_grade_platinum_count": 0,
+                            "total_children_grade_platinum_count": 43,
+                            "day_0_children_grade_gold_count": 0,
+                            "day_7_children_grade_gold_count": 0,
+                            "day_30_children_grade_gold_count": 0,
+                            "total_children_grade_gold_count": 3,
+                            "day_0_ecn_grade_platinum_count": 0,
+                            "day_7_ecn_grade_platinum_count": 2,
+                            "day_30_ecn_grade_platinum_count": 2,
+                            "total_ecn_grade_platinum_count": 373,
+                            "day_0_ecn_grade_gold_count": 0,
+                            "day_7_ecn_grade_gold_count": 0,
+                            "day_30_ecn_grade_gold_count": 0,
+                            "total_ecn_grade_gold_count": 61,
+                            "created_at": "2018-01-25T17:56:39.000+08:00",
+                            "updated_at": "2018-02-06T10:50:05.000+08:00"
+                        }
+                    ]
+                }
             }
 
 ## Data Structures
 ### SampleReportCumulativeShopActivity (object)
 + `id`: 665 (number) - ID
 + `shop_id`: 2 (number) - 店铺ID
++ `day_0_shared_count`: 3 (number) - 当天分享量
++ `day_7_shared_count`: 5 (number) - 7天分享量
++ `day_30_shared_count`: 13 (number) - 30天分享量
++ `total_shared_count`: 22 (number) - 分享量
++ `day_0_view_count`: 3 (number) - 当天浏览量
++ `day_7_view_count`: 5 (number) - 7天浏览量
++ `day_30_view_count`: 13 (number) - 30天浏览量
++ `total_view_count`: 22 (number) - 浏览量
++ `day_0_viewer_count`: 3 (number) - 当天访客数
++ `day_7_viewer_count`: 5 (number) - 7天访客数
++ `day_30_viewer_count`: 13 (number) - 30天访客数
++ `total_viewer_count`: 22 (number) - 访客数
 + `day_0_order_number`: 3 (number) - 当天订单数
 + `day_7_order_number`: 5 (number) - 7天订单数
 + `day_30_order_number`: 13 (number) - 30天订单数
