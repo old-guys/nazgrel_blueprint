@@ -19,3 +19,4 @@ HOST: http://mock.bi.ishanggang.com
 <!-- include(api/open/mobile/shop_activity.md) -->
 
 <!-- include(api/open/mobile/report/cumulative_shop_activity.md) -->
+<!-- include(api/open/mobile/report/shop_activity.md) -->
