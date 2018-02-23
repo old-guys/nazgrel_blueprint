@@ -460,6 +460,15 @@
 ### 店主关系拓扑 [GET]
 店主关系拓扑图接口
 
+::: note
+店铺总收入计算公式
+
+```
+店铺总收入 = 销售佣金 + 培训奖励（直接邀请的付费店主 黄金100，铂金200 一位）+ 团队收入（邀请的店主销售收益的 5%）
+total_income_amount = commission_income_amount + invite_amount + team_income_amount
+```
+:::
+
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
@@ -493,8 +502,8 @@
                 "message": "",
                 "remark": "",
                 "data": {
-                    "total_count": 495,
-                    "total_pages": 99,
+                    "total_count": 505,
+                    "total_pages": 101,
                     "current_page": 1,
                     "next_page": 2,
                     "prev_page": null,
@@ -527,6 +536,10 @@
                             "withdraw_amount": "0.0",
                             "blocked_amount": "0.0",
                             "create_shop_amount": "0.0",
+                            "commission_income_amount": "0.0",
+                            "team_income_amount": "0.0",
+                            "invite_amount": "1441.9",
+                            "shop_sales_amount": "0.0",
                             "invite_code": "inviteCo",
                             "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
                             "order_number": 671,
@@ -535,10 +548,9 @@
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_number": 671,
                             "sale_order_amount": "8495570.43",
-                            "commission_income_amount": "1041131.246",
                             "descendant_order_number": 1342,
                             "descendant_order_amount": "16991140.86",
-                            "descendant_commission_income_amount": "2082262.492",
+                            "descendant_commission_income_amount": "100.011",
                             "children_count": 1,
                             "descendant_count": 2,
                             "tree_depth": 1,
@@ -577,6 +589,10 @@
                             "withdraw_amount": "530.0",
                             "blocked_amount": "17.136",
                             "create_shop_amount": "0.0",
+                            "commission_income_amount": "0.0",
+                            "team_income_amount": "12.018",
+                            "invite_amount": "8204.403",
+                            "shop_sales_amount": "0.0",
                             "invite_code": "gaoq1234",
                             "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
                             "order_number": 2,
@@ -585,12 +601,11 @@
                             "shopkeeper_order_amount": "12990.0",
                             "sale_order_number": 1,
                             "sale_order_amount": "0.03",
-                            "commission_income_amount": "2054.003",
-                            "descendant_order_number": 482,
-                            "descendant_order_amount": "69144.89",
-                            "descendant_commission_income_amount": "11085.167",
-                            "children_count": 48,
-                            "descendant_count": 455,
+                            "descendant_order_number": 485,
+                            "descendant_order_amount": "69144.92",
+                            "descendant_commission_income_amount": "7191.342",
+                            "children_count": 49,
+                            "descendant_count": 465,
                             "tree_depth": 1,
                             "parent_names": [
                                 "高强"
@@ -627,6 +642,10 @@
                             "withdraw_amount": "0.0",
                             "blocked_amount": "0.0",
                             "create_shop_amount": "0.0",
+                            "commission_income_amount": "0.0",
+                            "team_income_amount": "0.0",
+                            "invite_amount": "0.0",
+                            "shop_sales_amount": "0.0",
                             "invite_code": null,
                             "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
                             "order_number": 0,
@@ -635,7 +654,6 @@
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_number": 0,
                             "sale_order_amount": "0.0",
-                            "commission_income_amount": "0.0",
                             "descendant_order_number": 0,
                             "descendant_order_amount": "0.0",
                             "descendant_commission_income_amount": "0.0",
@@ -680,6 +698,10 @@
                             "withdraw_amount": "0.0",
                             "blocked_amount": "0.003",
                             "create_shop_amount": "0.0",
+                            "commission_income_amount": "0.0",
+                            "team_income_amount": "0.0",
+                            "invite_amount": "0.0",
+                            "shop_sales_amount": "0.0",
                             "invite_code": null,
                             "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
                             "order_number": 671,
@@ -688,10 +710,9 @@
                             "shopkeeper_order_amount": "38970.0",
                             "sale_order_number": 668,
                             "sale_order_amount": "8456600.43",
-                            "commission_income_amount": "1041131.246",
                             "descendant_order_number": 671,
                             "descendant_order_amount": "8495570.43",
-                            "descendant_commission_income_amount": "1041131.246",
+                            "descendant_commission_income_amount": "100.011",
                             "children_count": 1,
                             "descendant_count": 1,
                             "tree_depth": 2,
@@ -733,6 +754,10 @@
                             "withdraw_amount": "0.0",
                             "blocked_amount": "-2.978",
                             "create_shop_amount": "0.0",
+                            "commission_income_amount": "100.011",
+                            "team_income_amount": "3.001",
+                            "invite_amount": "652406.4",
+                            "shop_sales_amount": "12970.1",
                             "invite_code": "BnmPHocI",
                             "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
                             "order_number": 671,
@@ -741,7 +766,6 @@
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_number": 671,
                             "sale_order_amount": "8495570.43",
-                            "commission_income_amount": "1041131.246",
                             "descendant_order_number": 0,
                             "descendant_order_amount": "0.0",
                             "descendant_commission_income_amount": "0.0",
@@ -818,6 +842,10 @@
 + `withdraw_amount`: 0.0 (string) - 已提现金额
 + `blocked_amount`: 0.0 (string) - 冻结金额
 + `create_shop_amount`: 0.0 (string) - 开店支付金额
++ `commission_income_amount`: 0.0 (string) - 店铺佣金
++ `team_income_amount`: 0.02 (string) - 团队收益
++ `invite_amount`: 0.02 (string) - 邀请收入 培训奖励
++ `shop_sales_amount`: 0.02 (string) - 销售业绩
 + `invite_code`: `inviteCo` (string, nullable) - 邀请码
 + `invite_qrcode_url`: `http://zmcimg.ishanggang.com/static/img/static/img/qrcode/BnmPHocI_inviteQrcode.jpg` (string, nullable) - 邀请二维码图片url
 + `order_number`: 15507 (number) - 订单数
@@ -826,7 +854,6 @@
 + `shopkeeper_order_amount`: 312.02 (string) - 自购订单销售金额
 + `sale_order_number`: 2003 (number) - 销售订单数
 + `sale_order_amount`: 312.02 (string) - 销售订单销售金额
-+ `commission_income_amount`: 0.02 (string) - 店铺佣金
 + `descendant_order_number`: 0 (number) - 下级店铺订单数
 + `descendant_order_amount`: 0.0 (string) - 下级店铺订单销售金额
 + `descendant_commission_income_amount`: 0.0 (string) - 下级店铺店铺佣金

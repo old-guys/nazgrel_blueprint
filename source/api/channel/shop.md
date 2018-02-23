@@ -191,6 +191,15 @@
 ### 店铺详情 [GET]
 通过店铺ID 获取店铺详情
 
+::: note
+店铺总收入计算公式
+
+```
+店铺总收入 = 销售佣金 + 培训奖励（直接邀请的付费店主 黄金100，铂金200 一位）+ 团队收入（邀请的店主销售收益的 5%）
+total_income_amount = commission_income_amount + invite_amount + team_income_amount
+```
+:::
+
 + Parameters
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
@@ -215,10 +224,12 @@
               + parent (shopkeeperProfile) - 上级店主
                   + tree_list (array[shopkeeperProfile], fixed-type) - 邀请人列表
               + total_income_amount: 2000 (string) - 账户总收入
-              + commission_income_amount: 233 (string) - 佣金收入
+              + commission_income_amount: 233 (string) - 店铺佣金 店铺收益 销售佣金
               + withdraw_amount: 23 (string) - 已提现金额
               + invite_amount: 23 (string) - 邀请收入 培训奖励
               + invite_number: 23 (number) - 邀请总人数
+              + team_income_amount: `12.018` (string) - 团队收益
+              + shop_sales_amount: `122.0` (string) - 销售业绩
               + order_amount: 3 (string) - 邀请总人数
               + order_number: 3 (number) - 订单总数
               + share_journal_count: 133 (number) - 分享次数
@@ -226,60 +237,45 @@
     + Body
 
             {
-              "code": 0,
-              "data": {
-                "id": 10,
-                "name": "cpencil芝蚂店",
-                "desc": "我的小店开张啦！欢迎大家常来逛",
-                "shopkeeper": {
-                  "user_name": "嘻嘻嘻",
-                  "user_grade": "grade_platinum",
-                  "user_grade_text": "白金店主",
-                  "user_phone": "13022189206",
-                  "user_photo": "http://zmcimg.ishanggang.com/default/shop/keeper/default_avatar.png",
-                  "child_count": {
-                    "count": 3,
-                    "grade_platinum_count": 3,
-                    "grade_gold_count": 0
-                  },
-                  "indirectly_descendant_count": {
-                    "count": 0,
-                    "grade_platinum_count": 0,
-                    "grade_gold_count": 0
-                  },
-                  "parent": {
-                    "user_name": "高强",
-                    "user_grade": "grade_platinum",
-                    "user_grade_text": "白金店主",
-                    "user_phone": "13661638426",
-                    "user_photo": "http://inte.ishanggang.com/upload/upload/user/Head/user_25998_1505274624483.jpeg",
-                    "tree_list": [
-                      {
+                "code": 0,
+                "message": "",
+                "remark": "",
+                "data": {
+                    "id": 2,
+                    "name": "解忧杂货店",
+                    "desc": "解忧亦无忧- 包罗万象。",
+                    "shopkeeper": {
+                        "user_id": 25998,
                         "user_name": "高强",
                         "user_grade": "grade_platinum",
                         "user_grade_text": "白金店主",
                         "user_phone": "13661638426",
-                        "user_photo": "http://inte.ishanggang.com/upload/upload/user/Head/user_25998_1505274624483.jpeg"
-                      },
-                      {
-                        "user_name": "嘻嘻嘻",
-                        "user_grade": "grade_platinum",
-                        "user_grade_text": "白金店主",
-                        "user_phone": "13022189206",
-                        "user_photo": "http://zmcimg.ishanggang.com/default/shop/keeper/default_avatar.png"
-                      }
-                    ]
-                  },
-                  "total_income_amount": "0.0",
-                  "withdraw_amount": "0.0",
-                  "invite_amount": "0.003",
-                  "invite_number": 3,
-                  "order_amount": "0.0",
-                  "order_number": 3,
-                  "share_journal_count": 47,
-                  "view_journal_count": 16
+                        "user_photo": "http://inte.ishanggang.com/upload/upload/user/Head/user_25998_1505274624483.jpeg",
+                        "created_at": "2017-07-28T17:37:33.000+08:00",
+                        "child_count": {
+                            "count": 49,
+                            "grade_platinum_count": 43,
+                            "grade_gold_count": 3
+                        },
+                        "indirectly_descendant_count": {
+                            "count": 416,
+                            "grade_platinum_count": 330,
+                            "grade_gold_count": 58
+                        },
+                        "parent": {},
+                        "total_income_amount": "8229.557",
+                        "commission_income_amount": "0.0",
+                        "withdraw_amount": "530.0",
+                        "invite_number": 28,
+                        "team_income_amount": "12.018",
+                        "invite_amount": "8204.403",
+                        "shop_sales_amount": "0.0",
+                        "order_amount": "12990.03",
+                        "order_number": 2,
+                        "share_journal_count": 0,
+                        "view_journal_count": 660
+                    }
                 }
-              }
             }
 
 ## Data Structures
