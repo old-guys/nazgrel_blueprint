@@ -37,70 +37,90 @@
                     "prev_page": null,
                     "first_page?": true,
                     "last_page?": true,
-                    "per_page": 15,
+                    "per_page": 1,
                     "page": 0,
                     "models": [
                         {
-                            "id": 250,
+                            "id": 1,
                             "shop_id": 2,
                             "day_0_shared_count": 0,
                             "day_7_shared_count": 0,
-                            "day_30_shared_count": 35,
+                            "day_30_shared_count": 0,
                             "total_shared_count": 0,
                             "day_0_view_count": 0,
                             "day_7_view_count": 0,
-                            "day_30_view_count": 3,
-                            "total_view_count": 660,
+                            "day_30_view_count": 0,
+                            "total_view_count": 0,
                             "day_0_viewer_count": 0,
                             "day_7_viewer_count": 0,
-                            "day_30_viewer_count": 3,
-                            "total_viewer_count": 50,
+                            "day_30_viewer_count": 0,
+                            "total_viewer_count": 0,
                             "day_0_order_number": 0,
                             "day_7_order_number": 0,
                             "day_30_order_number": 0,
-                            "total_order_number": 2,
+                            "total_order_number": 0,
                             "day_0_shopkeeper_order_number": 0,
                             "day_7_shopkeeper_order_number": 0,
                             "day_30_shopkeeper_order_number": 0,
-                            "total_shopkeeper_order_number": 1,
+                            "total_shopkeeper_order_number": 0,
                             "day_0_sale_order_number": 0,
                             "day_7_sale_order_number": 0,
                             "day_30_sale_order_number": 0,
-                            "total_sale_order_number": 1,
+                            "total_sale_order_number": 0,
                             "day_0_order_amount": "0.0",
                             "day_7_order_amount": "0.0",
                             "day_30_order_amount": "0.0",
-                            "total_order_amount": "12990.03",
+                            "total_order_amount": "0.0",
                             "day_0_commission_income_amount": "0.0",
                             "day_7_commission_income_amount": "0.0",
                             "day_30_commission_income_amount": "0.0",
-                            "total_commission_income_amount": "2054.003",
+                            "total_commission_income_amount": "0.0",
                             "day_0_shopkeeper_order_amount": "0.0",
                             "day_7_shopkeeper_order_amount": "0.0",
                             "day_30_shopkeeper_order_amount": "0.0",
-                            "total_shopkeeper_order_amount": "12990.0",
+                            "total_shopkeeper_order_amount": "0.0",
                             "day_0_sale_order_amount": "0.0",
                             "day_7_sale_order_amount": "0.0",
                             "day_30_sale_order_amount": "0.0",
-                            "total_sale_order_amount": "0.03",
+                            "total_sale_order_amount": "0.0",
                             "day_0_children_grade_platinum_count": 0,
                             "day_7_children_grade_platinum_count": 0,
                             "day_30_children_grade_platinum_count": 0,
-                            "total_children_grade_platinum_count": 43,
+                            "total_children_grade_platinum_count": 0,
                             "day_0_children_grade_gold_count": 0,
                             "day_7_children_grade_gold_count": 0,
                             "day_30_children_grade_gold_count": 0,
-                            "total_children_grade_gold_count": 3,
-                            "day_0_ecn_grade_platinum_count": 0,
-                            "day_7_ecn_grade_platinum_count": 2,
-                            "day_30_ecn_grade_platinum_count": 2,
-                            "total_ecn_grade_platinum_count": 373,
+                            "total_children_grade_gold_count": 0,
+                            "day_0_ecn_grade_platinum_count": 1,
+                            "day_7_ecn_grade_platinum_count": 1,
+                            "day_30_ecn_grade_platinum_count": 3,
+                            "total_ecn_grade_platinum_count": 0,
+                            "day_0_children_count": 0,
+                            "day_7_children_count": 0,
+                            "day_30_children_count": 0,
+                            "total_children_count": 0,
+                            "day_0_descendant_count": 1,
+                            "day_7_descendant_count": 1,
+                            "day_30_descendant_count": 1,
+                            "total_descendant_count": 0,
+                            "day_0_descendant_order_number": 0,
+                            "day_7_descendant_order_number": 0,
+                            "day_30_descendant_order_number": 0,
+                            "total_descendant_order_number": 0,
+                            "day_0_descendant_order_amount": "0",
+                            "day_7_descendant_order_amount": "0",
+                            "day_30_descendant_order_amount": "0",
+                            "total_descendant_order_amount": "0",
+                            "day_0_descendant_commission_income_amount": "0",
+                            "day_7_descendant_commission_income_amount": "0",
+                            "day_30_descendant_commission_income_amount": "0",
+                            "total_descendant_commission_income_amount": "0",
                             "day_0_ecn_grade_gold_count": 0,
                             "day_7_ecn_grade_gold_count": 0,
                             "day_30_ecn_grade_gold_count": 0,
-                            "total_ecn_grade_gold_count": 61,
-                            "created_at": "2018-01-25T17:56:39.000+08:00",
-                            "updated_at": "2018-02-06T10:50:05.000+08:00"
+                            "total_ecn_grade_gold_count": 0,
+                            "created_at": "2018-02-27T10:28:50.000+08:00",
+                            "updated_at": "2018-02-27T14:31:35.000+08:00"
                         }
                     ]
                 }
@@ -156,8 +176,8 @@
 + `total_children_grade_platinum_count`: 12 (number) - 直接邀请白金用户数
 + `day_0_children_grade_gold_count`: 2 (number) - 当天直接邀请黄金店主数
 + `day_7_children_grade_gold_count`: 5 (number) - 7天直接邀请黄金店主数
-+ `day_30_children_grade_gold_count`: 10 (number) - 30天直接邀黄金店主数
-+ `total_children_grade_gold_count`: 13 (number) - 直接邀黄金店主数
++ `day_30_children_grade_gold_count`: 10 (number) - 30天直接邀请黄金店主数
++ `total_children_grade_gold_count`: 13 (number) - 直接邀请黄金店主数
 + `day_0_ecn_grade_platinum_count`: 33 (number) - 当天ECN白金店主数
 + `day_7_ecn_grade_platinum_count`: 44 (number) - 7天ECN白金店主数
 + `day_30_ecn_grade_platinum_count`: 66 (number) - 30天ECN白金店主数
@@ -166,5 +186,29 @@
 + `day_7_ecn_grade_gold_count`: 33 (number) - 7天ECN黄金店主数
 + `day_30_ecn_grade_gold_count`: 35 (number) - 30天ECN黄金店主数
 + `total_ecn_grade_gold_count`: 135 (number) - ECN黄金店主数
++ `day_0_children_count`: 2 (number) - 当天直接邀请店主数
++ `day_7_children_count`: 5 (number) - 7天直接邀请店主数
++ `day_30_children_count`: 10 (number) - 30天直接邀请店主数
++ `total_children_count`: 13 (number) - 直接邀请店主数
++ `day_0_descendant_count`: 2 (number) - 当天下级店主数
++ `day_7_descendant_count`: 5 (number) - 7天下级店主数
++ `day_30_descendant_count`: 10 (number) - 30天下级店主数
++ `total_descendant_count`: 13 (number) - 下级店主数
++ `day_0_descendant_count`: 2 (number) - 当天下级店主数
++ `day_7_descendant_count`: 5 (number) - 7天下级店主数
++ `day_30_descendant_count`: 10 (number) - 30天下级店主数
++ `total_descendant_count`: 13 (number) - 下级店主数
++ `day_0_descendant_number`: 1 (number) - 当天下级订单数
++ `day_7_descendant_number`: 2 (number) - 7天下级订单数
++ `day_30_descendant_number`: 7 (number) - 30天下级订单数
++ `total_descendant_number`: 13 (number) - 下级订单数
++ `day_0_descendant_order_amount`: 58.0 (string) - 当天下级订单金额
++ `day_7_descendant_order_amount`: 200.0 (string) - 7天下级订单金额
++ `day_30_descendant_order_amount`: 1000.0 (string) - 30天下级订单金额
++ `total_descendant_order_amount`: 2130.0 (string) - 下级订单金额
++ `day_0_descendant_commission_income_amount`: 58.0 (string) - 当天下级佣金金额
++ `day_7_descendant_commission_income_amount`: 200.0 (string) - 7天下级佣金金额
++ `day_30_descendant_commission_income_amount`: 1000.0 (string) - 30天下级佣金金额
++ `total_descendant_commission_income_amount`: 2130.0 (string) - 下级佣金金额
 + created_at: `2018-01-25T17:56:39.000+08:00` (string) - 创建时间
 + updated_at: `2018-01-25T17:56:39.000+08:00` (string) - 更新时间
