@@ -1,0 +1,48 @@
+FROM node:9.6.1 AS builder
+
+# set working directory
+RUN mkdir /usr/src/app
+WORKDIR /usr/src/app
+
+# add `/usr/src/app/node_modules/.bin` to $PATH
+ENV PATH /usr/src/app/node_modules/.bin:$PATH
+COPY package.json /usr/src/app/package.json
+COPY . /usr/src/app
+
+# install and cache app dependencies
+# https://npm.taobao.org/
+RUN npm install -g cnpm --silent --registry=https://registry.npm.taobao.org
+RUN cnpm install pm2 -g --silent
+
+RUN cnpm install --silent
+
+# generate html
+RUN npm run clean
+
+RUN npm run generate_index
+RUN npm run generate_channel
+RUN npm run generate_web
+RUN npm run generate_mobile
+RUN npm run generate_dev
+
+RUN npm run generate_index_open
+RUN npm run generate_open_mobile
+
+# launch mock server
+RUN pm2 start npm --name channel_mock -- run start_channel
+RUN pm2 start npm  --name web_mock -- run start_web
+RUN pm2 start npm --name dev_mock -- run start_dev
+
+RUN pm2 start npm --name open_mobile_mock -- run start_open_mobile
+
+# production environment
+FROM nginx:1.13.9
+
+RUN rm -rf /etc/nginx/conf.d
+COPY conf /etc/nginx
+
+COPY --from=builder /usr/src/app/open_public /usr/share/nginx/html/open_public
+COPY --from=builder /usr/src/app/public /usr/share/nginx/html/public
+
+EXPOSE 80 81 82
+CMD ["nginx", "-g", "daemon off;"]
