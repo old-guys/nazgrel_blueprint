@@ -1,6 +1,6 @@
 # Group 店主行为报表
 
-## 店主行为报表列表 [GET /api/open/mobile/report/shop_activities{?device,user_token,shop_id,report_date}]
+## 店主行为报表列表 [GET /api/open/mobile/report/shop_activities{?device,user_token,shop_id,report_date,updated_at_range}]
 获取店主行为报表列表
 
 + Parameters
@@ -8,6 +8,12 @@
     + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + `report_date`: `2018-02-07` (string, optional) - 报表日期
     + `shop_id`: 2 (number,optional) - 店铺ID
+    + `updated_at_range`: 1_hour_ago (enum[string], optional) - 更新时间范围
+        + Members
+          + 30_minute_ago - 近30分钟
+          + 1_hour_ago - 近1个小时
+          + 1_day_ago - 近1天
+          + 1_month_ago - 近1个月
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
@@ -65,7 +71,7 @@
                 }
             }
 
-## 自然时间段店主行为报表列表 [GET /api/open/mobile/report/shop_activities/range_stat{?device,user_token,shop_id,report_date}]
+## 自然时间段店主行为报表列表 [GET /api/open/mobile/report/shop_activities/range_stat{?device,user_token,shop_id,report_date,updated_at_range}]
 获取按自然时间段的店主行为报表列表
 
 + Parameters
@@ -73,6 +79,12 @@
     + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + `report_date`: `2018-02-07` (string, optional) - 报表日期
     + `shop_id`: 2 (number,optional) - 店铺ID
+    + `updated_at_range`: 1_hour_ago (enum[string], optional) - 更新时间范围
+        + Members
+          + 30_minute_ago - 近30分钟
+          + 1_hour_ago - 近1个小时
+          + 1_day_ago - 近1天
+          + 1_month_ago - 近1个月
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)

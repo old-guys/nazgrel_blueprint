@@ -1,12 +1,18 @@
 # Group 累计店主行为报表
 
-## 累计店主行为报表列表 [GET /api/open/mobile/report/cumulative_shop_activities{?device,user_token,shop_id}]
+## 累计店主行为报表列表 [GET /api/open/mobile/report/cumulative_shop_activities{?device,user_token,shop_id,updated_at_range}]
 获取累计店主行为报表列表
 
 + Parameters
     + device: h5 (string, required) - 设备类型
     + `user_token`: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + `shop_id`: 2 (number,optional) - 店铺ID
+    + `updated_at_range`: 1_hour_ago (enum[string], optional) - 更新时间范围
+        + Members
+          + 30_minute_ago - 近30分钟
+          + 1_hour_ago - 近1个小时
+          + 1_day_ago - 近1天
+          + 1_month_ago - 近1个月
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)

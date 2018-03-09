@@ -1,6 +1,6 @@
 # Group 店主
 
-## 店主列表 [/api/open/mobile/shopkeepers{?device,user_token,shop_id,city,user_grade}]
+## 店主列表 [/api/open/mobile/shopkeepers{?device,user_token,shop_id,city,user_grade,updated_at_range}]
 ### 店主列表 [GET]
 获取不同等级，城市下的店主列表
 
@@ -13,6 +13,12 @@
             + `grade_platinum` - 白金店主
             + `grade_gold` - 黄金店主
             + `grade_trainee` - 实习店主
+    + `updated_at_range`: 1_hour_ago (enum[string], optional) - 更新时间范围
+        + Members
+          + 30_minute_ago - 近30分钟
+          + 1_hour_ago - 近1个小时
+          + 1_day_ago - 近1天
+          + 1_month_ago - 近1个月
     + city: 上海 (string, optional) - 城市筛选
 
 + Response 200 (application/json;charset=UTF-8)
@@ -258,7 +264,7 @@
                 }
             }
 
-## 店主历史总销售额排名 [/api/open/mobile/shopkeepers/sales{?device,user_token,shop_id,city,user_grade}]
+## 店主历史总销售额排名 [/api/open/mobile/shopkeepers/sales{?device,user_token,shop_id,city,user_grade,updated_at_range}]
 ### 店主历史总销售额排名 [GET]
 获取店主历史总销售额数据，可以按照城市过滤
 
@@ -271,6 +277,12 @@
             + `grade_platinum` - 白金店主
             + `grade_gold` - 黄金店主
             + `grade_trainee` - 实习店主
+    + `updated_at_range`: 1_hour_ago (enum[string], optional) - 更新时间范围
+        + Members
+          + 30_minute_ago - 近30分钟
+          + 1_hour_ago - 近1个小时
+          + 1_day_ago - 近1天
+          + 1_month_ago - 近1个月
     + city: 上海 (string, optional) - 城市筛选
 
 + Response 200 (application/json;charset=UTF-8)
@@ -456,7 +468,7 @@
                 }
             }
 
-## 店主关系拓扑 [/api/open/mobile/shopkeepers/report{?device,user_token,shop_id,time_range}]
+## 店主关系拓扑 [/api/open/mobile/shopkeepers/report{?device,user_token,shop_id,updated_at_range}]
 ### 店主关系拓扑 [GET]
 店主关系拓扑图接口
 
@@ -473,13 +485,12 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
     + device: h5 (string, required) - 设备类型
     + user_token: waNXHf3GnG2vKik4FDTQISzbvB5cDNezPYHytlunMY4= (string, required) - 用户 Token
     + `shop_id`: 2 (number, optional) - 店铺ID, 有店铺ID只返回特定店铺的结果
-    + `time_range`: 3_day_ago (enum[string], required) - 更新时间范围
+    + `updated_at_range`: 1_hour_ago (enum[string], optional) - 更新时间范围
         + Members
+          + 30_minute_ago - 近30分钟
+          + 1_hour_ago - 近1个小时
           + 1_day_ago - 近1天
-          + 3_day_ago - 近3天
-          + 7_day_ago - 近7天
-          + 1_month_ago - 近1月
-          + 1_year_ago - 近1年
+          + 1_month_ago - 近1个月
 
 + Response 200 (application/json;charset=UTF-8)
     + Attributes (object)
