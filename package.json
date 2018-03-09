@@ -31,13 +31,13 @@
     "shipit": "shipit"
   },
   "engines": {
-    "node": ">= 5.0.0",
-    "npm": ">= 3.0.0"
+    "node": ">= 8.9.4",
+    "npm": ">= 5.6.0"
   },
   "devDependencies": {
     "aglio": "^2.3.0",
     "drakov": "^1.0.4",
-    "dredd": "^4.9.3",
+    "dredd": "^5.1.4",
     "rimraf": "^2.6.2",
     "shipit-cli": "^3.0.0",
     "shipit-deploy": "^2.5.1",
