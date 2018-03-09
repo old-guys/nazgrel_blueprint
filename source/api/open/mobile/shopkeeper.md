@@ -548,11 +548,6 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_number": 671,
                             "sale_order_amount": "8495570.43",
-                            "descendant_order_number": 1342,
-                            "descendant_order_amount": "16991140.86",
-                            "descendant_commission_income_amount": "100.011",
-                            "children_count": 1,
-                            "descendant_count": 2,
                             "tree_depth": 1,
                             "parent_names": [
                                 "Andox"
@@ -601,11 +596,6 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "shopkeeper_order_amount": "12990.0",
                             "sale_order_number": 1,
                             "sale_order_amount": "0.03",
-                            "descendant_order_number": 485,
-                            "descendant_order_amount": "69144.92",
-                            "descendant_commission_income_amount": "7191.342",
-                            "children_count": 49,
-                            "descendant_count": 465,
                             "tree_depth": 1,
                             "parent_names": [
                                 "高强"
@@ -654,11 +644,6 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_number": 0,
                             "sale_order_amount": "0.0",
-                            "descendant_order_number": 0,
-                            "descendant_order_amount": "0.0",
-                            "descendant_commission_income_amount": "0.0",
-                            "children_count": 0,
-                            "descendant_count": 0,
                             "tree_depth": 2,
                             "parent_names": [
                                 "高强",
@@ -710,11 +695,6 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "shopkeeper_order_amount": "38970.0",
                             "sale_order_number": 668,
                             "sale_order_amount": "8456600.43",
-                            "descendant_order_number": 671,
-                            "descendant_order_amount": "8495570.43",
-                            "descendant_commission_income_amount": "100.011",
-                            "children_count": 1,
-                            "descendant_count": 1,
                             "tree_depth": 2,
                             "parent_names": [
                                 "Andox",
@@ -766,11 +746,6 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_number": 671,
                             "sale_order_amount": "8495570.43",
-                            "descendant_order_number": 0,
-                            "descendant_order_amount": "0.0",
-                            "descendant_commission_income_amount": "0.0",
-                            "children_count": 0,
-                            "descendant_count": 0,
                             "tree_depth": 3,
                             "parent_names": [
                                 "Andox",
@@ -854,11 +829,6 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
 + `shopkeeper_order_amount`: 312.02 (string) - 自购订单销售金额
 + `sale_order_number`: 2003 (number) - 销售订单数
 + `sale_order_amount`: 312.02 (string) - 销售订单销售金额
-+ `descendant_order_number`: 0 (number) - 下级店铺订单数
-+ `descendant_order_amount`: 0.0 (string) - 下级店铺订单销售金额
-+ `descendant_commission_income_amount`: 0.0 (string) - 下级店铺店铺佣金
-+ `children_count`: 0 (number) - 店主直接下级数量
-+ `descendant_count`: 0 (number) - 店主所有下级数量
 + `tree_depth`: 3 (number) - 店主所在层级
 + `parent_names`: `高强` (array[string]) - 上级名称
   + `掌柜`
