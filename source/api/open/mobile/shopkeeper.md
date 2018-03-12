@@ -513,8 +513,8 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                 "message": "",
                 "remark": "",
                 "data": {
-                    "total_count": 505,
-                    "total_pages": 101,
+                    "total_count": 508,
+                    "total_pages": 102,
                     "current_page": 1,
                     "next_page": 2,
                     "prev_page": null,
@@ -525,51 +525,54 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                     "models": [
                         {
                             "id": 1,
-                            "shop_id": 1,
-                            "user_id": 12345,
-                            "shopkeeper_name": "Andox",
-                            "shopkeeper_real_name": null,
+                            "shop_id": 2,
+                            "user_id": 24420,
+                            "shopkeeper_name": "李大帅锅",
+                            "shopkeeper_real_name": "0",
                             "province": "浙江",
                             "city": "杭州",
                             "status": "normal",
                             "status_text": "正常",
-                            "user_phone": "15888888888",
-                            "shop_name": "张三小店12千千万",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/9fa53b1117ea46ac81f12d1f55fa0d50.jpg",
+                            "user_phone": "13916025169",
+                            "shop_name": "解忧杂货店",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/d44674b9a4a74e05ae2f30cd781f0bfd.jpg",
                             "user_grade": "grade_platinum",
                             "user_grade_text": "白金店主",
                             "parent_shopkeeper_id": null,
                             "parent_shopkeeper_name": null,
                             "parent_user_phone": null,
                             "parent_shop_id": null,
-                            "total_income_amount": "1441.9",
-                            "balance_amount": "1441.9",
-                            "withdraw_amount": "0.0",
-                            "blocked_amount": "0.0",
+                            "total_income_amount": "2623.171",
+                            "balance_amount": "2243.144",
+                            "withdraw_amount": "400.0",
+                            "blocked_amount": "30.027",
                             "create_shop_amount": "0.0",
-                            "commission_income_amount": "0.0",
+                            "total_income_coin": "10000.0",
+                            "balance_coin": "9930.4",
+                            "use_coin": "69.6",
+                            "commission_income_amount": "0.004",
                             "team_income_amount": "0.0",
-                            "invite_amount": "1441.9",
+                            "invite_amount": "2300.0",
                             "shop_sales_amount": "0.0",
-                            "invite_code": "inviteCo",
-                            "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
-                            "order_number": 671,
-                            "order_amount": "8495570.43",
+                            "invite_code": "PXTo8s5J",
+                            "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/PXTo8s5J_inviteQrcode.jpg",
+                            "order_number": 2,
+                            "order_amount": "12990.03",
                             "shopkeeper_order_number": 0,
                             "shopkeeper_order_amount": "0.0",
-                            "sale_order_number": 671,
-                            "sale_order_amount": "8495570.43",
+                            "sale_order_number": 2,
+                            "sale_order_amount": "12990.03",
                             "tree_depth": 1,
                             "parent_names": [
-                                "Andox"
+                                "李大帅锅"
                             ],
                             "parent_shop_ids": [
-                                1
+                                2
                             ],
                             "parent_ids": [
                                 1
                             ],
-                            "created_at": "2017-07-28T00:54:27.000+08:00"
+                            "created_at": "2017-08-14T15:29:28.000+08:00"
                         },
                         {
                             "id": 2,
@@ -583,7 +586,7 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "status_text": "正常",
                             "user_phone": "13661638426",
                             "shop_name": "解忧杂货店",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/25b773c1f4644fcdbcca1cc1dee90659.jpg",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/d44674b9a4a74e05ae2f30cd781f0bfd.jpg",
                             "user_grade": "grade_platinum",
                             "user_grade_text": "白金店主",
                             "parent_shopkeeper_id": null,
@@ -595,12 +598,15 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "withdraw_amount": "530.0",
                             "blocked_amount": "17.136",
                             "create_shop_amount": "0.0",
+                            "total_income_coin": "0.0",
+                            "balance_coin": "0.0",
+                            "use_coin": "0.0",
                             "commission_income_amount": "0.0",
-                            "team_income_amount": "12.018",
+                            "team_income_amount": null,
                             "invite_amount": "8204.403",
-                            "shop_sales_amount": "0.0",
-                            "invite_code": "gaoq1234",
-                            "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
+                            "shop_sales_amount": null,
+                            "invite_code": null,
+                            "invite_qrcode_url": null,
                             "order_number": 2,
                             "order_amount": "12990.03",
                             "shopkeeper_order_number": 1,
@@ -617,7 +623,7 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "parent_ids": [
                                 2
                             ],
-                            "created_at": "2017-07-29T21:31:08.000+08:00"
+                            "created_at": "2017-08-14T15:29:28.000+08:00"
                         },
                         {
                             "id": 3,
@@ -643,12 +649,15 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "withdraw_amount": "0.0",
                             "blocked_amount": "0.0",
                             "create_shop_amount": "0.0",
+                            "total_income_coin": "0.0",
+                            "balance_coin": "0.0",
+                            "use_coin": "0.0",
                             "commission_income_amount": "0.0",
-                            "team_income_amount": "0.0",
+                            "team_income_amount": null,
                             "invite_amount": "0.0",
-                            "shop_sales_amount": "0.0",
+                            "shop_sales_amount": null,
                             "invite_code": null,
-                            "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
+                            "invite_qrcode_url": null,
                             "order_number": 0,
                             "order_amount": "0.0",
                             "shopkeeper_order_number": 0,
@@ -694,12 +703,15 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "withdraw_amount": "0.0",
                             "blocked_amount": "0.003",
                             "create_shop_amount": "0.0",
+                            "total_income_coin": "0.0",
+                            "balance_coin": "0.0",
+                            "use_coin": "0.0",
                             "commission_income_amount": "0.0",
-                            "team_income_amount": "0.0",
+                            "team_income_amount": null,
                             "invite_amount": "0.0",
-                            "shop_sales_amount": "0.0",
+                            "shop_sales_amount": null,
                             "invite_code": null,
-                            "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
+                            "invite_qrcode_url": null,
                             "order_number": 671,
                             "order_amount": "8495570.43",
                             "shopkeeper_order_number": 3,
@@ -708,15 +720,12 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "sale_order_amount": "8456600.43",
                             "tree_depth": 2,
                             "parent_names": [
-                                "Andox",
                                 "李航"
                             ],
                             "parent_shop_ids": [
-                                1,
                                 1
                             ],
                             "parent_ids": [
-                                1,
                                 4
                             ],
                             "created_at": "2017-07-28T00:54:27.000+08:00"
@@ -745,12 +754,15 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "withdraw_amount": "0.0",
                             "blocked_amount": "-2.978",
                             "create_shop_amount": "0.0",
+                            "total_income_coin": "0.0",
+                            "balance_coin": "0.0",
+                            "use_coin": "0.0",
                             "commission_income_amount": "100.011",
-                            "team_income_amount": "3.001",
+                            "team_income_amount": null,
                             "invite_amount": "652406.4",
-                            "shop_sales_amount": "12970.1",
-                            "invite_code": "BnmPHocI",
-                            "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/BnmPHocI_inviteQrcode.jpg",
+                            "shop_sales_amount": null,
+                            "invite_code": null,
+                            "invite_qrcode_url": null,
                             "order_number": 671,
                             "order_amount": "8495570.43",
                             "shopkeeper_order_number": 0,
@@ -759,17 +771,14 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "sale_order_amount": "8495570.43",
                             "tree_depth": 3,
                             "parent_names": [
-                                "Andox",
                                 "李航",
                                 "张三"
                             ],
                             "parent_shop_ids": [
                                 1,
-                                1,
                                 1
                             ],
                             "parent_ids": [
-                                1,
                                 4,
                                 10
                             ],
@@ -828,6 +837,9 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
 + `withdraw_amount`: 0.0 (string) - 已提现金额
 + `blocked_amount`: 0.0 (string) - 冻结金额
 + `create_shop_amount`: 0.0 (string) - 开店支付金额
++ `total_income_coin`: `10000.0` (string) - 总收入芝蚂币
++ `balance_coin`: `9930.4` (string) - 芝蚂币余额
++ `use_coin`: `69.6` (string) - 已使用芝蚂币
 + `commission_income_amount`: 0.0 (string) - 店铺佣金
 + `team_income_amount`: 0.02 (string) - 团队收益
 + `invite_amount`: 0.02 (string) - 邀请收入 培训奖励

@@ -226,6 +226,9 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
               + total_income_amount: 2000 (string) - 账户总收入
               + commission_income_amount: 233 (string) - 店铺佣金 店铺收益 销售佣金
               + withdraw_amount: 23 (string) - 已提现金额
+              + `total_income_coin`: `10000.0` (string) - 总收入芝蚂币
+              + `balance_coin`: `9930.4` (string) - 芝蚂币余额
+              + `use_coin`: `69.6` (string) - 已使用芝蚂币
               + invite_amount: 23 (string) - 邀请收入 培训奖励
               + invite_number: 23 (number) - 邀请总人数
               + team_income_amount: `12.018` (string) - 团队收益
@@ -243,37 +246,40 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                 "data": {
                     "id": 2,
                     "name": "解忧杂货店",
-                    "desc": "解忧亦无忧- 包罗万象。",
+                    "desc": "我的小店开张啦！欢迎大家常来逛。",
                     "shopkeeper": {
-                        "user_id": 25998,
-                        "user_name": "高强",
+                        "user_id": 24420,
+                        "user_name": "李大帅锅",
                         "user_grade": "grade_platinum",
                         "user_grade_text": "白金店主",
-                        "user_phone": "13661638426",
-                        "user_photo": "http://inte.ishanggang.com/upload/upload/user/Head/user_25998_1505274624483.jpeg",
-                        "created_at": "2017-07-28T17:37:33.000+08:00",
+                        "user_phone": "13916025169",
+                        "user_photo": "http://img.ishanggang.com/upload/upload/user/Head/user_24420_1498116925477.jpg",
+                        "created_at": "2017-08-14T15:29:28.000+08:00",
                         "child_count": {
-                            "count": 49,
-                            "grade_platinum_count": 43,
-                            "grade_gold_count": 3
+                            "count": 0,
+                            "grade_platinum_count": 0,
+                            "grade_gold_count": 0
                         },
                         "indirectly_descendant_count": {
-                            "count": 416,
-                            "grade_platinum_count": 330,
-                            "grade_gold_count": 58
+                            "count": 0,
+                            "grade_platinum_count": 0,
+                            "grade_gold_count": 0
                         },
                         "parent": {},
-                        "total_income_amount": "8229.557",
-                        "commission_income_amount": "0.0",
-                        "withdraw_amount": "530.0",
-                        "invite_number": 28,
-                        "team_income_amount": "12.018",
-                        "invite_amount": "8204.403",
+                        "total_income_amount": "2623.171",
+                        "commission_income_amount": "0.004",
+                        "withdraw_amount": "400.0",
+                        "total_income_coin": "10000.0",
+                        "balance_coin": "9930.4",
+                        "use_coin": "69.6",
+                        "invite_number": 10,
+                        "team_income_amount": "0.0",
+                        "invite_amount": "2300.0",
                         "shop_sales_amount": "0.0",
                         "order_amount": "12990.03",
                         "order_number": 2,
                         "share_journal_count": 0,
-                        "view_journal_count": 660
+                        "view_journal_count": 0
                     }
                 }
             }
