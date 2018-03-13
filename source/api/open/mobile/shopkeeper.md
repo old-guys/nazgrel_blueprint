@@ -513,8 +513,8 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                 "message": "",
                 "remark": "",
                 "data": {
-                    "total_count": 508,
-                    "total_pages": 102,
+                    "total_count": 518,
+                    "total_pages": 104,
                     "current_page": 1,
                     "next_page": 2,
                     "prev_page": null,
@@ -555,13 +555,13 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "invite_amount": "2300.0",
                             "shop_sales_amount": "0.0",
                             "invite_code": "PXTo8s5J",
-                            "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/PXTo8s5J_inviteQrcode.jpg",
-                            "order_number": 2,
-                            "order_amount": "12990.03",
-                            "shopkeeper_order_number": 0,
-                            "shopkeeper_order_amount": "0.0",
-                            "sale_order_number": 2,
-                            "sale_order_amount": "12990.03",
+                            "invite_qrcode_url": "http://inte.ishanggang.com/",
+                            "order_number": 15,
+                            "order_amount": "13940.03",
+                            "shopkeeper_order_number": 7,
+                            "shopkeeper_order_amount": "461.3",
+                            "sale_order_number": 8,
+                            "sale_order_amount": "13478.73",
                             "tree_depth": 1,
                             "parent_names": [
                                 "李大帅锅"
@@ -572,6 +572,11 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "parent_ids": [
                                 1
                             ],
+                            "org_grade": "grade_platinum",
+                            "org_grade_text": "白金店主",
+                            "order_create_at": "2017-08-10T14:39:45.000+08:00",
+                            "upgrade_grade_gold_at": null,
+                            "upgrade_grade_platinum_at": null,
                             "created_at": "2017-08-14T15:29:28.000+08:00"
                         },
                         {
@@ -623,166 +628,183 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
                             "parent_ids": [
                                 2
                             ],
+                            "org_grade": "grade_platinum",
+                            "org_grade_text": "白金店主",
+                            "order_create_at": null,
+                            "upgrade_grade_gold_at": null,
+                            "upgrade_grade_platinum_at": null,
                             "created_at": "2017-08-14T15:29:28.000+08:00"
                         },
                         {
                             "id": 3,
                             "shop_id": 3,
-                            "user_id": 8910,
-                            "shopkeeper_name": "王健雄",
-                            "shopkeeper_real_name": null,
-                            "province": null,
-                            "city": null,
+                            "user_id": 979,
+                            "shopkeeper_name": "联美家",
+                            "shopkeeper_real_name": "凡安才",
+                            "province": "上海",
+                            "city": "上海",
                             "status": "normal",
                             "status_text": "正常",
-                            "user_phone": "19888888888",
-                            "shop_name": "gg=jasldfjadsklf",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/5b0272f43df84733b932c40741e69860.jpg",
+                            "user_phone": "13166311579",
+                            "shop_name": "联美家小店",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/42e21b8d1f0644939e889c05381d3fcb.jpg",
                             "user_grade": "grade_platinum",
                             "user_grade_text": "白金店主",
                             "parent_shopkeeper_id": null,
                             "parent_shopkeeper_name": null,
                             "parent_user_phone": null,
                             "parent_shop_id": null,
-                            "total_income_amount": "0.0",
-                            "balance_amount": "0.0",
+                            "total_income_amount": "466.289",
+                            "balance_amount": "464.901",
                             "withdraw_amount": "0.0",
-                            "blocked_amount": "0.0",
+                            "blocked_amount": "1.388",
                             "create_shop_amount": "0.0",
                             "total_income_coin": "0.0",
                             "balance_coin": "0.0",
                             "use_coin": "0.0",
                             "commission_income_amount": "0.0",
-                            "team_income_amount": null,
+                            "team_income_amount": "0.0",
+                            "invite_amount": "400.0",
+                            "shop_sales_amount": "0.0",
+                            "invite_code": "K3HufzJz",
+                            "invite_qrcode_url": "http://inte.ishanggang.com/",
+                            "order_number": 3,
+                            "order_amount": "113.5",
+                            "shopkeeper_order_number": 2,
+                            "shopkeeper_order_amount": "35.9",
+                            "sale_order_number": 1,
+                            "sale_order_amount": "77.6",
+                            "tree_depth": 1,
+                            "parent_names": [
+                                "联美家"
+                            ],
+                            "parent_shop_ids": [
+                                3
+                            ],
+                            "parent_ids": [
+                                3
+                            ],
+                            "org_grade": "grade_platinum",
+                            "org_grade_text": "白金店主",
+                            "order_create_at": "2017-08-10T16:26:54.000+08:00",
+                            "upgrade_grade_gold_at": null,
+                            "upgrade_grade_platinum_at": null,
+                            "created_at": "2017-08-14T18:08:46.000+08:00"
+                        },
+                        {
+                            "id": 4,
+                            "shop_id": 4,
+                            "user_id": 24496,
+                            "shopkeeper_name": "国楠",
+                            "shopkeeper_real_name": "",
+                            "province": "上海",
+                            "city": "上海",
+                            "status": "normal",
+                            "status_text": "正常",
+                            "user_phone": "15901836867",
+                            "shop_name": "正品精选折扣店",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/touxiang_mr.jpg",
+                            "user_grade": "grade_platinum",
+                            "user_grade_text": "白金店主",
+                            "parent_shopkeeper_id": null,
+                            "parent_shopkeeper_name": null,
+                            "parent_user_phone": null,
+                            "parent_shop_id": null,
+                            "total_income_amount": "426.272",
+                            "balance_amount": "218.372",
+                            "withdraw_amount": "0.0",
+                            "blocked_amount": "207.9",
+                            "create_shop_amount": "0.0",
+                            "total_income_coin": "10000000.0",
+                            "balance_coin": "9993165.6",
+                            "use_coin": "6834.4",
+                            "commission_income_amount": "0.0",
+                            "team_income_amount": "0.0",
                             "invite_amount": "0.0",
-                            "shop_sales_amount": null,
-                            "invite_code": null,
-                            "invite_qrcode_url": null,
+                            "shop_sales_amount": "0.0",
+                            "invite_code": "r4D2sBqh",
+                            "invite_qrcode_url": "http://inte.ishanggang.com/static/img/qrcode/r4D2sBqh_inviteQrcode.jpg",
                             "order_number": 0,
                             "order_amount": "0.0",
                             "shopkeeper_order_number": 0,
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_number": 0,
                             "sale_order_amount": "0.0",
-                            "tree_depth": 2,
+                            "tree_depth": 1,
                             "parent_names": [
-                                "高强",
-                                "王健雄"
+                                "国楠"
                             ],
                             "parent_shop_ids": [
-                                2,
-                                3
-                            ],
-                            "parent_ids": [
-                                2,
-                                3
-                            ],
-                            "created_at": "2017-07-29T22:15:43.000+08:00"
-                        },
-                        {
-                            "id": 4,
-                            "shop_id": 1,
-                            "user_id": 12311,
-                            "shopkeeper_name": "李航",
-                            "shopkeeper_real_name": null,
-                            "province": null,
-                            "city": null,
-                            "status": "normal",
-                            "status_text": "正常",
-                            "user_phone": "12111111111",
-                            "shop_name": "张三小店12千千万",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/9fa53b1117ea46ac81f12d1f55fa0d50.jpg",
-                            "user_grade": "grade_platinum",
-                            "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": null,
-                            "parent_shopkeeper_name": null,
-                            "parent_user_phone": null,
-                            "parent_shop_id": null,
-                            "total_income_amount": "0.003",
-                            "balance_amount": "0.0",
-                            "withdraw_amount": "0.0",
-                            "blocked_amount": "0.003",
-                            "create_shop_amount": "0.0",
-                            "total_income_coin": "0.0",
-                            "balance_coin": "0.0",
-                            "use_coin": "0.0",
-                            "commission_income_amount": "0.0",
-                            "team_income_amount": null,
-                            "invite_amount": "0.0",
-                            "shop_sales_amount": null,
-                            "invite_code": null,
-                            "invite_qrcode_url": null,
-                            "order_number": 671,
-                            "order_amount": "8495570.43",
-                            "shopkeeper_order_number": 3,
-                            "shopkeeper_order_amount": "38970.0",
-                            "sale_order_number": 668,
-                            "sale_order_amount": "8456600.43",
-                            "tree_depth": 2,
-                            "parent_names": [
-                                "李航"
-                            ],
-                            "parent_shop_ids": [
-                                1
+                                4
                             ],
                             "parent_ids": [
                                 4
                             ],
-                            "created_at": "2017-07-28T00:54:27.000+08:00"
+                            "org_grade": "grade_platinum",
+                            "org_grade_text": "白金店主",
+                            "order_create_at": null,
+                            "upgrade_grade_gold_at": null,
+                            "upgrade_grade_platinum_at": null,
+                            "created_at": "2017-08-14T18:17:45.000+08:00"
                         },
                         {
-                            "id": 10,
-                            "shop_id": 1,
-                            "user_id": 26049,
-                            "shopkeeper_name": "张三",
+                            "id": 5,
+                            "shop_id": 5,
+                            "user_id": 26968,
+                            "shopkeeper_name": "高强",
                             "shopkeeper_real_name": null,
-                            "province": "湖南",
-                            "city": "株洲",
+                            "province": "上海",
+                            "city": "上海",
                             "status": "normal",
                             "status_text": "正常",
-                            "user_phone": "15207400547",
-                            "shop_name": "张三小店12千千万",
-                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/9fa53b1117ea46ac81f12d1f55fa0d50.jpg",
+                            "user_phone": "13661638426",
+                            "shop_name": "小小强的小店",
+                            "shop_img_url": "http://zmcimg.ishanggang.com/static/img/image/7371733502eb4e7b8c88f11baf34bfca.jpg",
                             "user_grade": "grade_platinum",
                             "user_grade_text": "白金店主",
-                            "parent_shopkeeper_id": 25998,
-                            "parent_shopkeeper_name": "高强",
-                            "parent_user_phone": "13661638426",
+                            "parent_shopkeeper_id": 24420,
+                            "parent_shopkeeper_name": "李大帅锅",
+                            "parent_user_phone": "13916025169",
                             "parent_shop_id": 2,
-                            "total_income_amount": "40775.434",
-                            "balance_amount": "48.012",
+                            "total_income_amount": "544.703",
+                            "balance_amount": "544.703",
                             "withdraw_amount": "0.0",
-                            "blocked_amount": "-2.978",
+                            "blocked_amount": "0.0",
                             "create_shop_amount": "0.0",
-                            "total_income_coin": "0.0",
-                            "balance_coin": "0.0",
+                            "total_income_coin": "20.0",
+                            "balance_coin": "20.0",
                             "use_coin": "0.0",
-                            "commission_income_amount": "100.011",
-                            "team_income_amount": null,
-                            "invite_amount": "652406.4",
-                            "shop_sales_amount": null,
-                            "invite_code": null,
-                            "invite_qrcode_url": null,
-                            "order_number": 671,
-                            "order_amount": "8495570.43",
-                            "shopkeeper_order_number": 0,
-                            "shopkeeper_order_amount": "0.0",
-                            "sale_order_number": 671,
-                            "sale_order_amount": "8495570.43",
-                            "tree_depth": 3,
+                            "commission_income_amount": "0.0",
+                            "team_income_amount": "0.0",
+                            "invite_amount": "500.0",
+                            "shop_sales_amount": "0.0",
+                            "invite_code": "qX4lLU10",
+                            "invite_qrcode_url": "http://inte.ishanggang.com/",
+                            "order_number": 3,
+                            "order_amount": "233.69",
+                            "shopkeeper_order_number": 2,
+                            "shopkeeper_order_amount": "115.69",
+                            "sale_order_number": 1,
+                            "sale_order_amount": "118.0",
+                            "tree_depth": 2,
                             "parent_names": [
-                                "李航",
-                                "张三"
+                                "李大帅锅",
+                                "高强"
                             ],
                             "parent_shop_ids": [
-                                1,
-                                1
+                                2,
+                                5
                             ],
                             "parent_ids": [
-                                4,
-                                10
+                                1,
+                                5
                             ],
-                            "created_at": "2017-07-28T00:54:27.000+08:00"
+                            "org_grade": "grade_platinum",
+                            "org_grade_text": "白金店主",
+                            "order_create_at": "2017-09-16T19:01:42.000+08:00",
+                            "upgrade_grade_gold_at": null,
+                            "upgrade_grade_platinum_at": null,
+                            "created_at": "2017-08-14T18:24:35.000+08:00"
                         }
                     ]
                 }
@@ -841,17 +863,17 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
 + `balance_coin`: `9930.4` (string) - 芝蚂币余额
 + `use_coin`: `69.6` (string) - 已使用芝蚂币
 + `commission_income_amount`: 0.0 (string) - 店铺佣金
-+ `team_income_amount`: 0.02 (string) - 团队收益
++ `team_income_amount`: 0.02 (string, nullable) - 团队收益
 + `invite_amount`: 0.02 (string) - 邀请收入 培训奖励
-+ `shop_sales_amount`: 0.02 (string) - 销售业绩
++ `shop_sales_amount`: 0.02 (string, nullable) - 销售业绩
 + `invite_code`: `inviteCo` (string, nullable) - 邀请码
 + `invite_qrcode_url`: `http://zmcimg.ishanggang.com/static/img/static/img/qrcode/BnmPHocI_inviteQrcode.jpg` (string, nullable) - 邀请二维码图片url
 + `order_number`: 15507 (number) - 订单数
 + `order_amount`: 0.02 (string) - 订单销售金额
 + `shopkeeper_order_number`: 2003 (number) - 自购订单数
-+ `shopkeeper_order_amount`: 312.02 (string) - 自购订单销售金额
++ `shopkeeper_order_amount`: 312.02 (string, nullable) - 自购订单销售金额
 + `sale_order_number`: 2003 (number) - 销售订单数
-+ `sale_order_amount`: 312.02 (string) - 销售订单销售金额
++ `sale_order_amount`: 312.02 (string, nullable) - 销售订单销售金额
 + `tree_depth`: 3 (number) - 店主所在层级
 + `parent_names`: `高强` (array[string]) - 上级名称
   + `掌柜`
@@ -859,4 +881,7 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
   + `1656`
 + `parent_shop_ids`: 2 (array[string]) - 上级店主ID
   + `3`
-+ `created_at`: `2017-07-28T00:54:27.000+08:00` (string) - 订单销售金额
++ `order_create_at`: `2017-07-28T00:54:27.000+08:00` (string, nullable) - 创建订单时间
++ `upgrade_grade_gold_at`: `2017-07-28T00:54:27.000+08:00` (string, nullable) - 升级黄金店主时间
++ `upgrade_grade_platinum_at`: `2017-07-28T00:54:27.000+08:00` (string, nullable) - 升级白金店主时间
++ `created_at`: `2017-07-28T00:54:27.000+08:00` (string) - 创建时间
