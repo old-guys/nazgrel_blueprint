@@ -881,6 +881,8 @@ total_income_amount = commission_income_amount + invite_amount + team_income_amo
   + `1656`
 + `parent_shop_ids`: 2 (array[string]) - 上级店主ID
   + `3`
++ `org_grade`: `grade_platinum` (string) - 初始店铺等级
++ `org_grade_text`: `白金店主` (string) - 初始店铺等级
 + `order_create_at`: `2017-07-28T00:54:27.000+08:00` (string, nullable) - 创建订单时间
 + `upgrade_grade_gold_at`: `2017-07-28T00:54:27.000+08:00` (string, nullable) - 升级黄金店主时间
 + `upgrade_grade_platinum_at`: `2017-07-28T00:54:27.000+08:00` (string, nullable) - 升级白金店主时间
