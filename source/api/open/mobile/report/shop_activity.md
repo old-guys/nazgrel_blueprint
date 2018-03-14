@@ -48,8 +48,8 @@
                     "page": 0,
                     "models": [
                         {
-                            "id": 2570,
-                            "shop_id": 34,
+                            "id": 3576,
+                            "shop_id": 649,
                             "shared_count": 0,
                             "view_count": 0,
                             "viewer_count": 0,
@@ -63,9 +63,16 @@
                             "children_grade_platinum_count": 0,
                             "children_grade_gold_count": 0,
                             "ecn_grade_platinum_count": 0,
+                            "children_count": 0,
+                            "children_commission_income_amount": "0.0",
+                            "descendant_count": 0,
+                            "descendant_activation_count": 0,
+                            "descendant_order_number": 0,
+                            "descendant_order_amount": "0.0",
+                            "descendant_commission_income_amount": "0.0",
                             "ecn_grade_gold_count": 0,
-                            "created_at": "2018-02-07T11:30:25.000+08:00",
-                            "updated_at": "2018-02-07T14:30:07.000+08:00"
+                            "created_at": "2018-03-02T16:00:19.000+08:00",
+                            "updated_at": "2018-03-02T16:00:19.000+08:00"
                         }
                     ]
                 }
@@ -153,6 +160,8 @@
                             "month_children_commission_income_amount": "0.0",
                             "week_descendant_count": 0,
                             "month_descendant_count": 0,
+                            "week_descendant_activation_count": 0,
+                            "month_descendant_activation_count": 0,
                             "week_descendant_order_number": 0,
                             "month_descendant_order_number": 0,
                             "week_descendant_order_amount": "0.0",
@@ -189,6 +198,7 @@
 + `children_count`: 23 (number) - 当天邀请店主数
 + `children_commission_income_amount`: `0.0` (string) - 当天邀请店主佣金金额
 + `descendant_count`: 23 (number) - 当天下级店主数
++ `descendant_activation_count`: 23 (number) - 当天下级激活数
 + `descendant_order_number`: 0 (number) - 当天下级店主订单
 + `descendant_order_amount`: `0.0` (string) - 当天下级店主订单金额
 + `descendant_commission_income_amount`: `0.0` (string) - 当天下级店主佣金金额
@@ -213,7 +223,8 @@
 + `week_ecn_grade_gold_count`: 23 (number) - 本周ECN黄金店主数
 + `week_children_count`: 23 (number) - 本周店主数
 + `week_children_commission_income_amount`: `0.0` (string) - 本周店主佣金金额
-+ `week_descendant_count`: 23 (number) - 本周店主数
++ `week_descendant_count`: 23 (number) - 本周下级店主数
++ `week_descendant_activation_count`: 23 (number) - 本周下级激活数
 + `week_descendant_order_number`: 0 (number) - 本周店主订单
 + `week_descendant_order_amount`: `0.0` (string) - 本周店主订单金额
 + `week_descendant_commission_income_amount`: `0.0` (string) - 本周店主佣金金额
@@ -234,6 +245,7 @@
 + `month_children_count`: 23 (number) - 本月邀请店主数
 + `month_children_commission_income_amount`: `0.0` (string) - 本月邀请店主佣金金额
 + `month_descendant_count`: 23 (number) - 本月下级店主数
++ `month_descendant_activation_count`: 23 (number) - 本月下级激活数
 + `month_descendant_order_number`: 0 (number) - 本月下级店主订单
 + `month_descendant_order_amount`: `0.0` (string) - 本月下级店主订单金额
 + `month_descendant_commission_income_amount`: `0.0` (string) - 本月下级店主佣金金额
