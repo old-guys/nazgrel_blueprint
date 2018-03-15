@@ -58,6 +58,7 @@
                             "sale_order_number": 0,
                             "order_amount": "0.0",
                             "commission_income_amount": "0.0",
+                            "withdraw_amount": "0.0",
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_amount": "0.0",
                             "children_grade_platinum_count": 0,
@@ -144,6 +145,8 @@
                             "month_order_amount": "0.0",
                             "week_commission_income_amount": "444.44",
                             "month_commission_income_amount": "0.0",
+                            "week_withdraw_amount": "0.0",
+                            "month_withdraw_amount": "0.0",
                             "week_shopkeeper_order_amount": "888.88",
                             "month_shopkeeper_order_amount": "0.0",
                             "week_sale_order_amount": "0.0",
@@ -189,6 +192,7 @@
 + `sale_order_number`: 1 (number) - 当天销售订单数
 + `order_amount`: 58.0 (string) - 当天订单金额
 + `commission_income_amount`: 18.0 (string) - 当天店铺佣金
++ `withdraw_amount`: 0 (string) - 当天提现金额
 + `shopkeeper_order_amount`: 20.0 (string) - 当天自购订单金额
 + `sale_order_amount`: 38.0 (string) - 当天销售订单金额
 + `children_grade_platinum_count`: 1 (number) - 当天直接邀请白金用户数
@@ -215,6 +219,7 @@
 + `week_sale_order_number`: 1 (number) - 本周销售订单数
 + `week_order_amount`: 58.0 (string) - 当天订单金额
 + `week_commission_income_amount`: 18.0 (string) - 本周店铺佣金
++ `week_withdraw_amount`: 0 (string) - 本周提现金额
 + `week_shopkeeper_order_amount`: 20.0 (string) - 本周自购订单金额
 + `week_sale_order_amount`: 38.0 (string) - 本周销售订单金额
 + `week_children_grade_platinum_count`: 1 (number) - 本周直接邀请白金用户数
@@ -236,6 +241,7 @@
 + `month_sale_order_number`: 1 (number) - 本月销售订单数
 + `month_order_amount`: 58.0 (string) - 本月订单金额
 + `month_commission_income_amount`: 18.0 (string) - 本月店铺佣金
++ `month_withdraw_amount`: 0 (string) - 本月提现金额
 + `month_shopkeeper_order_amount`: 20.0 (string) - 本月自购订单金额
 + `month_sale_order_amount`: 38.0 (string) - 本月销售订单金额
 + `month_children_grade_platinum_count`: 1 (number) - 本月直接邀请白金用户数

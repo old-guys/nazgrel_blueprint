@@ -25,7 +25,7 @@
             + prev_page (number, nullable) - 前一页
             + first_page? (boolean) - 是否第一页
             + last_page? (boolean) - 是否最后一页
-            + per_page: 15 (number) - 每页条数
+            + per_page: 3 (number) - 每页条数
             + page: 1 (number) - 页码
             + models (array[SampleReportCumulativeShopActivity], fixed-type)
 
@@ -36,8 +36,8 @@
                 "message": "",
                 "remark": "",
                 "data": {
-                    "total_count": 598,
-                    "total_pages": 200,
+                    "total_count": 4787,
+                    "total_pages": 1596,
                     "current_page": 1,
                     "next_page": 2,
                     "prev_page": null,
@@ -47,8 +47,8 @@
                     "page": 0,
                     "models": [
                         {
-                            "id": 598,
-                            "shop_id": 6692,
+                            "id": 4787,
+                            "shop_id": 4705,
                             "day_0_shared_count": 0,
                             "day_7_shared_count": 0,
                             "day_30_shared_count": 0,
@@ -81,6 +81,10 @@
                             "day_7_commission_income_amount": "0.0",
                             "day_30_commission_income_amount": "0.0",
                             "total_commission_income_amount": "0.0",
+                            "day_0_withdraw_amount": "0.0",
+                            "day_7_withdraw_amount": "0.0",
+                            "day_30_withdraw_amount": "0.0",
+                            "total_withdraw_amount": "0.0",
                             "day_0_shopkeeper_order_amount": "0.0",
                             "day_7_shopkeeper_order_amount": "0.0",
                             "day_30_shopkeeper_order_amount": "0.0",
@@ -133,12 +137,12 @@
                             "day_7_ecn_grade_gold_count": 0,
                             "day_30_ecn_grade_gold_count": 0,
                             "total_ecn_grade_gold_count": 0,
-                            "created_at": "2018-03-14T11:42:17.000+08:00",
-                            "updated_at": "2018-03-14T11:42:17.000+08:00"
+                            "created_at": "2018-03-15T09:27:37.000+08:00",
+                            "updated_at": "2018-03-15T09:27:37.000+08:00"
                         },
                         {
-                            "id": 597,
-                            "shop_id": 6691,
+                            "id": 4786,
+                            "shop_id": 4704,
                             "day_0_shared_count": 0,
                             "day_7_shared_count": 0,
                             "day_30_shared_count": 0,
@@ -171,6 +175,10 @@
                             "day_7_commission_income_amount": "0.0",
                             "day_30_commission_income_amount": "0.0",
                             "total_commission_income_amount": "0.0",
+                            "day_0_withdraw_amount": "0.0",
+                            "day_7_withdraw_amount": "0.0",
+                            "day_30_withdraw_amount": "0.0",
+                            "total_withdraw_amount": "0.0",
                             "day_0_shopkeeper_order_amount": "0.0",
                             "day_7_shopkeeper_order_amount": "0.0",
                             "day_30_shopkeeper_order_amount": "0.0",
@@ -223,12 +231,12 @@
                             "day_7_ecn_grade_gold_count": 0,
                             "day_30_ecn_grade_gold_count": 0,
                             "total_ecn_grade_gold_count": 0,
-                            "created_at": "2018-03-14T11:42:17.000+08:00",
-                            "updated_at": "2018-03-14T11:42:17.000+08:00"
+                            "created_at": "2018-03-15T09:27:37.000+08:00",
+                            "updated_at": "2018-03-15T09:27:37.000+08:00"
                         },
                         {
-                            "id": 596,
-                            "shop_id": 6690,
+                            "id": 4785,
+                            "shop_id": 4703,
                             "day_0_shared_count": 0,
                             "day_7_shared_count": 0,
                             "day_30_shared_count": 0,
@@ -261,6 +269,10 @@
                             "day_7_commission_income_amount": "0.0",
                             "day_30_commission_income_amount": "0.0",
                             "total_commission_income_amount": "0.0",
+                            "day_0_withdraw_amount": "0.0",
+                            "day_7_withdraw_amount": "0.0",
+                            "day_30_withdraw_amount": "0.0",
+                            "total_withdraw_amount": "0.0",
                             "day_0_shopkeeper_order_amount": "0.0",
                             "day_7_shopkeeper_order_amount": "0.0",
                             "day_30_shopkeeper_order_amount": "0.0",
@@ -313,8 +325,8 @@
                             "day_7_ecn_grade_gold_count": 0,
                             "day_30_ecn_grade_gold_count": 0,
                             "total_ecn_grade_gold_count": 0,
-                            "created_at": "2018-03-14T11:42:17.000+08:00",
-                            "updated_at": "2018-03-14T11:42:17.000+08:00"
+                            "created_at": "2018-03-15T09:27:36.000+08:00",
+                            "updated_at": "2018-03-15T09:27:36.000+08:00"
                         }
                     ]
                 }
@@ -356,6 +368,10 @@
 + `day_7_commission_income_amount`: 220.0 (string) - 7天店铺佣金
 + `day_30_commission_income_amount`: 500.0 (string) - 30天店铺佣金
 + `total_commission_income_amount`: 830.0 (string) - 店铺佣金
++ `day_0_withdraw_amount`: 3.0 (string) - 当天提现金额
++ `day_7_withdraw_amount`: 13.0 (string) - 7天提现金额
++ `day_30_withdraw_amount`: 20.0 (string) - 30天提现金额
++ `total_withdraw_amount`: 135.0 (string) - 提现金额
 + `day_0_shopkeeper_order_amount`: 20.0 (string) - 当天自购订单金额
 + `day_7_shopkeeper_order_amount`: 20.0 (string) - 7天自购订单金额
 + `day_30_shopkeeper_order_amount`: 230.0 (string) - 30天自购订单金额
