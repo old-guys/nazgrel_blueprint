@@ -37,14 +37,14 @@
                 "message": "",
                 "remark": "",
                 "data": {
-                    "total_count": 1,
-                    "total_pages": 1,
+                    "total_count": 2,
+                    "total_pages": 2,
                     "current_page": 1,
-                    "next_page": null,
+                    "next_page": 2,
                     "prev_page": null,
                     "first_page?": true,
-                    "last_page?": true,
-                    "per_page": 15,
+                    "last_page?": false,
+                    "per_page": 1,
                     "page": 0,
                     "models": [
                         {
@@ -58,6 +58,8 @@
                             "sale_order_number": 0,
                             "order_amount": "0.0",
                             "commission_income_amount": "0.0",
+                            "income_coin": "0.0",
+                            "use_coin": "0.0",
                             "withdraw_amount": "0.0",
                             "shopkeeper_order_amount": "0.0",
                             "sale_order_amount": "0.0",
@@ -116,14 +118,14 @@
                 "message": "",
                 "remark": "",
                 "data": {
-                    "total_count": 1,
-                    "total_pages": 1,
+                    "total_count": 2,
+                    "total_pages": 2,
                     "current_page": 1,
-                    "next_page": null,
+                    "next_page": 2,
                     "prev_page": null,
                     "first_page?": true,
-                    "last_page?": true,
-                    "per_page": 15,
+                    "last_page?": false,
+                    "per_page": 1,
                     "page": 0,
                     "models": [
                         {
@@ -145,6 +147,10 @@
                             "month_order_amount": "0.0",
                             "week_commission_income_amount": "444.44",
                             "month_commission_income_amount": "0.0",
+                            "week_income_coin": "0.0",
+                            "month_income_coin": "0.0",
+                            "week_use_coin": "0.0",
+                            "month_use_coin": "0.0",
                             "week_withdraw_amount": "0.0",
                             "month_withdraw_amount": "0.0",
                             "week_shopkeeper_order_amount": "888.88",
@@ -192,6 +198,8 @@
 + `sale_order_number`: 1 (number) - 当天销售订单数
 + `order_amount`: 58.0 (string) - 当天订单金额
 + `commission_income_amount`: 18.0 (string) - 当天店铺佣金
++ `income_coin`: 18.0 (string) - 当天收入芝蚂币
++ `use_coin`: 18.0 (string) - 当天使用芝蚂币
 + `withdraw_amount`: 0 (string) - 当天提现金额
 + `shopkeeper_order_amount`: 20.0 (string) - 当天自购订单金额
 + `sale_order_amount`: 38.0 (string) - 当天销售订单金额
@@ -219,6 +227,8 @@
 + `week_sale_order_number`: 1 (number) - 本周销售订单数
 + `week_order_amount`: 58.0 (string) - 当天订单金额
 + `week_commission_income_amount`: 18.0 (string) - 本周店铺佣金
++ `week_income_coin`: 18.0 (string) - 本周收入芝蚂币
++ `week_use_coin`: 18.0 (string) - 本周使用芝蚂币
 + `week_withdraw_amount`: 0 (string) - 本周提现金额
 + `week_shopkeeper_order_amount`: 20.0 (string) - 本周自购订单金额
 + `week_sale_order_amount`: 38.0 (string) - 本周销售订单金额
@@ -241,6 +251,8 @@
 + `month_sale_order_number`: 1 (number) - 本月销售订单数
 + `month_order_amount`: 58.0 (string) - 本月订单金额
 + `month_commission_income_amount`: 18.0 (string) - 本月店铺佣金
++ `month_income_coin`: 18.0 (string) - 本月收入芝蚂币
++ `month_use_coin`: 18.0 (string) - 本月使用芝蚂币
 + `month_withdraw_amount`: 0 (string) - 本月提现金额
 + `month_shopkeeper_order_amount`: 20.0 (string) - 本月自购订单金额
 + `month_sale_order_amount`: 38.0 (string) - 本月销售订单金额
