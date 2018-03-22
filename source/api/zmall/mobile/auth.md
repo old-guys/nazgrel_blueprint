@@ -1,6 +1,6 @@
 # Group 认证
 
-## 登陆 [/api/zmall/mobile/auth/login{?device}]
+## 登陆 [/api/open/mobile/auth/login{?device}]
 
 ### 用户登陆 [POST]
 用户登陆
@@ -38,7 +38,7 @@
                 }
             }
 
-## ping db [/api/zmall/mobile/auth/ping_db{?device,user_token}]
+## ping db [/api/open/mobile/auth/ping_db{?device,user_token}]
 ### ping api 服务器数据库 [GET]
 ping api 服务器数据库，得到最新的用户信息
 

@@ -40,6 +40,12 @@ You're going to need:
  2. Generate html file: `npm run generate_mobile`
  3. test mock api: `npm run test_mobile`
 
+### Development Zmall Mobile api
+
+ 1. Start the Mock server: `npm run start_zmall_mobile`
+ 2. Generate html file: `npm run generate_zmall_mobile`
+ 3. test mock api: `npm run test_zmall_mobile`
+
 ### Development Web api
 
  1. Start the Mock server: `npm run start_web`
