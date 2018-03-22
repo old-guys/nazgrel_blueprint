@@ -73,8 +73,10 @@
                             "month_sale_order_number": 0,
                             "month_sale_order_amount": "0.0",
                             "month_commission_income_amount": "0.0",
-                            "month_income_coin": "0.0",
-                            "month_use_coin": "0.0"
+                            "month_balance_amount": "2243.144",
+                            "month_income_coin": "19.6",
+                            "month_use_coin": "0.0",
+                            "month_balance_coin": "9930.4"
                         },
                         {
                             "report_month": "2018-02",
@@ -83,8 +85,10 @@
                             "month_sale_order_number": 0,
                             "month_sale_order_amount": "0.0",
                             "month_commission_income_amount": "0.0",
+                            "month_balance_amount": "0.0",
                             "month_income_coin": "0.0",
-                            "month_use_coin": "0.0"
+                            "month_use_coin": "0.0",
+                            "month_balance_coin": "0.0"
                         },
                         {
                             "report_month": "2018-01",
@@ -93,8 +97,10 @@
                             "month_sale_order_number": 0,
                             "month_sale_order_amount": "0.0",
                             "month_commission_income_amount": "0.0",
+                            "month_balance_amount": "0.0",
                             "month_income_coin": "0.0",
-                            "month_use_coin": "0.0"
+                            "month_use_coin": "0.0",
+                            "month_balance_coin": "0.0"
                         },
                         {
                             "report_month": "2017-12",
@@ -103,28 +109,10 @@
                             "month_sale_order_number": 0,
                             "month_sale_order_amount": "0.0",
                             "month_commission_income_amount": "0.0",
+                            "month_balance_amount": "0.0",
                             "month_income_coin": "0.0",
-                            "month_use_coin": "0.0"
-                        },
-                        {
-                            "report_month": "2017-11",
-                            "month_shopkeeper_order_number": 0,
-                            "month_shopkeeper_order_amount": "0.0",
-                            "month_sale_order_number": 0,
-                            "month_sale_order_amount": "0.0",
-                            "month_commission_income_amount": "0.0",
-                            "month_income_coin": "0.0",
-                            "month_use_coin": "0.0"
-                        },
-                        {
-                            "report_month": "2017-10",
-                            "month_shopkeeper_order_number": 0,
-                            "month_shopkeeper_order_amount": "0.0",
-                            "month_sale_order_number": 0,
-                            "month_sale_order_amount": "0.0",
-                            "month_commission_income_amount": "0.0",
-                            "month_income_coin": "0.0",
-                            "month_use_coin": "0.0"
+                            "month_use_coin": "0.0",
+                            "month_balance_coin": "0.0"
                         }
                     ]
                 }
@@ -153,5 +141,7 @@
 + `month_sale_order_number`: 0 (number) - 月销售订单数
 + `month_sale_order_amount`: 0 (string) - 月销售订单金额
 + `month_commission_income_amount`: 0 (string) - 月佣金收入
++ `month_balance_amount`: 0 (string) - 账户余额
 + `month_income_coin`: 0 (string) - 芝蚂币收入
 + `month_use_coin`: 0 (string) - 芝蚂币使用
++ `month_balance_coin`: 0 (string) - 芝蚂币余额
