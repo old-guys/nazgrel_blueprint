@@ -97,7 +97,7 @@
                   "user_grade": {
                     "grade_platinum": "白金店主",
                     "grade_gold": "黄金店主",
-                    "grade_trainee": "见习店主"
+                    "grade_trainee": "体验店主"
                   }
                 },
                 "md5": "5bcd50b80fc15455db23f438f1311adc"

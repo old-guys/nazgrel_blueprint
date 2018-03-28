@@ -76,7 +76,7 @@
                     },
                     {
                         "user_grade": "grade_trainee",
-                        "user_grade_text": "见习店主",
+                        "user_grade_text": "体验店主",
                         "count": 2
                     }
                 ]
