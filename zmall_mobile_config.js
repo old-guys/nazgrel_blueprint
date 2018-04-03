@@ -1,6 +1,6 @@
 module.exports = {
     sourceFiles: './source/api/zmall/mobile/**/*.md',
-    serverPort: 3010,
+    serverPort: 3005,
     public: true,
     disableCORS: false,
     autoOptions: true,
