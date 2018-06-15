@@ -34,16 +34,19 @@
     "shipit": "shipit"
   },
   "engines": {
-    "node": ">= 8.9.4",
+    "node": ">= 10.0.1",
     "npm": ">= 5.6.0"
   },
   "devDependencies": {
     "aglio": "^2.3.0",
     "drakov": "^1.0.4",
-    "dredd": "^5.1.4",
+    "dredd": "^5.1.10",
     "rimraf": "^2.6.2",
-    "shipit-cli": "^3.0.0",
-    "shipit-deploy": "^2.5.1",
+    "shipit-cli": "^4.1.1",
+    "shipit-deploy": "^4.1.1",
     "shipit-npm": "^0.2.0"
+  },
+  "dependencies": {
+    "npm": "^6.1.0"
   }
 }
